@@ -1,0 +1,327 @@
+@charset "UTF-8";
+.icon {
+  display: block;
+  width: 1.5rem;
+  height: 1.3rem;
+  background-repeat: no-repeat;
+}
+.icon.arrow-fill {
+  background-image: url("data:image/svg+xml;charset=utf8,  %3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='6'%3E%3Cpath fill-rule='evenodd' fill='%23ff0077' d='m4.5-.001 4.5 6H0l4.5-6Z'/%3E%3C/svg%3E");
+}
+.icon.arrow-fill__bottom {
+  background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='m5.997 8.005-6-7.994h11.999L5.997 8.005Z'/%3E%3C/svg%3E");
+}
+.icon.arrow-fill__right {
+  background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='15'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='M10 7.498 0-.001v14.999l10-7.5Z'/%3E%3C/svg%3E");
+}
+.icon.arrow-fill__white {
+  width: 2.1rem;
+  width: 1.5rem;
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon.arrow-fill__gray {
+  width: 2.1rem;
+  width: 1.5rem;
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon.arrow-fill__dgray {
+  width: 1.5rem;
+  width: 1.3rem;
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon.arrow-round {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+.icon.arrow-back {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+.icon.arrow-top {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+.icon.arrow-left {
+  background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='14.5' height='21.5'%3E%3Cpath fill-rule='evenodd' stroke='rgb(0, 0, 0)' fill='rgb(255, 255, 255)' d='M13.509 1.361 1.777 10.396l11.586 9.233-.305.876-11.995-9.559-.261.201-.311-.866.354-.273.097-.278.129.104L13.198.495l.311.866Z'/%3E%3C/svg%3E");
+}
+.icon.arrow-first {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+.icon.arrow-last {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+  transform: rotate(180deg);
+}
+.icon.arrow-prev {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+  background-size: cover;
+}
+.icon.arrow-next {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+  background-size: cover;
+  transform: rotate(180deg);
+}
+.icon.arrow-right {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+.icon.arrow-more {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+.icon.close {
+  width: 13px;
+  height: 13px;
+  background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13'%3E%3Cpath fill-rule='evenodd' fill='%23000' d='m12.864 12.156-.707.707L6.5 7.206.843 12.863l-.707-.707 5.657-5.657L.136.841.843.134 6.5 5.792 12.157.134l.707.707-5.657 5.658 5.657 5.657Z'/%3E%3C/svg%3E");
+}
+.icon.close_big {
+  background-image: url("data:image/svg+xml;charset=utf8, %0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='27'%3E%3Cpath fill-rule='evenodd' fill='%23000' d='m25.531 25.047-.983.983L13 14.482 1.451 26.03l-.982-.983 11.548-11.548L.469 1.951l.982-.983L13 12.516 24.548.968l.983.983-11.548 11.548 11.548 11.548Z'/%3E%3C/svg%3E");
+}
+
+.sitemap-close {
+  background-image: url("data:image/svg+xml;charset=utf8, ");
+}
+
+@keyframes wave {
+  0% {
+    opacity: 0;
+    background-position: left center;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    background-position: right center;
+    opacity: 0.4;
+  }
+}
+@keyframes rotateIcon {
+  50% {
+    opacity: 1;
+    transform: rotateY(91deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+#skipNavigation {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+#skipNavigation a {
+  display: block;
+  left: -9000px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 500;
+  background-color: #fff;
+}
+#skipNavigation a:hover, #skipNavigation a:focus, #skipNavigation a:active {
+  position: Absolute;
+  padding: 0.2rem 0;
+  left: 0;
+  color: #000;
+  font-size: 2rem;
+  z-index: 500;
+  border: 1px solid #000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 공통 */
+html, body, .wrap {
+  height: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+/** header */
+.header__inner {
+  display: flex;
+  -ms-display: flexbox;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  height: 24rem;
+  padding: 0 5rem;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+.header-logo__inner {
+  margin-right: 5rem;
+}
+.header-logo__link {
+  display: block;
+  width: 14.1rem;
+  height: 11.2rem;
+  background: url(../image/common/logo.png) no-repeat center;
+  background-size: cover;
+}
+.header-user__inner {
+  font-size: 5.2rem;
+}
+.header-user .user-name {
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+}
+.header-right {
+  margin-left: auto;
+}
+.header-alarm__button {
+  width: 6.9rem;
+  height: 8.2rem;
+  background: url(../image/common/icon-alarm.png) no-repeat center;
+  background-size: 6.9rem 8.2rem;
+}
+.header-hamberger {
+  margin-left: 9rem;
+}
+.header-hamberger__button {
+  width: 7.8rem;
+  height: 6.8rem;
+  background: url(../image/common/icon-hamberger.png);
+  background-size: 7.8rem 6.8rem;
+}
+.header-title__inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+
+.page-back__inner {
+  height: 100%;
+}
+
+.container {
+  flex: 1;
+}
+.container__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container-core {
+  height: 100%;
+}
+
+/** quick-menu */
+.quick-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+  transition: all 0.1s;
+  z-index: 2;
+}
+.quick-menu.is-show {
+  bottom: 0;
+  transition: all 0.1s;
+}
+.quick-menu.is-fix {
+  bottom: 0;
+  transition: all 0.1s;
+}
+.quick-menu__inner {
+  display: flex;
+  height: 32.6rem;
+  margin-top: 13rem;
+  background: #ffffff;
+  border-radius: 6rem 6rem 0 0;
+  box-shadow: 1.2rem 1.2rem 5.4rem rgba(0, 0, 0, 0.08);
+}
+.quick-menu__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-size: 4.8rem;
+  font-weight: 500;
+  color: #76798e;
+  background: no-repeat;
+}
+.quick-menu__button i {
+  display: block;
+  width: 100%;
+  height: 11.5rem;
+  background: no-repeat center;
+  transition: all 0.2s;
+}
+.quick-menu__button--enroll i {
+  background-image: url(../image/common/icon-quickmenu01.png);
+  background-size: 9.6rem 8.1rem;
+}
+.quick-menu__button--pay i {
+  background-image: url(../image/common/icon-quickmenu02.png);
+  background-size: 9.7rem 6.1rem;
+}
+.quick-menu__button--customer i {
+  background-image: url(../image/common/icon-quickmenu03.png);
+  background-size: 9.1rem 7.3rem;
+}
+.quick-menu__button--my i {
+  background-image: url(../image/common/icon-quickmenu04.png);
+  background-size: 8.6rem 8.9rem;
+}
+.quick-menu__button-text {
+  margin-top: 3rem;
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+.quick-menu__button.is-active i {
+  animation: rotateIcon 0.2s linear;
+}
+.quick-menu__button.is-active .quick-menu__button-text {
+  color: #3c50a2;
+  font-weight: 600;
+}
+.quick-menu__button.is-active.quick-menu__button-text {
+  color: #3c50a2;
+  font-weight: 600;
+}
+.quick-menu__button.is-active.quick-menu__button--enroll i {
+  background-image: url(../image/common/icon-quickmenu01__on.png);
+  background-size: 9.6rem 8.1rem;
+}
+.quick-menu__button.is-active.quick-menu__button--pay i {
+  background-image: url(../image/common/icon-quickmenu02__on.png);
+  background-size: 9.7rem 6.1rem;
+}
+.quick-menu__button.is-active.quick-menu__button--customer i {
+  background-image: url(../image/common/icon-quickmenu03__on.png);
+  background-size: 9.1rem 7.3rem;
+}
+.quick-menu__button.is-active.quick-menu__button--my i {
+  background-image: url(../image/common/icon-quickmenu04__on.png);
+  background-size: 8.6rem 8.9rem;
+}
+
+.line-gray {
+  width: 100%;
+  height: 3rem;
+  background: #f2f3f7;
+}
+
+/* footer */
+.footer__inner {
+  margin-top: 45.5rem;
+}
