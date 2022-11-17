@@ -1,0 +1,10 @@
+@import './helper/index';
+
+.button-wrap__intro {
+    &.manager__btn {
+        button {
+            background: #795bdc;
+            background-color: #795bdc;
+        }
+    }
+}
