@@ -55,7 +55,8 @@
 }
 .icon.arrow-last {
   background-image: url("data:image/svg+xml;charset=utf8, ");
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .icon.arrow-prev {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -64,7 +65,8 @@
 .icon.arrow-next {
   background-image: url("data:image/svg+xml;charset=utf8, ");
   background-size: cover;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .icon.arrow-right {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -85,6 +87,20 @@
   background-image: url("data:image/svg+xml;charset=utf8, ");
 }
 
+@-webkit-keyframes wave {
+  0% {
+    opacity: 0;
+    background-position: left center;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    background-position: right center;
+    opacity: 0.4;
+  }
+}
+
 @keyframes wave {
   0% {
     opacity: 0;
@@ -98,14 +114,28 @@
     opacity: 0.4;
   }
 }
-@keyframes rotateIcon {
+@-webkit-keyframes rotateIcon {
   50% {
     opacity: 1;
-    transform: rotateY(91deg);
+    -webkit-transform: rotateY(91deg);
+            transform: rotateY(91deg);
   }
   100% {
     opacity: 1;
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+@keyframes rotateIcon {
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(91deg);
+            transform: rotateY(91deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
 }
 .join-top {

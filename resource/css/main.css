@@ -19,21 +19,28 @@
   text-align: center;
 }
 .care-service__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin-top: 13rem;
   background: #ffffff;
   border-radius: 2rem;
-  box-sizing: border-box;
-  box-shadow: 2rem 2rem 4rem rgba(84, 93, 131, 0.35);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 2rem 2rem 4rem rgba(84, 93, 131, 0.35);
+          box-shadow: 2rem 2rem 4rem rgba(84, 93, 131, 0.35);
 }
 .care-service__button {
   height: 20rem;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   font-size: 7rem;
   font-weight: 600;
   color: #3c50a2;
-  box-shadow: 2rem 2rem 4rem rgba(1, 10, 46, 0.15);
+  -webkit-box-shadow: 2rem 2rem 4rem rgba(1, 10, 46, 0.15);
+          box-shadow: 2rem 2rem 4rem rgba(1, 10, 46, 0.15);
 }
 .care-service-icon {
   width: 25.1rem;
@@ -43,8 +50,12 @@
   background-size: contain;
 }
 .care-service-icon__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 7rem;
 }
 .care-service-icon:nth-child(1) {
@@ -103,9 +114,16 @@
   background-size: 56.8rem 67.3rem;
 }
 .look-service__vip-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   height: 100%;
 }
@@ -159,14 +177,21 @@
   border-radius: 3rem;
 }
 .with-vomi__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
   padding: 7rem 9rem;
   background: #e4ecfe;
 }
 .with-vomi__review {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
   margin: -1.5rem;
@@ -179,7 +204,8 @@
   height: 100%;
   background: #ffffff;
   border-radius: 1.5rem;
-  box-shadow: 1rem 1rem 1.5rem rgba(66, 70, 75, 0.1);
+  -webkit-box-shadow: 1rem 1rem 1.5rem rgba(66, 70, 75, 0.1);
+          box-shadow: 1rem 1rem 1.5rem rgba(66, 70, 75, 0.1);
 }
 .with-vomi__review--name {
   margin-bottom: 4rem;
@@ -187,8 +213,12 @@
   font-weight: 500;
 }
 .with-vomi__review--star {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .with-vomi__review--star > i {
   display: inline-block;
@@ -201,8 +231,12 @@
   margin-left: 0.7rem;
 }
 .with-vomi__review--star-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 2.5rem;
 }
 .with-vomi__review--star img {
@@ -238,8 +272,12 @@
   line-height: 100%;
 }
 .slide-title__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 5rem;
 }
 .slide-title__wrap .button-plus {
@@ -257,15 +295,23 @@
   overflow: hidden;
 }
 .my-question__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
   padding: 7rem 9rem;
   background: #e4ecfe;
 }
 .my-question__q {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 .my-question__q--img {
   margin-left: 2rem;
@@ -294,19 +340,24 @@
   background: url(../image/main/icon-answer__tail.png);
 }
 .my-question__q, .my-question__a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .my-question__q--img, .my-question__a--img {
   width: 13rem;
   height: 13rem;
   background-size: 13rem;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 .my-question__q--text, .my-question__a--text {
   position: relative;
   padding: 3rem 4rem;
   border-radius: 3rem;
-  box-shadow: 1rem 1rem 1.5rem rgba(66, 70, 75, 0.1);
+  -webkit-box-shadow: 1rem 1rem 1.5rem rgba(66, 70, 75, 0.1);
+          box-shadow: 1rem 1rem 1.5rem rgba(66, 70, 75, 0.1);
 }
 .my-question__q--text__inner, .my-question__a--text__inner {
   font-size: 4rem;
@@ -328,12 +379,16 @@
 
 /** case2 */
 .care-enroll-progress__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .care-enroll-info {
   margin-top: 12rem;
 }
 .care-enroll-info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .care-enroll-info__list + .care-enroll-info__list {
@@ -345,10 +400,14 @@
 .care-enroll-info__title {
   width: 33.5rem;
   color: #575c62;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 .care-enroll-info__text {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: right;
 }
 .care-enroll-info__text--s {
@@ -396,7 +455,9 @@
   width: 31.1rem;
   height: 35.9rem;
   padding: 5rem;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background-color: #e1e4ee;
   background-repeat: no-repeat;
   background-position: right 5rem bottom 5rem;
@@ -405,7 +466,8 @@
   line-height: 7rem;
   color: #9196a5;
   border-radius: 2rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .progress-step + .progress-step {
   margin-left: 3.2rem;
@@ -435,7 +497,8 @@
   height: 4.3rem;
   background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='43'%3E%3Cpath fill='%23E1E4EE' fill-rule='evenodd' d='M24.753 20.036c1.332.771 1.332 2.693 0 3.464L3.028 42.413c-1.334.771-3.001-.191-3.001-1.731V2.855c0-1.541 1.667-2.503 3.001-1.733l21.725 18.914Z'/%3E%3C/svg%3E");
   background-size: 2.6rem 4.3rem;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   content: "";
 }
 .progress-step:not(.progress-step__end).is-active::before {
@@ -456,7 +519,8 @@
 .progress-step.is-active {
   background-color: #4b62c3;
   color: #ffffff;
-  box-shadow: 2rem 2rem 4rem rgba(67, 76, 133, 0.35);
+  -webkit-box-shadow: 2rem 2rem 4rem rgba(67, 76, 133, 0.35);
+          box-shadow: 2rem 2rem 4rem rgba(67, 76, 133, 0.35);
 }
 .progress-step.is-active.progress-step__matching {
   background-image: url(../image/main/icon-matching__active.png);
@@ -493,7 +557,8 @@
 /* 보미쌤 지원 현황 */
 .carer-list {
   border-radius: 3rem;
-  box-shadow: 2rem 2rem 4rem rgba(67, 76, 133, 0.28);
+  -webkit-box-shadow: 2rem 2rem 4rem rgba(67, 76, 133, 0.28);
+          box-shadow: 2rem 2rem 4rem rgba(67, 76, 133, 0.28);
   overflow: hidden;
 }
 .carer-list + .carer-list {
@@ -514,25 +579,36 @@
   z-index: 2;
 }
 .carer-list.is-show .carer-detail__list--more {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .carer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 8rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .carer-image {
+  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 30rem;
   height: 40.1rem;
   border-radius: 1rem;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   overflow: hidden;
 }
 .carer-image img {
@@ -553,6 +629,8 @@
   margin-top: 5.5rem;
 }
 .carer-detail__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .carer-detail__list--more {
@@ -564,13 +642,21 @@
 .carer-detail__title {
   width: 21.6rem;
   color: #575c62;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   line-height: 9.4rem;
 }
 .carer-detail__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   line-height: 9.4rem;
   word-break: keep-all;
   letter-spacing: -1px;
@@ -601,6 +687,8 @@
   font-weight: 600;
 }
 .carer-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .carer-button {
@@ -614,12 +702,15 @@
 }
 .carer-button__choice {
   display: none;
+  background: -webkit-gradient(linear, left bottom, left top, from(#8999de), color-stop(60%, #8999de), to(rgba(97, 122, 176, 0.8)));
   background: linear-gradient(0deg, #8999de 0%, #8999de 60%, rgba(97, 122, 176, 0.8) 100%);
 }
 .carer-button__wish {
   display: none;
   width: 16.7rem;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   background: #4a61c0;
 }
 .carer-button__wish i {
@@ -632,9 +723,14 @@
 
 /* 간병 기간 변경하기 팝업 */
 .care-date__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .care-date__list + .care-date__list {
   margin-top: 8rem;
@@ -645,11 +741,15 @@
 .care-date__title {
   width: 40rem;
   color: #575c62;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 .care-date__button {
   margin-left: auto;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 
 /* 지원자 없음 */

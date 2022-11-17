@@ -175,7 +175,9 @@
 }
 
 .flex {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 @media (max-width: 1400px) {

@@ -1,8 +1,14 @@
 .sch-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .sch-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 50px;
 }
@@ -19,6 +25,8 @@
   background-position: 90% center;
 }
 .sch-form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 40rem;
   font-size: 0;
@@ -28,6 +36,26 @@
   height: 100%;
   border: 1px solid #d2d5dc;
 }
+.sch-form__input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+.sch-form__input::-moz-placeholder {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+.sch-form__input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+.sch-form__input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
 .sch-form__input::placeholder {
   font-size: 16px;
   color: #000;
@@ -36,24 +64,34 @@
 
 .ui-form input, .ui-form textarea {
   border: 1px solid #d8dce2;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-appearance: none;
-  -webkit-border-radius: 0;
   border-radius: 1.5rem;
   font-size: 5.5rem;
 }
 .ui-form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .ui-form__cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 5.5rem;
 }
 .ui-form__cell .ui-form {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .ui-form__flex--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .ui-form__flex--row + .ui-form__flex--row {
@@ -69,7 +107,9 @@
   margin-left: 2rem;
 }
 .ui-form__flex--right {
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .ui-form__text {
   font-size: 5.5rem;
@@ -103,6 +143,22 @@
 .ui-input__bg-gray {
   background: #f8f8f8;
 }
+.ui-input::-webkit-input-placeholder {
+  font-size: 5.5rem;
+  color: #9196a5;
+}
+.ui-input::-moz-placeholder {
+  font-size: 5.5rem;
+  color: #9196a5;
+}
+.ui-input:-ms-input-placeholder {
+  font-size: 5.5rem;
+  color: #9196a5;
+}
+.ui-input::-ms-input-placeholder {
+  font-size: 5.5rem;
+  color: #9196a5;
+}
 .ui-input::placeholder {
   font-size: 5.5rem;
   color: #9196a5;
@@ -113,7 +169,8 @@
   padding-left: 5.5rem;
   font-size: 5.5rem;
   border: 0.3rem solid #d8dce2;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: url(../image/common/icon/icon-select.png) no-repeat right 5.5rem center;
   background-size: 3.9rem 2.6rem;
   border-radius: 1.5rem;
@@ -124,11 +181,25 @@
   padding: 1.5rem 2rem;
   font-size: 1.6rem;
   resize: none;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .ui-textarea__height-265 {
   padding: 5.5rem;
   height: 26.5rem;
+}
+.ui-textarea::-webkit-input-placeholder {
+  color: #9196a5;
+}
+.ui-textarea::-moz-placeholder {
+  color: #9196a5;
+}
+.ui-textarea:-ms-input-placeholder {
+  color: #9196a5;
+}
+.ui-textarea::-ms-input-placeholder {
+  color: #9196a5;
 }
 .ui-textarea::placeholder {
   color: #9196a5;
@@ -146,7 +217,8 @@
   height: 6.9rem;
   /* margin-top: -1px; */
   border: 1px solid #ced4db;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 0.5rem;
   background: no-repeat 50% 50% #fff;
   -webkit-box-flex: 0;
@@ -169,8 +241,12 @@
   border: 5px solid #4568a9;
 }
 .ui-radio-block {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.5rem;
 }
 .ui-radio-block .ui-radio {
@@ -192,8 +268,12 @@
   background-size: 4.5rem 3.1rem;
 }
 .ui-checkbox-block {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.5rem;
 }
 .ui-checkbox-block .ui-checkbox {
@@ -215,12 +295,14 @@
   background-size: 4.5rem 3.1rem;
 }
 .ui-label {
+  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.6rem;
   line-height: normal;
   cursor: pointer;
@@ -263,7 +345,8 @@
   vertical-align: top;
   width: 13.5rem;
   height: 5rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #4568a9;
   font-size: 1.6rem;
   color: #ffffff;
@@ -282,12 +365,14 @@
 }
 
 .attach-file__top {
+  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .attach-file__bottom {
   margin-top: 1.5rem;
@@ -298,12 +383,14 @@
   line-height: normal;
 }
 .attach-file__item {
+  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.2rem 0 0.2rem 2.5rem;
   font-size: 1.6rem;
   background: url(../image/common/icon/icon-file__list.png) no-repeat left center;
@@ -318,7 +405,9 @@
   margin-left: 1rem;
   background: url(../image/common/icon/icon-delete__file.png) no-repeat center;
   background-size: cover;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 
 .form-title {

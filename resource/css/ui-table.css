@@ -43,7 +43,8 @@
   text-align: center;
   vertical-align: middle;
   border-bottom: 1px solid #d2d5dc;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .board-table__list tbody td a {
   font-size: 1.8rem;
@@ -55,12 +56,14 @@
   text-overflow: ellipsis;
 }
 .board-table__list .td-title__inner {
+  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .board-table__list .td-title .icon-secret {
   display: inline-block;
@@ -70,7 +73,9 @@
   vertical-align: top;
   background: url(../image/common/icon/icon-secret.png) no-repeat center;
   background-size: 1.3rem 2rem;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 .board-table__list .td-titlelink {
   overflow: hidden;
@@ -85,20 +90,25 @@
   background-size: cover;
 }
 .board-table__list .td-process .badge-process {
+  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 9.2rem;
   height: 4rem;
   margin: 0 auto;
   border: 1px solid #4568a9;
   font-size: 1.6rem;
   color: #4568a9;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .board-table__list .td-process .badge-process__end {
   background: #4568a9;
@@ -177,9 +187,15 @@
     -webkit-overflow-scrolling: touch;
   }
   .board-table__list .board-table__inner::before {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     left: 0;
     width: 100%;

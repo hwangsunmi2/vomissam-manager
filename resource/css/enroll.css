@@ -54,7 +54,8 @@
 }
 .icon.arrow-last {
   background-image: url("data:image/svg+xml;charset=utf8, ");
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .icon.arrow-prev {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -63,7 +64,8 @@
 .icon.arrow-next {
   background-image: url("data:image/svg+xml;charset=utf8, ");
   background-size: cover;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .icon.arrow-right {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -84,6 +86,20 @@
   background-image: url("data:image/svg+xml;charset=utf8, ");
 }
 
+@-webkit-keyframes wave {
+  0% {
+    opacity: 0;
+    background-position: left center;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    background-position: right center;
+    opacity: 0.4;
+  }
+}
+
 @keyframes wave {
   0% {
     opacity: 0;
@@ -97,14 +113,28 @@
     opacity: 0.4;
   }
 }
-@keyframes rotateIcon {
+@-webkit-keyframes rotateIcon {
   50% {
     opacity: 1;
-    transform: rotateY(91deg);
+    -webkit-transform: rotateY(91deg);
+            transform: rotateY(91deg);
   }
   100% {
     opacity: 1;
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+@keyframes rotateIcon {
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(91deg);
+            transform: rotateY(91deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
 }
 .enroll-title {
@@ -144,8 +174,12 @@
   border: 0.2rem solid #e9eaec;
 }
 .hospital-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-left: 8.5rem;
   font-size: 5.6rem;
 }
@@ -153,7 +187,9 @@
   margin-top: 7rem;
 }
 .hospital-list__item .ui-button__badge {
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   margin-top: 0.7rem;
 }
 .hospital-list__item.is-active {
@@ -165,18 +201,24 @@
   font-weight: 500;
 }
 .hospital-list__text {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   line-height: normal;
 }
 
 .care-period__text {
+  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   min-height: 25.6rem;
   padding: 2rem 0;
@@ -188,15 +230,21 @@
   line-height: 10rem;
 }
 .care-period__text.is-inputed {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #3c50a2;
   border: 0.3rem solid #4b62c3;
-  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+          box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 .care-period__text--inner {
   padding: 2.5rem 0;
 }
 .care-period__dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .care-period__dl + .care-period__dl {
@@ -204,7 +252,9 @@
 }
 .care-period__dt {
   width: 26.5rem;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
 }
 .care-cost__box {
   padding: 13rem 0;
@@ -226,8 +276,12 @@
   margin: 10rem 0;
 }
 .care-enroll-info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .care-enroll-info__list + .care-enroll-info__list {
   margin-top: 5.5rem;
@@ -237,7 +291,9 @@
 }
 .care-enroll-info__title {
   color: #575c62;
-  flex: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   line-height: 7rem;
 }
 .care-enroll-info__title--des {
@@ -247,7 +303,9 @@
   width: 50.5rem;
 }
 .care-enroll-info__text {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: right;
   font-weight: 500;
 }
