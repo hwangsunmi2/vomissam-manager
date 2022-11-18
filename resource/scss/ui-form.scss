@@ -60,6 +60,9 @@
         }
         &__flex{
             &--row{
+                &.twoArea {
+                    border:1px solid red;
+                }
                 &+.ui-form__flex--row{
                     margin-top: 2rem;
                 }
@@ -75,10 +78,12 @@
                         margin-left: 2rem;
                     }
                 }
+                
             }
             &--right{
                 justify-content: flex-end;
             }
+            
         }
         &__text{
             font-size: 5.5rem;

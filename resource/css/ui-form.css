@@ -94,6 +94,9 @@
   display: -ms-flexbox;
   display: flex;
 }
+.ui-form__flex--row.twoArea {
+  border: 1px solid red;
+}
 .ui-form__flex--row + .ui-form__flex--row {
   margin-top: 2rem;
 }

@@ -38,3 +38,195 @@
         text-align: center;
     }
 }
+
+.joinStep {
+    &-process{
+        &__inner{
+            padding:5rem 4rem 7rem 4rem;
+        }
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            &::after{
+                display: inline-block;
+                position: absolute;
+                top: 8.5rem;
+                left: 0rem;
+                width: calc(100% - 10rem);
+                height: 1rem;
+                background: url(../image/sub/line-dashed.png) no-repeat center;
+                background-size: cover;
+                content:"";
+                z-index: -1;
+            }
+            &--step02{
+                &::after{
+                    left: 3rem;
+                    width: calc(100% - 12rem);
+                    background-image: url(../image/sub/line-dashed__half.png);
+                }
+            }
+        }
+        &__text{
+            margin-top: 4rem;
+            font-size: 5rem;
+            text-align: center;
+            color:#9196a5;
+            line-height: 6rem;
+            letter-spacing: -1px;
+        }
+        &__step{
+            .joinStep-process__img{
+                @include d-flex-center;
+                position: relative;
+                width: 18rem;
+                height: 18rem;
+                &::before{
+                    width: 5rem;
+                    height:5rem;
+                    background-color: #c3c8d5;
+                    background-size: 5rem;    
+                    border-radius: 100%;
+                    content:"";
+                }
+                
+            }
+            &.is-active{
+                .joinStep-process__img{
+                    background-size: 18rem;
+                    background-position: center;
+                    &::before{
+                        display: none;
+                    }
+                }
+                .joinStep-process__text{
+                    color:#000000;
+                    font-weight: 500;
+                }
+            }
+            &.is-past{
+                .joinStep-process__img{
+                    
+                    background-position: center;
+                    background: url(../image/m-sub/joinStep__past.png) no-repeat center;
+                    background-size: 15.4rem;
+                    &::before{
+                        display: none;
+                    }
+                }
+                .joinStep-process__text{
+                    color:#000000;
+                    font-weight: 500;
+                }
+            }
+            &__inner{
+                width:18rem;
+            }
+            
+            &01{
+                &.is-active{
+                    .joinStep-process__img{
+                        background-image: url(../image/m-sub/joinStep__icon01.png);
+                    }
+                }
+            }
+            &02{
+                &.is-active{
+                    .joinStep-process__img{
+                        background-image: url(../image/m-sub/joinStep__icon02.png);
+                    }
+                }
+            }
+            &03{
+                &.is-active{
+                    .joinStep-process__img{
+                        background-image: url(../image/m-sub/joinStep__icon03.png);
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+.joinSub-title {
+    padding: 10rem 0;
+    font-size:6.5rem;
+    text-align:center;
+    line-height:10rem;
+    letter-spacing: -0.5px;
+    span {
+        font-size:6.5rem;
+        font-weight:500;
+        color:#6349ba;
+        letter-spacing: -0.5px;
+    }
+}
+
+.sub-item {
+    &.join {
+        .sub-item{
+            &__title {
+                font-weight:400;
+            }
+        }
+
+    }
+}
+
+.container-core {
+    .careEnrollEnd{
+        &-top{
+            .img-wrap{
+                margin-top: 6.6rem;
+                margin-bottom: 10rem;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        } 
+    }
+    .sub-text {
+        font-size:6.5rem;
+        span{
+            font-size:6.5rem;
+            color:#6349ba;
+            &.bold {
+                font-size:8.5rem;
+                font-weight:500;
+            }
+        }
+    }
+}
+
+/* joinGuide */
+.m{
+    &t{
+        &-20{
+            margin-top:20px;
+        }
+        &-30{
+            margin-top:30px;
+        }
+        &-40{
+            margin-top:40px;
+        }
+        &-50{
+            margin-top:50px;
+        }
+        &-60{
+            margin-top:60px;
+        }
+        &__rem {
+            &-4 {
+                margin-top:4rem;
+            }
+            &-13 {
+                margin-top:13rem;
+            }
+        }
+    }
+}

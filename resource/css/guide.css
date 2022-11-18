@@ -160,6 +160,10 @@
   color: #3c50a2;
 }
 
+.color-purple {
+  color: #6349ba;
+}
+
 /* img */
 .img-alert {
   width: 16.8rem;
@@ -1741,6 +1745,9 @@
 }
 .mt-60 {
   margin-top: 60px;
+}
+.mt__rem-130 {
+  margin-top: 13rem;
 }
 
 header {
