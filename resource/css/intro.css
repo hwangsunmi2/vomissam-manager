@@ -306,6 +306,9 @@
 .button-wrap__intro {
   margin-bottom: 15.5rem;
 }
+.button-wrap__intro.manager__btn button {
+  background: #795bdc;
+}
 .button-wrap__intro button {
   width: 100%;
   height: 20rem;
