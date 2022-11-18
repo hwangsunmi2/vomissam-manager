@@ -19,8 +19,7 @@
 
     <!-- 각 페이지 css -->
     <link rel="stylesheet" href="../resource/css/payment.css">
-    <link rel="stylesheet" href="../resource/css/m-join.css">
-    <link rel="stylesheet" href="../resource/css/m-guide.css">
+    <link rel="stylesheet" href="../resource/css/join.css">
     <!-- //각 페이지 css -->
 
 
@@ -79,7 +78,7 @@
                             <div class="sub-item">
                                 <div class="joinStep-process">
                                     <div class="joinStep-process__inner">
-                                        <ul class="joinStep-process__list joinStep-process__list--step01">
+                                        <ul class="joinStep-process__list joinStep-process__list--step02">
                                             <!-- 해당 진행상태에선 .is-active, 지난 상태는 .is-past 붙습니다. -->
                                             <li class="joinStep-process__step joinStep-process__step01 is-past">
                                                 <div class="joinStep-process__step--inner">
@@ -102,31 +101,46 @@
                                         </ul>
                                     </div>
                                 </div>
+
+                                <div class="ui-checkbox__list ml-40 agree manager mt__rem-13">
+                                    <div class="ui-checkbox__inner">
+                                        <div class="ui-checkbox-block">
+                                            <input type="checkbox" class="ui-checkbox" id="checkbox1" checked="">
+                                            <label for="checkbox1" class="ui-label">
+                                              <span class="ui-checkbox-object"></span>
+                                              <span class="ui-label__text">약관 전체동의</span>
+                                            </label>
+                                          </div>
+                                    </div>
+                                </div>
+
+                                <div class="w-100 agreeView mt_10">
+                                    <div class="form-check d-flex">
+                                        <input class="termsService" type="checkbox" title="" name="terms" id="check_authForm01" value="10"> <label for="check_authForm01"><span class="color-red">(필수)</span> 서비스 이용약관</label>
+                                        <button type="button" class="sub-item__btn--view" data-toggle="modal" data-target="#serviceAdmitView">보기</button>
+                                    </div>
+                                    <div class="form-check d-flex">
+                                        <input class="termsService" type="checkbox" title="" name="terms" id="check_authForm02" value="10"> <label for="check_authForm02"><span class="color-red">(필수)</span> 개인정보수집 및 이용 동의</label>
+                                        <button type="button" class="sub-item__btn--view" data-toggle="modal" data-target="#serviceAdmitView">보기</button>
+                                    </div>
+                                    <div class="form-check d-flex">
+                                        <input class="termsService" type="checkbox" title="" name="terms" id="check_authForm02" value="10"> <label for="check_authForm02"><span class="color-black">(필수)</span> 이벤트 참여를 위한 개인정보 처리위탁동의</label>
+                                        <button type="button" class="sub-item__btn--view" data-toggle="modal" data-target="#serviceAdmitView">보기</button>
+                                    </div>
+                                    <div class="form-check d-flex">
+                                        <input class="termsService" type="checkbox" title="" name="terms" id="check_authForm02" value="10"> <label for="check_authForm02"><span class="color-black">(선택)</span> 이벤트 참여를 위한 개인정보 처리위탁동의</label>
+                                        <button type="button" class="sub-item__btn--view" data-toggle="modal" data-target="#serviceAdmitView">보기</button>
+                                    </div>
+                                    <div class="form-check d-flex">
+                                        <input class="termsService" type="checkbox" title="" name="terms" id="check_authForm02" value="10"> <label for="check_authForm02"><span class="color-black">(선택)</span> 광고성 정보 수신동의</label>
+                                        <button type="button" class="sub-item__btn--view" data-toggle="modal" data-target="#serviceAdmitView">보기</button>
+                                    </div>
+                                </div>
+
+                                
                             </div>
 
-                            <div class="joinSub-title">
-                                이름과 휴대폰 번호를 입력하신 후<br/><span>‘인증요청’</span> 버튼을 클릭하세요.
-                            </div>
                             
-
-                            <div class="sub-item join">
-                                <p class="sub-item__title">이름</p>
-                                <div class="ui-form ui-form__flex--row">
-                                    <input type="text" class="ui-input" value="" placeholder="이름을 입력하세요.">
-                                </div>
-
-                                <p class="sub-item__title mt-130">휴대전화번호<span class="ui-required">(필수)</span></p>
-                                <div class="ui-form ui-form__flex--row">
-                                    <input type="text" class="ui-input" value="" placeholder="010********">
-                                </div>
-                                <span class="ui-required mt-40 d-block">* 숫자만 입력하세요.</span>
-
-
-                                <p class="sub-item__title mt-130">주민등록번호</p>
-                                <div class="ui-form ui-form__flex--row">
-                                    <input type="text" class="ui-input" value="" placeholder="">
-                                </div>
-                            </div>
 
                         </section>
 
@@ -134,11 +148,7 @@
                         <section class="page-bottom page-bottom__padding">
                             <div class="page-bottom__inner">
                                 <div class="ui-buttons">
-                                    <button type="button">보미쌤 회원 가입하기</button>
-                                </div>
-                                <div class="ui-buttons">
-                                    <button type="button" class="ui-button ui-button__border-gray">이전</button>
-                                    <button type="button" class="ui-button ui-button__border-blue">다음</button>
+                                    <button type="button" class="ui-button ui-button__bg-purple">인증 요청</button>
                                 </div>
                             </div>
                         </section>

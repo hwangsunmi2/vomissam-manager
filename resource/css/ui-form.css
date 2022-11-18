@@ -95,7 +95,15 @@
   display: flex;
 }
 .ui-form__flex--row.twoArea {
-  border: 1px solid red;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ui-form__flex--row.twoArea .ui-input {
+  width: 48%;
 }
 .ui-form__flex--row + .ui-form__flex--row {
   margin-top: 2rem;
@@ -270,6 +278,21 @@
   background-image: url("../image/common/icon/icon-check.png");
   background-size: 4.5rem 3.1rem;
 }
+.ui-checkbox__list.agree {
+  padding-bottom: 8rem;
+  border-bottom: 2px solid #dfe0e2;
+}
+.ui-checkbox__list.agree .ui-label__text {
+  font-size: 6.5rem;
+  font-weight: 500;
+}
+.ui-checkbox__list.agree :checked + .ui-checkbox-object,
+.ui-checkbox__list.agree :checked + .ui-label .ui-checkbox-object {
+  border-color: #795bdc;
+  background-color: #795bdc;
+  background-image: url("../image/common/icon/icon-check.png");
+  background-size: 4.5rem 3.1rem;
+}
 .ui-checkbox-block {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -365,6 +388,34 @@
 }
 .ui-file-vol span {
   font-weight: 600;
+}
+
+.agreeView .form-check {
+  padding: 7.5rem 0;
+}
+.agreeView .form-check label {
+  font-size: 6rem;
+}
+.agreeView .form-check label span.color-red {
+  color: #dd5458;
+}
+.agreeView .form-check label span.color-black {
+  color: #000;
+}
+.agreeView .form-check input.termsService[type=checkbox] + label::before {
+  position: absolute;
+  left: 0;
+  content: " ";
+  display: inline-block;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: -0.3rem 0.8rem 0 0;
+  text-align: center;
+  vertical-align: middle;
+  border: 0;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  background: #fff url(../image/common/icon/icon-check_off.png) no-repeat center center;
 }
 
 .attach-file__top {

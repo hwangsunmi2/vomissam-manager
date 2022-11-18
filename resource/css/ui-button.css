@@ -46,6 +46,10 @@
   background: #4b62c3;
   color: #ffffff;
 }
+.ui-button__bg-purple {
+  background: #795bdc;
+  color: #ffffff;
+}
 .ui-button__border-gray {
   border: 0.4rem solid #e9eaec;
 }

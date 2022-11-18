@@ -194,7 +194,12 @@
 .joinStep-process__list--step02::after {
   left: 3rem;
   width: calc(100% - 12rem);
-  background-image: url(../image/sub/line-dashed__half.png);
+  background-image: url(../image/m-sub/line-dashed__half_purple.png);
+}
+.joinStep-process__list--step03::after {
+  left: 3rem;
+  width: calc(100% - 12rem);
+  background-image: url(../image/m-sub/line-dashed__purple.png);
 }
 .joinStep-process__text {
   margin-top: 4rem;
@@ -300,6 +305,7 @@
 .container-core .sub-text span.bold {
   font-size: 8.5rem;
   font-weight: 500;
+  color: #000;
 }
 
 /* joinGuide */
@@ -323,4 +329,7 @@
 }
 .mt__rem-13 {
   margin-top: 13rem;
+}
+.mt__rem-37 {
+  margin-top: 37rem;
 }

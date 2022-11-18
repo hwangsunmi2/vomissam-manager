@@ -64,7 +64,14 @@
                 &::after{
                     left: 3rem;
                     width: calc(100% - 12rem);
-                    background-image: url(../image/sub/line-dashed__half.png);
+                    background-image: url(../image/m-sub/line-dashed__half_purple.png);
+                }
+            }
+            &--step03{
+                &::after{
+                    left: 3rem;
+                    width: calc(100% - 12rem);
+                    background-image: url(../image/m-sub/line-dashed__purple.png);
                 }
             }
         }
@@ -197,10 +204,13 @@
             &.bold {
                 font-size:8.5rem;
                 font-weight:500;
+                color:#000;
             }
         }
     }
 }
+
+
 
 /* joinGuide */
 .m{
@@ -226,6 +236,9 @@
             }
             &-13 {
                 margin-top:13rem;
+            }
+            &-37 {
+                margin-top:37rem;
             }
         }
     }
