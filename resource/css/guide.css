@@ -186,47 +186,6 @@
           flex: 1;
 }
 
-@media (max-width: 1400px) {
-  .mt-20 {
-    margin-top: 2rem;
-  }
-  .mt-30 {
-    margin-top: 3rem;
-  }
-  .mt-40 {
-    margin-top: 4rem;
-  }
-  .mt-50 {
-    margin-top: 5rem;
-  }
-  .mt-60 {
-    margin-top: 6rem;
-  }
-  .mt-80 {
-    margin-top: 8rem;
-  }
-  .txt-depth--01 {
-    font-size: 2.4rem;
-  }
-  .txt-depth--02 {
-    font-size: 2.2rem;
-  }
-  .txt-depth--03 {
-    font-size: 2rem;
-  }
-  .txt-depth--04 {
-    font-size: 1.8rem;
-  }
-  .txt-depth--05 {
-    font-size: 1.6rem;
-  }
-  .txt-depth--06 {
-    font-size: 1.4rem;
-  }
-  .txt-depth--07 {
-    font-size: 1.2rem;
-  }
-}
 /* button */
 .ui-button {
   width: 100%;
@@ -583,6 +542,11 @@
   font-weight: 500;
 }
 
+@media (max-width: 1600px) {
+  .ui-buttons__second .ui-button__font-xs {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 1024px) {
   .btn--download {
     width: 11.7rem;
@@ -597,10 +561,16 @@
     height: 5.4rem;
     font-size: 1.8rem;
   }
+  .ui-buttons__second .ui-button__font-xs {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 768px) {
   .btn-wrap .btn {
     font-size: 14px;
+  }
+  .ui-buttons__second .ui-button__font-xs {
+    font-size: 3.2rem;
   }
 }
 /** 소통마당 > 공지사항 */
@@ -1697,6 +1667,7 @@
   padding-right: 0 !important;
   /* case3 간병시작하기 모달 */
   /* 인적 사항 사진 업로드 모달 */
+  /* 인적 사항 사진 올리기 모달 */
 }
 .modal-header {
   padding: 10rem 6rem 0 6rem;
@@ -1882,6 +1853,7 @@
   line-height: 7rem;
   text-align: center;
   vertical-align: middle;
+  font-size: 5.5rem;
 }
 .modal .uploadimg__wrap > div + div {
   margin-left: 2rem;
@@ -1890,7 +1862,44 @@
   height: 14rem;
   line-height: 14rem;
 }
+.modal .modalUploadImg__wrap {
+  width: 100%;
+  padding: 7rem 6rem 15rem 6rem;
+}
+.modal .modalUploadImg__wrap > div {
+  width: 50%;
+  border: 3px solid #d8dce2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1.3rem;
+  text-align: center;
+  cursor: pointer;
+}
+.modal .modalUploadImg__wrap > div img {
+  text-align: center;
+  margin: 0 auto;
+}
+.modal .modalUploadImg__wrap > div + div {
+  margin-left: 2rem;
+}
 
+@media (max-width: 1400px) {
+  /* 모달 사진 업로드 */
+  .modal .uploadimg__wrap > div {
+    padding: 4rem;
+  }
+  .modal .uploadimg__wrap > div img {
+    width: 60%;
+  }
+  .modal .uploadimg__wrap > div p {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+  .modal .uploadimg__wrap > div + div p {
+    height: 8rem;
+    line-height: 8rem;
+  }
+}
 /* ========== reponsive =========== */
 /*
 * xs: 576px,// Small screen / phone
@@ -1922,6 +1931,47 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .mt-20 {
+    margin-top: 2rem;
+  }
+  .mt-30 {
+    margin-top: 3rem;
+  }
+  .mt-40 {
+    margin-top: 4rem;
+  }
+  .mt-50 {
+    margin-top: 5rem;
+  }
+  .mt-60 {
+    margin-top: 6rem;
+  }
+  .mt-80 {
+    margin-top: 8rem;
+  }
+  .txt-depth--01 {
+    font-size: 2.4rem;
+  }
+  .txt-depth--02 {
+    font-size: 2.2rem;
+  }
+  .txt-depth--03 {
+    font-size: 2rem;
+  }
+  .txt-depth--04 {
+    font-size: 1.8rem;
+  }
+  .txt-depth--05 {
+    font-size: 1.6rem;
+  }
+  .txt-depth--06 {
+    font-size: 1.4rem;
+  }
+  .txt-depth--07 {
+    font-size: 1.2rem;
+  }
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

@@ -163,7 +163,7 @@
                                                             <img src="../resource/image/m-sub/no-picture.png" alt="">
                                                             <p>사진 없음<br/>(올리지 않음)</p>
                                                         </div>
-                                                        <div>
+                                                        <div data-toggle="modal" data-target="#modalUploadImg">
                                                             <img src="../resource/image/m-sub/upload.png" alt="">
                                                             <p>사진 올리기</p>
                                                         </div>
@@ -180,6 +180,36 @@
                                 </div>
                             </div>
                             <!-- //인적 사항 사진 업로드 모달 -->
+
+                            <!-- 인적 사항 사진 찾기 모달 -->
+                            <div class="modal fade" id="modalUploadImg" tabindex="-1" aria-labelledby="modalUploadImgLabel"
+                            aria-hidden="true" style="z-index: 1060;">
+                                <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                    <div class="modal-content modal-content__s modal-content__modalUploadImg">
+                                        <div class="modal-body modal-body__main">
+                                                <div class="modal-header">
+                                                    <div class="modal-title modal-title__font-l text-left mb-0">사진 올리기</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="modalUploadImg__wrap d-flex searchImg">
+                                                        <label class="jRadioImage thumb-radio-image loading"><input type="radio" value="one" name="choose_image" tabindex="-1"><i class="thumb-image"><img alt="" src="../resource/image/m-sub/searchImg.jpg"></i></label>
+
+                                                        <label class="jRadioImage thumb-radio-image loading active"><input type="radio" value="two" name="choose_image" tabindex="-1" checked><i class="thumb-image"><img alt="" src="../resource/image/m-sub/searchImg.jpg"></i></label>
+
+
+                                                    </div>
+                                                </div>
+                                        
+
+                                            <div class="modal-buttons modal-buttons__sticky">
+                                                <button type="button" class="ui-button ui-button__bg-purple">확인</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //인적 사항 사진 찾기 모달 -->
                         <!-- //모달 -->
 
 

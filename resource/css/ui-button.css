@@ -354,6 +354,11 @@
   font-weight: 500;
 }
 
+@media (max-width: 1600px) {
+  .ui-buttons__second .ui-button__font-xs {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 1024px) {
   .btn--download {
     width: 11.7rem;
@@ -368,9 +373,15 @@
     height: 5.4rem;
     font-size: 1.8rem;
   }
+  .ui-buttons__second .ui-button__font-xs {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 768px) {
   .btn-wrap .btn {
     font-size: 14px;
+  }
+  .ui-buttons__second .ui-button__font-xs {
+    font-size: 3.2rem;
   }
 }

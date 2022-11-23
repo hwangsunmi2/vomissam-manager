@@ -28,3 +28,45 @@
     font-size: 62.5%;
   }
 }
+
+@media (max-width: 1400px) {
+  .mt-20 {
+    margin-top: 2rem;
+  }
+  .mt-30 {
+    margin-top: 3rem;
+  }
+  .mt-40 {
+    margin-top: 4rem;
+  }
+  .mt-50 {
+    margin-top: 5rem;
+  }
+  .mt-60 {
+    margin-top: 6rem;
+  }
+  .mt-80 {
+    margin-top: 8rem;
+  }
+  .txt-depth--01 {
+    font-size: 2.4rem;
+  }
+  .txt-depth--02 {
+    font-size: 2.2rem;
+  }
+  .txt-depth--03 {
+    font-size: 2rem;
+  }
+  .txt-depth--04 {
+    font-size: 1.8rem;
+  }
+  .txt-depth--05 {
+    font-size: 1.6rem;
+  }
+  .txt-depth--06 {
+    font-size: 1.4rem;
+  }
+  .txt-depth--07 {
+    font-size: 1.2rem;
+  }
+}

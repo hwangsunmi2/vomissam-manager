@@ -393,6 +393,21 @@
 }
 
 
+@include media-breakpoint-down(n-xl) {
+    //1600
+    .ui-buttons{
+        &__second {
+            .ui-button{
+                &__font {
+                    &-xs {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}
 
 @include media-breakpoint-down(n-md) {
 
@@ -414,6 +429,18 @@
         }
 
     }
+
+    .ui-buttons{
+        &__second {
+            .ui-button{
+                &__font {
+                    &-xs {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(n-sm) {
@@ -422,4 +449,17 @@
     .btn-wrap .btn {
         font-size: 14px;
     }
+
+    .ui-buttons{
+        &__second {
+            .ui-button{
+                &__font {
+                    &-xs {
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+        }
+    }
+
 }

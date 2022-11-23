@@ -5,6 +5,7 @@
   padding-right: 0 !important;
   /* case3 간병시작하기 모달 */
   /* 인적 사항 사진 업로드 모달 */
+  /* 인적 사항 사진 올리기 모달 */
 }
 .modal-header {
   padding: 10rem 6rem 0 6rem;
@@ -190,6 +191,7 @@
   line-height: 7rem;
   text-align: center;
   vertical-align: middle;
+  font-size: 5.5rem;
 }
 .modal .uploadimg__wrap > div + div {
   margin-left: 2rem;
@@ -197,4 +199,42 @@
 .modal .uploadimg__wrap > div + div p {
   height: 14rem;
   line-height: 14rem;
+}
+.modal .modalUploadImg__wrap {
+  width: 100%;
+  padding: 7rem 6rem 15rem 6rem;
+}
+.modal .modalUploadImg__wrap > div {
+  width: 50%;
+  border: 3px solid #d8dce2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1.3rem;
+  text-align: center;
+  cursor: pointer;
+}
+.modal .modalUploadImg__wrap > div img {
+  text-align: center;
+  margin: 0 auto;
+}
+.modal .modalUploadImg__wrap > div + div {
+  margin-left: 2rem;
+}
+
+@media (max-width: 1400px) {
+  /* 모달 사진 업로드 */
+  .modal .uploadimg__wrap > div {
+    padding: 4rem;
+  }
+  .modal .uploadimg__wrap > div img {
+    width: 60%;
+  }
+  .modal .uploadimg__wrap > div p {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+  .modal .uploadimg__wrap > div + div p {
+    height: 8rem;
+    line-height: 8rem;
+  }
 }

@@ -27,3 +27,58 @@ html{
         font-size:62.5%;
     }
 }
+
+
+// responsive
+@include media-breakpoint-down(n-ml){ //1400
+    //margin
+    .m{
+        &t{
+            &-20{
+                margin-top:2rem;
+            }
+            &-30{
+                margin-top:3rem;
+            }
+            &-40{
+                margin-top:4rem;
+            }
+            &-50{
+                margin-top:5rem;
+            }
+            &-60{
+                margin-top:6rem;
+            }
+            &-80{
+                margin-top:8rem;
+            }
+        }
+    }
+
+    //font
+    .txt{
+        &-depth{
+            &--01{
+                font-size:2.4rem
+            }
+            &--02{
+                font-size:2.2rem
+            }
+            &--03{
+                font-size:2.0rem
+            }
+            &--04{
+                font-size:1.8rem
+            }
+            &--05{
+                font-size:1.6rem
+            }
+            &--06{
+                font-size:1.4rem
+            }
+            &--07{
+                font-size:1.2rem
+            }
+        }
+    }
+}
