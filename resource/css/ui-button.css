@@ -217,6 +217,15 @@
   -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
           box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
+.ui-button__check--purple.is-active {
+  font-weight: 500;
+  color: #6349ba;
+  border-color: #6349ba;
+  background: url(../image/m-sub/check_purple.png) no-repeat right 5.8rem center;
+  background-size: 4.5rem 3.1rem;
+  -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+          box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+}
 .ui-button__check--multi--purple.is-active {
   font-weight: 500;
   color: #6349ba;

@@ -186,6 +186,18 @@
           flex: 1;
 }
 
+.ta-l {
+  text-align: left;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-r {
+  text-align: right;
+}
+
 /* button */
 .ui-button {
   width: 100%;
@@ -401,6 +413,15 @@
   color: #3c50a2;
   border-color: #4b62c3;
   background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+  background-size: 4.5rem 3.1rem;
+  -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+          box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+}
+.ui-button__check--purple.is-active {
+  font-weight: 500;
+  color: #6349ba;
+  border-color: #6349ba;
+  background: url(../image/m-sub/check_purple.png) no-repeat right 5.8rem center;
   background-size: 4.5rem 3.1rem;
   -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
           box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
@@ -1170,7 +1191,7 @@
   font-size: 5rem;
 }
 .ui-file-input {
-  font-size: 0;
+  font-size: t 0;
   line-height: 0;
   white-space: nowrap;
 }
@@ -1374,6 +1395,62 @@
 }
 .form-item.form-item {
   margin-top: 10rem;
+}
+
+.radioForm label {
+  position: relative;
+  font-size: 18px;
+  line-height: 2rem;
+}
+.radioForm span {
+  vertical-align: middle;
+}
+.radioForm [type=radio] {
+  position: absolute;
+  vertical-align: middle;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 2px solid #d9dde3;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  top: 1.7rem;
+  right: 1.7rem;
+}
+.radioForm [type=radio]:checked {
+  position: absolute;
+  border: 2px solid #795bdc;
+}
+.radioForm [type=radio]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #795bdc;
+}
+.radioForm [type=radio]:focus-visible {
+  outline: 2px dotted #795bdc;
+}
+.radioForm [type=radio]:disabled {
+  background-color: lightgray;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: not-allowed;
+}
+.radioForm [type=radio]:disabled + span {
+  cursor: not-allowed;
+}
+
+.text-ex-indent {
+  font-size: 5.5rem;
+  color: #777;
 }
 
 .container__sub {
@@ -1666,6 +1743,7 @@
   padding: 10rem 0;
   padding-right: 0 !important;
   /* case3 간병시작하기 모달 */
+  /* 인적 사항 보미쌤 찾기 모달 */
   /* 인적 사항 사진 업로드 모달 */
   /* 인적 사항 사진 올리기 모달 */
 }
@@ -1829,6 +1907,41 @@
   font-size: 6.5rem;
   font-weight: 500;
 }
+.modal .ssamSearch__wrap {
+  width: 100%;
+  padding: 7rem 6rem 15rem 6rem;
+}
+.modal .ssamSearch__wrap > div {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1.3rem;
+}
+.modal .ssamSearch__wrap > div.ssamLineTop {
+  margin-top: 5rem;
+  border-top: 0.4rem solid #000;
+  border-radius: 0;
+}
+.modal .ssamSearch__wrap > div.ssamLineTop .ssamLine {
+  padding: 7rem 2rem;
+  border-bottom: 1px solid #e9eaec;
+}
+.modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div {
+  width: 25%;
+}
+.modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div:nth-child(1) {
+  width: 20%;
+}
+.modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div:nth-child(2) {
+  width: 35%;
+}
+.modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div:nth-child(3) {
+  width: 20%;
+}
+.modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div.choice a {
+  color: #228ff8;
+  text-decoration: underline;
+}
 .modal .uploadimg__wrap {
   width: 100%;
   padding: 7rem 6rem 15rem 6rem;
@@ -1863,41 +1976,85 @@
   line-height: 14rem;
 }
 .modal .modalUploadImg__wrap {
-  width: 100%;
   padding: 7rem 6rem 15rem 6rem;
+  width: 100%;
 }
-.modal .modalUploadImg__wrap > div {
+.modal .modalUploadImg__wrap .thumb-radio-image {
+  overflow: hidden;
+  position: relative;
+  display: inline-table;
   width: 50%;
-  border: 3px solid #d8dce2;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 1.3rem;
-  text-align: center;
+  height: auto;
   cursor: pointer;
+  border: 3px solid #d8dce2;
+  border-radius: 1.3rem;
 }
-.modal .modalUploadImg__wrap > div img {
-  text-align: center;
-  margin: 0 auto;
+.modal .modalUploadImg__wrap .thumb-radio-image img {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
 }
-.modal .modalUploadImg__wrap > div + div {
+.modal .modalUploadImg__wrap .thumb-radio-image + .thumb-radio-image {
   margin-left: 2rem;
 }
+.modal .modalUploadImg__wrap .thumb-radio-image.active {
+  border: 3px solid #795bdc;
+}
 
+@media (max-width: 1600px) {
+  .modal .ssamSearch__wrap input::-webkit-input-placeholder {
+    font-size: 3rem;
+  }
+  .modal .ssamSearch__wrap input::-moz-placeholder {
+    font-size: 3rem;
+  }
+  .modal .ssamSearch__wrap input:-ms-input-placeholder {
+    font-size: 3rem;
+  }
+  .modal .ssamSearch__wrap input::-ms-input-placeholder {
+    font-size: 3rem;
+  }
+  .modal .ssamSearch__wrap input::placeholder {
+    font-size: 3rem;
+  }
+  .modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div {
+    font-size: 3rem;
+  }
+  .modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div span {
+    font-size: 3rem;
+  }
+  .modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div a {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 1400px) {
   /* 모달 사진 업로드 */
   .modal .uploadimg__wrap > div {
     padding: 4rem;
-  }
-  .modal .uploadimg__wrap > div img {
-    width: 60%;
-  }
-  .modal .uploadimg__wrap > div p {
-    font-size: 3.5rem;
-    line-height: 5rem;
+    font-size: 5.5rem;
   }
   .modal .uploadimg__wrap > div + div p {
     height: 8rem;
     line-height: 8rem;
+  }
+}
+@media (max-width: 1024px) {
+  .modal .ssamSearch__wrap input::-webkit-input-placeholder {
+    font-size: 5.5rem;
+  }
+  .modal .ssamSearch__wrap input::-moz-placeholder {
+    font-size: 5.5rem;
+  }
+  .modal .ssamSearch__wrap input:-ms-input-placeholder {
+    font-size: 5.5rem;
+  }
+  .modal .ssamSearch__wrap input::-ms-input-placeholder {
+    font-size: 5.5rem;
+  }
+  .modal .ssamSearch__wrap input::placeholder {
+    font-size: 5.5rem;
   }
 }
 /* ========== reponsive =========== */
@@ -1996,8 +2153,17 @@
 .mt-60 {
   margin-top: 60px;
 }
+.mt__rem-4 {
+  margin-top: 40rem;
+}
 .mt__rem-130 {
   margin-top: 13rem;
+}
+.ml__rem-4 {
+  margin-left: 40rem;
+}
+.ml__rem-200 {
+  margin-left: 20rem;
 }
 
 header {

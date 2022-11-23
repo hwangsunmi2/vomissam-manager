@@ -11,6 +11,11 @@ $(function(){
         $(this).toggleClass("is-active");
     });
     
+    $(".ui-button__check--purple").click(function(){
+        $(this).addClass("is-active");
+        $(this).siblings().removeClass("is-active");
+    });
+
     $(".ui-button__check--multi--purple").click(function(){
         $(this).toggleClass("is-active");
     });
@@ -94,6 +99,15 @@ $(function(){
     })
     
 
+    $( 'input[name="choose_image"]:radio' ).change(function() {
+
+        var container = $('#thumbs');
+        var parent = $(this).closest('.jRadioImage');
+       
+        $('.jRadioImage').not(parent).removeClass('active');
+        parent.addClass('active');
+       
+      });
 });
 
 

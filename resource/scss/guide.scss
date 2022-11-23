@@ -30,8 +30,21 @@
             margin-top:60px;
         }
         &__rem {
+            &-4 {
+                margin-top:40rem;
+            }
             &-130 {
                 margin-top:13rem;
+            }
+        }
+    }
+    &l {
+        &__rem {
+            &-4{
+                margin-left:40rem;
+            }
+            &-200{
+                margin-left:20rem;
             }
         }
     }
@@ -314,6 +327,7 @@ header{
         }
     }
 }
+
 
 @include media-breakpoint-up(n-xl){
 }

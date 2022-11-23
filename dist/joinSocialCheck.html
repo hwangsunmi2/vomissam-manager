@@ -83,7 +83,7 @@
 
                                     <div class="ui-form ui-form__button ui-form__flex--row">
                                         <input type="text" class="ui-input" value="" placeholder="이름을 입력하세요">
-                                        <button type="submit" class="ui-button ui-button__certi ui-button__width-280 ui-button__font-xs"
+                                        <button type="submit" class="ui-button ui-button__certi ui-button__width-280 ui-button__font-xs"  data-toggle="modal" data-target="#ssamSearch"
                                         >검색</button>
                                     </div>
                                 </div>
@@ -148,6 +148,58 @@
                         </section>
 
                         <!-- 모달 -->
+                            <!-- 인적 사항 보미쌤 찾기 모달 -->
+                            <div class="modal fade" id="ssamSearch" tabindex="-1" aria-labelledby="ssamSearchLabel"
+                            aria-hidden="true" style="z-index: 1060;">
+                                <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                    <div class="modal-content modal-content__s modal-content__ssamSearch">
+                                        <div class="modal-body modal-body__main">
+                                                <div class="modal-header">
+                                                    <div class="modal-title modal-title__font-l text-left mb-0">보미쌤 검색</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="ssamSearch__wrap">
+
+                                                        <div class="ui-form ui-form__button ui-form__flex--row">
+                                                            <input type="text" class="ui-input" value="" placeholder="이름을 입력하세요">
+                                                            <button type="submit" class="ui-button ui-button__certi ui-button__width-280 ui-button__font-xs"  data-toggle="modal" data-target="#ssamSearch"
+                                                            >검색</button>
+                                                        </div>
+                                                        <div class="ssamLineTop">
+                                                            <div class="ssamLine d-flex">
+                                                                <div class="name">김보미</div>
+                                                                <div class="phone ta-c">010-1234-5678</div>
+                                                                <div class="genderAge ta-r"><span>여</span>/<span>58세</span></div>
+                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
+                                                            </div>
+                                                            <div class="ssamLine d-flex">
+                                                                <div class="name">이일화</div>
+                                                                <div class="phone ta-c">010-1234-5678</div>
+                                                                <div class="genderAge ta-r"><span>여</span>/<span>61세</span></div>
+                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
+                                                            </div>
+                                                            <div class="ssamLine d-flex">
+                                                                <div class="name">박보미</div>
+                                                                <div class="phone ta-c">010-1234-5678</div>
+                                                                <div class="genderAge ta-r"><span>여</span>/<span>49세</span></div>
+                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
+                                                            </div>
+                                                            <div class="ssamLine d-flex">
+                                                                <div class="name">최보미</div>
+                                                                <div class="phone ta-c">010-1234-5678</div>
+                                                                <div class="genderAge ta-r"><span>여</span>/<span>52세</span></div>
+                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //인적 사항 보미쌤 찾기 모달 -->
+                            
                             <!-- 인적 사항 사진 업로드 모달 -->
                             <div class="modal fade" id="uploadImg" tabindex="-1" aria-labelledby="uploadImgLabel"
                             aria-hidden="true" style="z-index: 1060;">
@@ -191,7 +243,7 @@
                                                     <div class="modal-title modal-title__font-l text-left mb-0">사진 올리기</div>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <div class="modalUploadImg__wrap d-flex searchImg">
+                                                    <div class="modalUploadImg__wrap d-flex searchImg radioForm">
                                                         <label class="jRadioImage thumb-radio-image loading"><input type="radio" value="one" name="choose_image" tabindex="-1"><i class="thumb-image"><img alt="" src="../resource/image/m-sub/searchImg.jpg"></i></label>
 
                                                         <label class="jRadioImage thumb-radio-image loading active"><input type="radio" value="two" name="choose_image" tabindex="-1" checked><i class="thumb-image"><img alt="" src="../resource/image/m-sub/searchImg.jpg"></i></label>

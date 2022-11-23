@@ -183,3 +183,15 @@
       -ms-flex: 1;
           flex: 1;
 }
+
+.ta-l {
+  text-align: left;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-r {
+  text-align: right;
+}
