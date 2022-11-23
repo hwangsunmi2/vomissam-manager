@@ -353,6 +353,18 @@ html, body, .wrap {
   background-image: url(../image/common/icon-quickmenu04.png);
   background-size: 8.6rem 8.9rem;
 }
+.quick-menu__button--search i {
+  background-image: url(../image/m-sub/icon-menu1.png);
+  background-size: 6.5rem 11.1rem;
+}
+.quick-menu__button--calculate i {
+  background-image: url(../image/m-sub/icon-menu2.png);
+  background-size: 6.8rem 9.2rem;
+}
+.quick-menu__button--note i {
+  background-image: url(../image/m-sub/icon-menu3.png);
+  background-size: 7.5rem 9.2rem;
+}
 .quick-menu__button-text {
   margin-top: 3rem;
   font-size: 4.8rem;
@@ -386,6 +398,18 @@ html, body, .wrap {
 .quick-menu__button.is-active.quick-menu__button--my i {
   background-image: url(../image/common/icon-quickmenu04__on.png);
   background-size: 8.6rem 8.9rem;
+}
+.quick-menu__button.is-active.quick-menu__button--search i {
+  background-image: url(../image/m-sub/icon-menu1_on.png);
+  background-size: 6.5rem 11.1rem;
+}
+.quick-menu__button.is-active.quick-menu__button--calculate i {
+  background-image: url(../image/m-sub/icon-menu2_on.png);
+  background-size: 6.8rem 9.2rem;
+}
+.quick-menu__button.is-active.quick-menu__button--note i {
+  background-image: url(../image/m-sub/icon-menu3_on.png);
+  background-size: 7.5rem 9.2rem;
 }
 
 .line-gray {

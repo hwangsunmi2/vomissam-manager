@@ -347,12 +347,56 @@
     
 }
 
+.personalInfo {
+    width:100%;
+    padding:3.5rem;
+    border:1px solid #d8dce2;
+    border-radius: 1.5rem;
+    box-sizing:border-box;
+    &__img {
+        overflow: hidden;
+        width:39.4rem;
+        height:auto;
+        border:1px dashed #d8dce2;
+        border-radius: 1.5rem;
+        box-sizing:border-box;
+        cursor:pointer;
+        img {
+            width:100%;
+        }
+    }
+    &__text{
+        align-items: center;
+        &--inner {
+            padding:14rem 0;
+            margin-left:8rem;
+            width: calc(100% - 39.4rem);
+            p {
+                width:28.5rem;
+                color:#575c62;
+            }
+            span {
+                color:#000;
+            }
+            >div {
+                &+div {
+                    margin-top:8rem;
+                }
+            }
+        }
+    }
+}
+
 .agreeView {
     .form-check {
+        position:relative;
+        justify-content: flex-start;
         padding: 7.5rem 0;
         label {
+            margin-left:10rem;
             font-size:6rem;
             span {
+                font-size: 6rem;
                 &.color-red {
                     color:#dd5458;
                 }
@@ -361,23 +405,47 @@
                 }
             }
         }
+        
         input {
+            &[type='checkbox'] {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                border: 0;
+            }
             &.termsService[type='checkbox'] {
                 &+label::before{
                     position: absolute;
+                    padding:1rem;
                     left: 0;
                     content: ' ';
                     display: inline-block;
-                    width: 2.2rem;
-                    height: 2.2rem;
+                    width: 6.9rem;
+                    height: 6.9rem;
                     margin: -0.3rem 0.8rem 0 0;
                     text-align: center;
                     vertical-align: middle;
                     border: 0;
                     border-radius: 0.3rem;
                     background-color: #fff;
-                    background: #fff url(../image/common/icon/icon-check_off.png) no-repeat center center;
+                    background: #fff url(../image/m-sub/check_gray.png) no-repeat center center;
+                    border:1px solid #ccc;
+                    box-sizing:border-box;
                 }
+            }
+        }
+        .sub-item__btn{
+            &--view {
+                position:absolute;
+                top: 8rem;
+                right:0;
+                width:2.9rem;
+                height:5.1rem;
+                background-image: url('../image/m-sub/icon-right-agree.png');
             }
         }
     }
@@ -437,4 +505,3 @@
 @include media-breakpoint-down(n-md){ //1024
     
 }
-

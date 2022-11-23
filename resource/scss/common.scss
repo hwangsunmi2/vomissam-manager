@@ -190,6 +190,24 @@ html, body, .wrap{
                 background-size: 8.6rem 8.9rem;
             }
         }
+        &--search{
+            i{
+                background-image: url(../image/m-sub/icon-menu1.png);
+                background-size: 6.5rem 11.1rem;
+            }
+        }
+        &--calculate{
+            i{
+                background-image: url(../image/m-sub/icon-menu2.png);
+                background-size: 6.8rem 9.2rem;
+            }
+        }
+        &--note{
+            i{
+                background-image: url(../image/m-sub/icon-menu3.png);
+                background-size: 7.5rem 9.2rem;
+            }
+        }
         &-text{
             margin-top: 3rem;
             font : {
@@ -237,6 +255,25 @@ html, body, .wrap{
                     i{
                         background-image: url(../image/common/icon-quickmenu04__on.png);
                         background-size: 8.6rem 8.9rem;
+                    }
+                }
+                &--search{
+                    i{
+                        background-image: url(../image/m-sub/icon-menu1_on.png);
+                        background-size: 6.5rem 11.1rem;
+                       
+                    }
+                }
+                &--calculate{
+                    i{
+                        background-image: url(../image/m-sub/icon-menu2_on.png);
+                        background-size: 6.8rem 9.2rem;
+                    }
+                }
+                &--note{
+                    i{
+                        background-image: url(../image/m-sub/icon-menu3_on.png);
+                        background-size: 7.5rem 9.2rem;
                     }
                 }
             }

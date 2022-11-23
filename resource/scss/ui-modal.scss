@@ -228,4 +228,39 @@
             };
         }
     }
+
+    /* 인적 사항 사진 업로드 모달 */ 
+    .uploadimg{
+        &__wrap {
+            width:100%;
+            padding:7rem 6rem 15rem 6rem;
+            &>div {
+                width:50%;
+                padding:10rem;
+                border:1px solid #d8dce2;
+                box-sizing:border-box;
+                border-radius: 1.3rem;
+                text-align: center;
+                cursor: pointer;
+                img {
+                    text-align: center;
+                    margin:0 auto;
+                }
+                p {
+                    margin-top:6rem;
+                    height:14rem;
+                    line-height: 7rem;
+                    text-align:center;
+                    vertical-align: middle;
+                }
+                &+div {
+                    margin-left:2rem;
+                    p {
+                        height:14rem;
+                        line-height:14rem;
+                    }
+                }
+            }
+        }
+    }
 }

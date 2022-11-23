@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>보미쌤</title>
 
+    <!-- 공통 css -->
     <link rel="stylesheet" href="../resource/css/reset.css">
     <link rel="stylesheet" href="../resource/css/font.css">
     <link rel="stylesheet" href="../resource/css/common.css">
@@ -14,19 +15,23 @@
     <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
 
     <link rel="stylesheet" href="../resource/css/ux-common.css">
+    <!-- //공통 css -->
 
+    <!-- 각 페이지 css -->
+    <link rel="stylesheet" href="../resource/css/payment.css">
     <link rel="stylesheet" href="../resource/css/join.css">
+    <!-- //각 페이지 css -->
 
 
-    
-    
+
+
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/swiper.min.js"></script>
     <script type="text/javascript" src="../resource/js/include.js"></script>
     <script type="text/javascript" src="../resource/js/common.js"></script>
-    <script type="text/javascript" src="../resource/js/main.js"></script>
+    <script type="text/javascript" src="../resource/js/sub.js"></script>
     
     
     
@@ -41,7 +46,6 @@
         <!-- //skipNavigation -->
 
         <!-- header -->
-        <!-- [include] header -->
         <header>
             <div class="header__inner">
                 <div class="page-back">
@@ -57,47 +61,50 @@
 
             </div>            
         </header>
-        <!-- //[include] header -->
         <!-- //header -->
 
 
         <!-- container -->
-        <div class="container container-join container__sub">
+        <div class="container">
 
             <div class="container__inner">
 
                 <div class="container-core">
                     <div class="container-core__inner container-core__flex">
-                        <section class="joinSocial-top">
-                            <div class="img-wrap">
-                                <img src="../resource/image/m-sub/img-alert-purple.png" alt="" style="width:31.7rem; height:31rem;">
+                       
+                        
+
+                        <section class="sub-items">
+
+                            <div class="container-core">
+                                <div class="container-core__inner container-core__flex">
+                                    <section class="careEnrollEnd-top">
+                                        <div class="img-wrap">
+                                            <img src="../resource/image/m-sub/welcome.png" alt="" style="width:57.5rem; height:95.1rem;">
+                                        </div>
+                                        <div class="sub-text text-center">
+                                            <span class="bold">이일화</span>님
+                                        </div>
+                                        <div class="sub-text text-center mt__rem-13">
+                                            VIP 간병서비스 보미쌤 회원 가입을 환영합니다.<br/>
+                                            회원님께서는 보미쌤의 모든 서비스를 <br/>
+                                            이용하실 수 있습니다
+                                        </div>
+                                    </section>
+            
+                                    
+                                </div>
                             </div>
-                            <div class="sub-title2">
-                                <span class="joinSocial-name">이일화</span> 회원님께서는 <br>
-                                이미 보미쌤에 가입하셨습니다.
+
+                        </section>
+
+                        <section class="page-bottom page-bottom__padding">
+                            <div class="page-bottom__inner">
+                                <div class="ui-buttons">
+                                    <button type="button" class="ui-button ui-button__bg-purple">보미쌤 서비스 이용하기</button>
+                                </div>
                             </div>
                         </section>
-                        <section class="joinSocial-login">
-                            <button class="button-joinSocial button-joinSocial__naver">네이버 계정으로 로그인</button>
-                            <button class="button-joinSocial button-joinSocial__google">구글 계정으로 로그인</button>
-                            <button class="button-joinSocial button-joinSocial__kakao">카카오 계정으로 로그인</button>
-
-                            <div class="joinSocial-text">
-                                카카오 계정으로 가입을 진행하시려면 <br>
-                                아래의 <span class="color-purple font-weight__r">‘가입하기’</span> 버튼을 클릭하세요.    
-                            </div>
-                        </section>
-
-                        <section class="page-bottom">
-                            <div class="ui-buttons">
-                                <button type="button" class="ui-button ui-button__border-gray ui-button__width-s">취소</button>
-                                <button type="button" class="ui-button ui-button__bg-purple">가입하기</button>
-                            </div>
-                        </section>
-
-
-
-
 
                     </div>
                 </div>
@@ -108,7 +115,9 @@
         </div>
         <!-- //container -->
 
-       
+
+
+      
         
 
     </div>

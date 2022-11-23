@@ -16,6 +16,15 @@
   display: -ms-flexbox;
   display: flex;
 }
+.ui-buttons__second {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -1rem;
+}
+.ui-buttons__second .ui-button {
+  max-width: calc(50% - 2rem);
+  margin: 1rem;
+}
 .ui-buttons__thirds {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -57,6 +66,11 @@
   border: 0.4rem solid #4b62c3;
   background: #ffffff;
   color: #3c50a2;
+}
+.ui-button__border-purple {
+  border: 0.4rem solid #795bdc;
+  background: #ffffff;
+  color: #6349ba;
 }
 .ui-button__width-xs {
   width: 42rem;
@@ -203,6 +217,15 @@
   -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
           box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
+.ui-button__check--multi--purple.is-active {
+  font-weight: 500;
+  color: #6349ba;
+  border-color: #6349ba;
+  background: url(../image/m-sub/check_purple.png) no-repeat right 5.8rem center;
+  background-size: 4.5rem 3.1rem;
+  -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+          box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+}
 .ui-button__check--multi.is-active {
   font-weight: 500;
   color: #3c50a2;
@@ -245,8 +268,17 @@
   background-size: 5.6rem 5.1rem;
 }
 .button-joinSocial__google {
+  border-color: #dc4e41;
   background-image: url(../image/common/icon-google__colored.png);
   background-size: 5.3rem 5.5rem;
+}
+.button-joinSocial__kakao {
+  border-color: #fae100;
+  background-image: url(../image/common/icon-kakao.png);
+  background-size: 5.6rem 5.1rem;
+}
+.button-joinSocial + .button-joinSocial {
+  margin-top: 8.7rem;
 }
 .button-kakao {
   width: 100%;
@@ -315,6 +347,11 @@
   color: #9196a5;
   background: #eff0f5;
   border-radius: 2rem;
+}
+
+.joinSocial-text .color-purple {
+  font-size: 6rem;
+  font-weight: 500;
 }
 
 @media (max-width: 1024px) {

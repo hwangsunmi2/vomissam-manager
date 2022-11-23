@@ -16,6 +16,14 @@
     }
     &s{
         display: flex;
+        &__second{
+            flex-wrap: wrap;
+            margin: -1rem;
+            .ui-button{
+                max-width: calc(100% / 2 - 2rem);
+                margin: 1rem;
+            }
+        }
         &__thirds{
             flex-wrap: wrap;
             margin: -1rem;
@@ -64,6 +72,11 @@
             border: .4rem solid #4b62c3; 
             background: #ffffff;
             color:#3c50a2;
+        }
+        &-purple{
+            border: .4rem solid #795bdc; 
+            background: #ffffff;
+            color:#6349ba;
         }
     }
     &__width{
@@ -234,6 +247,16 @@
             box-shadow: 1rem 1rem 3.3rem rgba(0,0,0,.13);
         }
         &--multi{
+            &--purple {
+                &.is-active{
+                    font-weight: 500;
+                    color:#6349ba;
+                    border-color: #6349ba;
+                    background: url(../image/m-sub/check_purple.png) no-repeat right 5.8rem center;
+                    background-size: 4.5rem 3.1rem;
+                    box-shadow: 1rem 1rem 3.3rem rgba(0,0,0,.13);
+                }
+            }
             &.is-active{
                 font-weight: 500;
                 color:#3c50a2;
@@ -281,15 +304,18 @@
             background-size: 5.6rem 5.1rem;
         }
         &__google{
-            // border-color: #06be34;
+            border-color: #dc4e41;
             background-image: url(../image/common/icon-google__colored.png);
             background-size: 5.3rem 5.5rem;
         }
-        // &__kakao{
-        //     border-color: #fae100;
-        //     // background-image: url(../image/common/icon-naver__colored.png) ;
-        //     // background-size: 5.6rem 5.1rem;
-        // }
+        &__kakao{
+            border-color: #fae100;
+            background-image: url(../image/common/icon-kakao.png) ;
+            background-size: 5.6rem 5.1rem;
+        }
+        &+.button-joinSocial {
+            margin-top:8.7rem;
+        }
         
     }
     &-kakao{
@@ -356,9 +382,15 @@
         background: #eff0f5;
         border-radius: 2rem;
     }
+    
 }
 
-
+.joinSocial-text{
+    .color-purple {
+        font-size:6rem;
+        font-weight:500;
+    }
+}
 
 
 

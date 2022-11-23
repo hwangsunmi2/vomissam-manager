@@ -18,9 +18,13 @@
     <link rel="stylesheet" href="../resource/css/ux-common.css">
     <!-- //공통 css -->
 
-    <!-- 개별 페이지 css -->
+    <!-- 각 페이지 css -->
     <link rel="stylesheet" href="../resource/css/enroll.css">
-    <!-- //개별 페이지 css -->
+    <!-- //각 페이지 css -->
+
+
+
+
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
@@ -28,6 +32,9 @@
     <script type="text/javascript" src="../resource/js/include.js"></script>
     <script type="text/javascript" src="../resource/js/common.js"></script>
     <script type="text/javascript" src="../resource/js/sub.js"></script>
+
+
+
 </head>
 
 <body>
@@ -50,7 +57,7 @@
                 </div>
                 <div class="header-title">
                     <div class="header-title__inner">
-                        간병신청하기
+                        개인정보 등록하기
                     </div>
                 </div>
                 <div class="header-right">
@@ -77,68 +84,41 @@
                 <div class="container-core">
                     <div class="container-core__inner container-core__flex">
                         <section class="sub-content">
-                            <div class="enroll-box">
-                                <div class="enroll-box__inner">
-                                    <div class="enroll-title">간병 형태</div>
-                                    <div class="ui-buttons">
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-calendar ui-button__font-xs ui-button__check is-active">기간제</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-clock ui-button__font-xs ui-button__check">시간제</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="enroll-box">
-                                <div class="enroll-box__inner">
-                                    <div class="enroll-title">간병 장소</div>
-                                    <div class="ui-buttons">
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-hospital ui-button__font-xs ui-button__check">병원</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__icon ui-button__icon-home ui-button__font-xs ui-button__check is-active">자택</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="enroll-box">
-                                <div class="enroll-box__inner">
-                                    <div class="enroll-title">자택 주소</div>
-
-                                    <div class="ui-form ui-form__button ui-form__flex--row">
-                                        <input type="text" class="ui-input" value="" placeholder="기본 주소">
-                                        <button type="submit" class="ui-button ui-button__certi ui-button__width-280 ui-button__font-xs"
-                                        >주소 찾기</button>
-                                    </div>
-                                    <div class="ui-form ui-form__flex--row">
-                                        <input type="text" class="ui-input" value="" placeholder="상세 주소 입력">
-                                      </div>
-                                </div>
-                            </div>
 
                             <div class="enroll-box">
                                 <div class="enroll-box__inner">
-                                    <div class="enroll-title">간병 기간</div>
-                                    <div class="care-period">
-                                        <div class="care-period__inner">
-                                            <div  class="care-period__text">간병 기간을 입력하시려면 클릭하세요
-                                            </div>
-
-                                            <div class="care-period__text is-inputed mt-50">2022/10/05/ 12:00 ~ 2022/10/14일 12:00 <br>( 총 10일 0시간 )
-                                            </div>
-                                        </div>
+                                    <div class="enroll-title">돌봄 기술 정보 <p class="enroll-title-sub">*실제 간병 기간만 입력하세요</p>
+                                    </div>
+                                    <div class="ui-buttons ui-buttons__second">
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">콧줄식사보조</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">뱃줄식사보조</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">소변주머니 관리</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">기저귀 관리</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">침상 위 대소변기관리</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">장루 관리</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">침대와 휠체어 간의 이동 보조</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">체위(자세 변경)</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">욕창 관리</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">입, 목석션</button>
                                     </div>
                                 </div>
                             </div>
-                            
                         </section>
-
-
 
                         <section class="page-bottom">
                             <div class="page-bottom__inner ui-buttons">
                                 <button type="button"
-                                    class="ui-button ui-button__border-gray ui-button__color-gray font-weight__m">이전</button>
-                                <button type="button" class="ui-button ui-button__border-blue font-weight__m"
-                                    onclick="location.href='./careEnrollPeriodStep02.html'">다음</button>
+                                    class="ui-button ui-button__border-purple font-weight__m" data-toggle="modal" data-target="#careEnrollInfoCheck">다음</button>
                             </div>
                         </section>
 

@@ -390,10 +390,60 @@
   font-weight: 600;
 }
 
+.personalInfo {
+  width: 100%;
+  padding: 3.5rem;
+  border: 1px solid #d8dce2;
+  border-radius: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.personalInfo__img {
+  overflow: hidden;
+  width: 39.4rem;
+  height: auto;
+  border: 1px dashed #d8dce2;
+  border-radius: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+.personalInfo__img img {
+  width: 100%;
+}
+.personalInfo__text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.personalInfo__text--inner {
+  padding: 14rem 0;
+  margin-left: 8rem;
+  width: calc(100% - 39.4rem);
+}
+.personalInfo__text--inner p {
+  width: 28.5rem;
+  color: #575c62;
+}
+.personalInfo__text--inner span {
+  color: #000;
+}
+.personalInfo__text--inner > div + div {
+  margin-top: 8rem;
+}
+
 .agreeView .form-check {
+  position: relative;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 7.5rem 0;
 }
 .agreeView .form-check label {
+  margin-left: 10rem;
+  font-size: 6rem;
+}
+.agreeView .form-check label span {
   font-size: 6rem;
 }
 .agreeView .form-check label span.color-red {
@@ -402,20 +452,42 @@
 .agreeView .form-check label span.color-black {
   color: #000;
 }
+.agreeView .form-check input[type=checkbox] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 .agreeView .form-check input.termsService[type=checkbox] + label::before {
   position: absolute;
+  padding: 1rem;
   left: 0;
   content: " ";
   display: inline-block;
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 6.9rem;
+  height: 6.9rem;
   margin: -0.3rem 0.8rem 0 0;
   text-align: center;
   vertical-align: middle;
   border: 0;
   border-radius: 0.3rem;
   background-color: #fff;
-  background: #fff url(../image/common/icon/icon-check_off.png) no-repeat center center;
+  background: #fff url(../image/m-sub/check_gray.png) no-repeat center center;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.agreeView .form-check .sub-item__btn--view {
+  position: absolute;
+  top: 8rem;
+  right: 0;
+  width: 2.9rem;
+  height: 5.1rem;
+  background-image: url("../image/m-sub/icon-right-agree.png");
 }
 
 .attach-file__top {

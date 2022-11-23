@@ -158,6 +158,12 @@
   color: #DD5458;
   margin-left: 1rem;
 }
+.enroll-title-sub {
+  display: block;
+  padding-top: 7rem;
+  color: #777;
+  font-size: 5.5rem;
+}
 .enroll-box:nth-child(1) {
   margin-top: 9rem;
 }

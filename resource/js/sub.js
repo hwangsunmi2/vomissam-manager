@@ -10,6 +10,10 @@ $(function(){
     $(".ui-button__check--multi").click(function(){
         $(this).toggleClass("is-active");
     });
+    
+    $(".ui-button__check--multi--purple").click(function(){
+        $(this).toggleClass("is-active");
+    });
 
     $(".ui-button__click").click(function(){
         $(this).addClass("is-active");
