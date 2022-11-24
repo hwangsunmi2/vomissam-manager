@@ -51,9 +51,9 @@ html, body, .wrap{
         }
         &__link{
             display: block;
-            width: 14.1rem;
+            width: 51.7rem;
             height: 11.2rem;
-            background: url(../image/common/logo.png) no-repeat center;
+            background: url(../image/m-sub/logo.png) no-repeat center;
             background-size: cover;
         }
     }
@@ -215,15 +215,24 @@ html, body, .wrap{
                 weight:500;
             }
             line-height: 100%;
+            &--purple {
+                margin-top:3rem;
+            }
         }
         &.is-active{
             i{
                 animation: rotateIcon .2s linear;
             }
             .quick-menu__button{
+
                 &-text{
                     color:#3c50a2;
                     font-weight: 600;
+                    &--purple{
+                        margin-top: 3rem;
+                        color:#6349ba;
+                        font-weight: 600;
+                    }
                 }
             }
             &.quick-menu__button{
