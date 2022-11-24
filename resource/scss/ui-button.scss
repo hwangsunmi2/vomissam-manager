@@ -34,6 +34,9 @@
                 //     margin: 1rem;
                 // }
             }
+            &.mt__rem-5{
+                margin-top:5rem;
+            }
         }
     }
     &__page {
@@ -196,7 +199,23 @@
                 width: 7.9rem;
                 height: 7.6rem;
                 margin-top: -1rem;
-                background-image: url(../image/sub/icon/icon-hospital.png);
+                background-image: url(../image/m-sub/icon-hospital.png);
+            }
+        }
+        &-nursingHospital{
+            &::before{
+                width: 7.3rem;
+                height: 6.6rem;
+                margin-top: -1rem;
+                background-image: url(../image/m-sub/icon-nursingHospital.png);
+            }
+        }
+        &-nursingHome{
+            &::before{
+                width: 4.5rem;
+                height: 7.6rem;
+                margin-top: -1rem;
+                background-image: url(../image/m-sub/icon-nursingHome.png);
             }
         }
         &-home{
@@ -204,14 +223,47 @@
                 width: 6.6rem;
                 height: 6.6rem;
                 margin-top: -1rem;
-                background-image: url(../image/sub/icon/icon-home.png);
+                background-image: url(../image/m-sub/icon-home.png);
+            }
+        }
+        
+        &-nursing{
+            &::before{
+                width: 7.6rem;
+                height: 7.6rem;
+                margin-top: -1rem;
+                background-image: url(../image/m-sub/icon-nursing.png);
+            }
+        }
+        &-nursingAssistant{
+            &::before{
+                width: 7.2rem;
+                height: 3.8rem;
+                margin-top: -1rem;
+                background-image: url(../image/m-sub/icon-nursingAssistant.png);
+            }
+        }
+        &-caregiver{
+            &::before{
+                width: 8.1rem;
+                height: 5.1rem;
+                margin-top: -1rem;
+                background-image: url(../image/m-sub/icon-caregiver.png);
+            }
+        }
+        &-physicalTherapist{
+            &::before{
+                width: 6.6rem;
+                height: 6.6rem;
+                margin-top: -1rem;
+                background-image: url(../image/m-sub/icon-physicalTherapist.png);
             }
         }
         &-right{
             line-height: 100%;
             &::before{
-                width: 2.9rem;
-                height: 5.3rem;
+                width: 4.8rem;
+                height: 6.7rem;
                 margin: 0;
                 background-image: url(../image/sub/icon/icon-right.png);
             }

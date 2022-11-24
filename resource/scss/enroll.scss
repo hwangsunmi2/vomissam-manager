@@ -33,6 +33,12 @@
             color:#777;
             font-size:5.5rem;
         }
+        &-span {
+            display: inline-block;
+            padding-left:1.5rem;
+            color:#777;
+            font-size:5.5rem;
+        }
     }
     &-box{
         &:nth-child(1){
@@ -40,12 +46,16 @@
         }
         &+&{
             margin-top: 13rem;
+            &.mt__rem-8 {
+                margin-top:8rem;
+            }
         }
         &__sub{
             &+&{
                 margin-top: 8rem;
             }
         }
+        
     }
 }
 

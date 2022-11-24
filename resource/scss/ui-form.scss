@@ -57,6 +57,9 @@
             .ui-form{
                 flex: 1;
             }
+            &.ml__rem-2 {
+                margin-left:2rem;
+            }
         }
         &__flex{
             &--row{
@@ -82,6 +85,9 @@
                         margin-left: 2rem;
                     }
                 }
+                &.mt__rem-4 {
+                    margin-top:4rem;
+                }
             }
             &--right{
                 justify-content: flex-end;
@@ -91,6 +97,20 @@
         &__text{
             font-size: 5.5rem;
             margin-right: 6.5rem;
+        }
+        &.agree {
+            justify-content: space-between;
+            align-items: center;
+            &>div {
+                line-height:7rem;
+            }
+            .noUnderline {
+                padding-bottom:0;
+                border-bottom:0;
+            }
+        }
+        &.mt__rem-9 {
+            margin-top:9rem;
         }
         
     }
@@ -201,6 +221,7 @@
                 // }
             }
         }
+        
     }
     &-radio{
         &-block{
@@ -277,6 +298,10 @@
             background-color: #4b62c3;
             background-image: url('../image/common/icon/icon-check.png');
             background-size: 4.5rem 3.1rem;
+        }
+        &.agree {
+            border: 1px solid pink;
+
         }
     }
     &-label {
@@ -559,8 +584,24 @@
 }
  
 .text-ex-indent {
+    padding-left:4rem;
     font-size:5.5rem;
     color:#777;
+    &.ml__rem-20 {
+        margin-left:20rem;
+    }
+    &.ml__rem-25 {
+        margin-left:25rem;
+    }
+    &.ml__rem-30 {
+        margin-left:30rem;
+    }
+    &.mt__rem-4 {
+        margin-top:4rem;
+    }
+    &.mt__rem-9 {
+        margin-top:9rem;
+    }
 }
 
 @include media-breakpoint-down(n-md){ //1024

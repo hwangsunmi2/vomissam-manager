@@ -34,6 +34,9 @@
   max-width: calc(33.3333333333% - 2rem);
   margin: 1rem;
 }
+.ui-buttons__thirds.mt__rem-5 {
+  margin-top: 5rem;
+}
 .ui-button__page--back {
   width: 12.9rem;
   height: 100%;
@@ -175,20 +178,56 @@
   width: 7.9rem;
   height: 7.6rem;
   margin-top: -1rem;
-  background-image: url(../image/sub/icon/icon-hospital.png);
+  background-image: url(../image/m-sub/icon-hospital.png);
+}
+.ui-button__icon-nursingHospital::before {
+  width: 7.3rem;
+  height: 6.6rem;
+  margin-top: -1rem;
+  background-image: url(../image/m-sub/icon-nursingHospital.png);
+}
+.ui-button__icon-nursingHome::before {
+  width: 4.5rem;
+  height: 7.6rem;
+  margin-top: -1rem;
+  background-image: url(../image/m-sub/icon-nursingHome.png);
 }
 .ui-button__icon-home::before {
   width: 6.6rem;
   height: 6.6rem;
   margin-top: -1rem;
-  background-image: url(../image/sub/icon/icon-home.png);
+  background-image: url(../image/m-sub/icon-home.png);
+}
+.ui-button__icon-nursing::before {
+  width: 7.6rem;
+  height: 7.6rem;
+  margin-top: -1rem;
+  background-image: url(../image/m-sub/icon-nursing.png);
+}
+.ui-button__icon-nursingAssistant::before {
+  width: 7.2rem;
+  height: 3.8rem;
+  margin-top: -1rem;
+  background-image: url(../image/m-sub/icon-nursingAssistant.png);
+}
+.ui-button__icon-caregiver::before {
+  width: 8.1rem;
+  height: 5.1rem;
+  margin-top: -1rem;
+  background-image: url(../image/m-sub/icon-caregiver.png);
+}
+.ui-button__icon-physicalTherapist::before {
+  width: 6.6rem;
+  height: 6.6rem;
+  margin-top: -1rem;
+  background-image: url(../image/m-sub/icon-physicalTherapist.png);
 }
 .ui-button__icon-right {
   line-height: 100%;
 }
 .ui-button__icon-right::before {
-  width: 2.9rem;
-  height: 5.3rem;
+  width: 4.8rem;
+  height: 6.7rem;
   margin: 0;
   background-image: url(../image/sub/icon/icon-right.png);
 }

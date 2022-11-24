@@ -164,11 +164,20 @@
   color: #777;
   font-size: 5.5rem;
 }
+.enroll-title-span {
+  display: inline-block;
+  padding-left: 1.5rem;
+  color: #777;
+  font-size: 5.5rem;
+}
 .enroll-box:nth-child(1) {
   margin-top: 9rem;
 }
 .enroll-box + .enroll-box {
   margin-top: 13rem;
+}
+.enroll-box + .enroll-box.mt__rem-8 {
+  margin-top: 8rem;
 }
 .enroll-box__sub + .enroll-box__sub {
   margin-top: 8rem;

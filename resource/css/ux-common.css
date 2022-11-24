@@ -234,6 +234,9 @@
   max-width: calc(33.3333333333% - 2rem);
   margin: 1rem;
 }
+.ui-buttons__thirds.mt__rem-5 {
+  margin-top: 5rem;
+}
 .ui-button__page--back {
   width: 12.9rem;
   height: 100%;
@@ -375,20 +378,56 @@
   width: 7.9rem;
   height: 7.6rem;
   margin-top: -1rem;
-  background-image: url(../image/sub/icon/icon-hospital.png);
+  background-image: url(../image/m-sub/icon-hospital.png);
+}
+.ui-button__icon-nursingHospital::before {
+  width: 7.3rem;
+  height: 6.6rem;
+  margin-top: -1rem;
+  background-image: url(../image/m-sub/icon-nursingHospital.png);
+}
+.ui-button__icon-nursingHome::before {
+  width: 4.5rem;
+  height: 7.6rem;
+  margin-top: -1rem;
+  background-image: url(../image/m-sub/icon-nursingHome.png);
 }
 .ui-button__icon-home::before {
   width: 6.6rem;
   height: 6.6rem;
   margin-top: -1rem;
-  background-image: url(../image/sub/icon/icon-home.png);
+  background-image: url(../image/m-sub/icon-home.png);
+}
+.ui-button__icon-nursing::before {
+  width: 7.6rem;
+  height: 7.6rem;
+  margin-top: -1rem;
+  background-image: url(../image/m-sub/icon-nursing.png);
+}
+.ui-button__icon-nursingAssistant::before {
+  width: 7.2rem;
+  height: 3.8rem;
+  margin-top: -1rem;
+  background-image: url(../image/m-sub/icon-nursingAssistant.png);
+}
+.ui-button__icon-caregiver::before {
+  width: 8.1rem;
+  height: 5.1rem;
+  margin-top: -1rem;
+  background-image: url(../image/m-sub/icon-caregiver.png);
+}
+.ui-button__icon-physicalTherapist::before {
+  width: 6.6rem;
+  height: 6.6rem;
+  margin-top: -1rem;
+  background-image: url(../image/m-sub/icon-physicalTherapist.png);
 }
 .ui-button__icon-right {
   line-height: 100%;
 }
 .ui-button__icon-right::before {
-  width: 2.9rem;
-  height: 5.3rem;
+  width: 4.8rem;
+  height: 6.7rem;
   margin: 0;
   background-image: url(../image/sub/icon/icon-right.png);
 }
@@ -941,6 +980,9 @@
       -ms-flex: 1;
           flex: 1;
 }
+.ui-form__cell.ml__rem-2 {
+  margin-left: 2rem;
+}
 .ui-form__flex--row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -969,6 +1011,9 @@
 .ui-form__flex--row .ui-form__cell--s + .ui-form__cell--s {
   margin-left: 2rem;
 }
+.ui-form__flex--row.mt__rem-4 {
+  margin-top: 4rem;
+}
 .ui-form__flex--right {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -977,6 +1022,24 @@
 .ui-form__text {
   font-size: 5.5rem;
   margin-right: 6.5rem;
+}
+.ui-form.agree {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ui-form.agree > div {
+  line-height: 7rem;
+}
+.ui-form.agree .noUnderline {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.ui-form.mt__rem-9 {
+  margin-top: 9rem;
 }
 .ui-input {
   width: 100%;
@@ -1171,6 +1234,9 @@
   background-color: #4b62c3;
   background-image: url("../image/common/icon/icon-check.png");
   background-size: 4.5rem 3.1rem;
+}
+.ui-checkbox.agree {
+  border: 1px solid pink;
 }
 .ui-label {
   display: -webkit-box;
@@ -1449,8 +1515,24 @@
 }
 
 .text-ex-indent {
+  padding-left: 4rem;
   font-size: 5.5rem;
   color: #777;
+}
+.text-ex-indent.ml__rem-20 {
+  margin-left: 20rem;
+}
+.text-ex-indent.ml__rem-25 {
+  margin-left: 25rem;
+}
+.text-ex-indent.ml__rem-30 {
+  margin-left: 30rem;
+}
+.text-ex-indent.mt__rem-4 {
+  margin-top: 4rem;
+}
+.text-ex-indent.mt__rem-9 {
+  margin-top: 9rem;
 }
 
 .container__sub {

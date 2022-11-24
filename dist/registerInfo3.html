@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보미쌤</title>
+
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/font.css">
+    <link rel="stylesheet" href="../resource/css/common.css">
+
+    <link rel="stylesheet" href="../resource/css/lib/swiper.min.css">
+    <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../resource/css/ux-common.css">
+    <!-- //공통 css -->
+
+    <!-- 각 페이지 css -->
+    <link rel="stylesheet" href="../resource/css/enroll.css">
+    <!-- //각 페이지 css -->
+
+    <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/swiper.min.js"></script>
+    <script type="text/javascript" src="../resource/js/include.js"></script>
+    <script type="text/javascript" src="../resource/js/common.js"></script>
+    <script type="text/javascript" src="../resource/js/sub.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- skipNavigation -->
+        <div id="skipNavigation" title="스킵내비게이션">
+            <a href="#nav">메뉴 바로가기</a>
+            <a href="#">본문 바로가기</a>
+        </div>
+        <!-- //skipNavigation -->
+
+        <!-- header -->
+        <!-- [include] header -->
+        <header>
+            <div class="header__inner">
+                <div class="page-back">
+                    <div class="page-back__inner">
+                        <button type="button" class="ui-button ui-button__page--back"></button>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <div class="header-title__inner">
+                        개인정보 등록하기
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-alarm">
+                        <div class="header-alarm__inner">
+                            <button type="button" class="header-alarm__button"></button>
+                        </div>
+                    </div>
+                    <div class="header-hamberger">
+                        <div class="header-hamberger__inner">
+                            <button type="button" class="header-hamberger__button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //[include] header -->
+        <!-- //header -->
+
+
+        <!-- container -->
+        <div class="container container__sub container__sub--enroll container__sub--pb-0">
+            <div class="container__inner">
+                <div class="container-core">
+                    <div class="container-core__inner container-core__flex">
+                        <section class="sub-content">
+
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
+                                    <div class="enroll-title">기본 돌봄 정보</p>
+                                    </div>
+                                    <div class="ui-form ui-form indentType mt__rem-4">
+                                        <div class="ui-form">선호 돌봄 시간</div>
+                                        <div class="ui-buttons ui-buttons__thirds  mt__rem-5">
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">종일제</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">시간제</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">상관없음</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="enroll-box mt__rem-8">
+                                <div class="enroll-box__inner">
+                                    <div class="ui-form ui-form indentType mt__rem-4">
+                                        <div class="ui-form">선호 돌봄 장소</div>
+                                        <div class="ui-buttons ui-buttons__thirds  mt__rem-5">
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">병원</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">자택</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">상관없음</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="enroll-box mt__rem-8">
+                                <div class="enroll-box__inner">
+                                    <div class="ui-form ui-form indentType mt__rem-4">
+                                        <div class="ui-form">활동 가능 지역</div>
+                                        <div class="ui-buttons ui-buttons__thirds  mt__rem-5">
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">선호지역1</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">선호지역2</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">선호지역3</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="enroll-box mt__rem-8">
+                                <div class="enroll-box__inner">
+                                    <div class="ui-form ui-form indentType mt__rem-4">
+                                        <div class="ui-form">돌봄 가능 성별</div>
+                                        <div class="ui-buttons ui-buttons__thirds  mt__rem-5">
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">남성</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">여성</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">상관없음</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="enroll-box mt__rem-8">
+                                <div class="enroll-box__inner">
+                                    <div class="ui-form ui-form indentType mt__rem-4">
+                                        <div class="ui-form">국적</div>
+                                        <div class="ui-buttons ui-buttons__thirds  mt__rem-5">
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">한국(귀화포함)</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">중국</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">기타 국가</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="enroll-box mt__rem-8">
+                                <div class="enroll-box__inner">
+                                    <div class="ui-form ui-form indentType mt__rem-4">
+                                        <div class="ui-form">가능 언어</div>
+                                        <div class="ui-buttons ui-buttons__thirds  mt__rem-5">
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">영어</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">중국</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">기타 국가</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="enroll-box mt__rem-8">
+                                <div class="enroll-box__inner">
+                                    <div class="ui-form ui-form indentType mt__rem-4">
+                                        <div class="ui-form">종교</div>
+                                        <div class="ui-buttons ui-buttons__thirds  mt__rem-5">
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">기독교</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">불교</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">천주교</button>
+                                            <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">없음</button>
+                                            <div class="ui-form__cell width-200">기타 종교</div>
+                                            <div class="ui-form__cell flex ml__rem-2">
+                                                <input type="text" class="ui-input" placeholder="직접입력">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="page-bottom">
+                            <div class="page-bottom__inner ui-buttons">
+                                <button type="button"
+                                    class="ui-button ui-button__border-purple font-weight__m" data-toggle="modal" data-target="#careEnrollInfoCheck">다음</button>
+                            </div>
+                        </section>
+
+
+                    </div>
+                </div><!-- //container-core -->
+            </div>
+
+        </div>
+        <!-- //container -->
+
+        <!-- quick-menu -->
+        <section class="quick-menu">
+            <div class="quick-menu__inner">
+                <!-- 전달사항 :: 선택 항목에 클래스 is-active 붙습니다. -->
+                <button type="button" class="quick-menu__button quick-menu__button--search ">
+                    <i></i>
+                    <span class="quick-menu__button-text">일감찾기</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--calculate is-active">
+                    <i></i>
+                    <span class="quick-menu__button-text">간병비 정산</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--note">
+                    <i></i>
+                    <span class="quick-menu__button-text">보미쌤 노트</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--my">
+                    <i></i>
+                    <span class="quick-menu__button-text">내정보관리</span>
+                </button>
+            </div>
+        </section>
+        <!-- //quick-menu -->
+
+
+
+
+        <!-- footer -->
+        <!-- [include] footer -->
+        <footer data-include-file="../include/footer.html" class="footer-wrap js-include"></footer>
+        <!-- //[include] footer -->
+        <!-- //footer -->
+
+
+
+
+    </div>
+
+</body>
+<script>
+
+</script>
+
+</html>
