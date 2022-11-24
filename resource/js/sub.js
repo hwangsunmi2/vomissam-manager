@@ -108,6 +108,11 @@ $(function(){
         parent.addClass('active');
        
       });
+
+    //acordion
+    $('.acordion-notice__btn').on('click', function(){
+        $(this).toggleClass('is-click').next().slideToggle();
+    });
 });
 
 

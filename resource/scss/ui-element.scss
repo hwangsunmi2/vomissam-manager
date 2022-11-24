@@ -307,3 +307,77 @@
         }
     }
 }
+
+//acordion
+.acordion{
+    &-notice{
+        &__btn{
+            position:relative;
+            display:block;
+            width:100%;
+            padding:8.5rem 6rem;
+            padding-right:16rem;
+            font-size:5.6rem;
+            font-weight:600;
+            color:#222;
+            background:url('../image/sub/icon/icon-down.png') no-repeat 95% center;
+            background-size:5.3rem 2.9rem;
+            border-bottom:1px solid #e9eaec;
+            line-height:1.2;
+            text-align:left;
+            &.is-click{
+                background:url('../image/sub/icon/icon-up--blue.png') no-repeat 95% center;
+                background-size:5.3rem 2.9rem;
+            }
+        }
+        &__view{
+            position:relative;
+            display:none;
+            padding:7.5rem 6rem;
+            font-size:4.8rem;
+            font-weight:500;
+            color:#222;
+            line-height:1.5;
+            background-color:#f6f8fb;
+        }
+        &--faq{
+            .acordion-notice{
+                &__btn{
+                    padding-left:14rem;
+                    &::before{
+                        position:absolute;
+                        top:8rem;
+                        left:6rem;
+                        margin-right:4.5rem;
+                        font-size:5.6rem;
+                        font-weight:600;
+                        color:#4b62c3;
+                        content:"Q"
+                    }
+                    &.is-click{
+                        & + .acordion-notice__view{
+                            &::before{
+                                top:6.5rem;
+                                transition:all .4s ease-in-out;
+                            }
+                        }
+                    }
+                }
+                &__view{
+                    padding-left:14rem;
+                    &::before{
+                        position:absolute;
+                        top:0;
+                        left:6rem;
+                        margin-right:4.5rem;
+                        font-size:5.6rem;
+                        font-weight:600;
+                        color:#f46b76;
+                        transition:all .4s ease-in-out;
+                        content:"A"
+                    }
+                }
+            }
+        }
+    }
+}
