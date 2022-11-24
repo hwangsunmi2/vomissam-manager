@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="../resource/css/ux-common.css">
     <!-- //공통 css -->
 
-    <!-- 각 페이지 css -->
+    <!-- 개별 페이지 css -->
     <link rel="stylesheet" href="../resource/css/enroll.css">
-    <!-- //각 페이지 css -->
+    <!-- //개별 페이지 css -->
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
@@ -28,9 +28,6 @@
     <script type="text/javascript" src="../resource/js/include.js"></script>
     <script type="text/javascript" src="../resource/js/common.js"></script>
     <script type="text/javascript" src="../resource/js/sub.js"></script>
-
-
-
 </head>
 
 <body>
@@ -80,43 +77,192 @@
                 <div class="container-core">
                     <div class="container-core__inner container-core__flex">
                         <section class="sub-content">
-
                             <div class="enroll-box">
                                 <div class="enroll-box__inner">
-                                    <div class="enroll-title">돌봄 기술 정보 <p class="enroll-title-sub">*실제 간병 기간만 입력하세요</p>
-                                    </div>
-                                    <div class="ui-buttons ui-buttons__second">
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">콧줄식사보조</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">뱃줄식사보조</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">소변주머니 관리</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">기저귀 관리</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">침상 위 대소변기관리</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">장루 관리</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">침대와 휠체어 간의 이동 보조</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">체위(자세 변경)</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">욕창 관리</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">입, 목석션</button>
+                                    <div class="enroll-title">추천 보미쌤 등록</div>
+
+                                    <div class="ui-form ui-form__button ui-form__flex--row">
+                                        <input type="text" class="ui-input" value="" placeholder="이름을 입력하세요">
+                                        <button type="submit" class="ui-button ui-button__certi ui-button__width-280 ui-button__font-xs"  data-toggle="modal" data-target="#ssamSearch"
+                                        >검색</button>
                                     </div>
                                 </div>
                             </div>
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
+                                    <div class="enroll-title">인적 사항</div>
+                                    <div class="personalInfo">
+                                        <div class="personalInfo__inner">
+                                            <div class="personalInfo__text d-flex">
+                                                <div class="personalInfo__img" data-toggle="modal" data-target="#uploadImg">
+                                                    <img src="../resource/image/m-sub/pictureUpload.jpg" alt="">
+                                                </div>
+                                                <div class="personalInfo__text--inner">
+                                                    <div class="d-flex"><p>성명</p><span>김보미</span></div>
+                                                    <div class="d-flex"><p>성별</p><span>여</span></div>
+                                                    <div class="d-flex"><p>생년월일</p><span>1965/01/01</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
+                                    <div class="enroll-title">현 주소</div>
+
+                                    <div class="ui-form ui-form__button ui-form__flex--row">
+                                        <input type="text" class="ui-input" value="" placeholder="우편 번호">
+                                        <button type="submit" class="ui-button ui-button__certi ui-button__width-280 ui-button__font-xs"
+                                        >검색</button>
+                                    </div>
+                                    <div class="ui-form ui-form__flex--row">
+                                        <input type="text" class="ui-input" value="" placeholder="기본 주소">
+                                    </div>
+                                    <div class="ui-form ui-form__flex--row">
+                                        <input type="text" class="ui-input" value="" placeholder="상세 주소">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
+                                    <div class="enroll-title">휴대 전화</div>
+                                    <div class="ui-form ui-form__flex--row">
+                                        <input type="text" class="ui-input" value="" placeholder="010-0000-0000">
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </section>
+
+
 
                         <section class="page-bottom">
                             <div class="page-bottom__inner ui-buttons">
                                 <button type="button"
-                                    class="ui-button ui-button__border-purple font-weight__m" data-toggle="modal" data-target="#careEnrollInfoCheck">다음</button>
+                                    class="ui-button ui-button__border-gray ui-button__color-gray font-weight__m">이전</button>
+                                <button type="button" class="ui-button ui-button__border-purple font-weight__m"
+                                    onclick="location.href='./careEnrollPeriodStep02.html'">다음</button>
                             </div>
                         </section>
+
+                        <!-- 모달 -->
+                            <!-- 인적 사항 보미쌤 찾기 모달 -->
+                            <div class="modal fade" id="ssamSearch" tabindex="-1" aria-labelledby="ssamSearchLabel"
+                            aria-hidden="true" style="z-index: 1060;">
+                                <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                    <div class="modal-content modal-content__s modal-content__ssamSearch">
+                                        <div class="modal-body modal-body__main">
+                                                <div class="modal-header">
+                                                    <div class="modal-title modal-title__font-l text-left mb-0">보미쌤 검색</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="ssamSearch__wrap">
+
+                                                        <div class="ui-form ui-form__button ui-form__flex--row">
+                                                            <input type="text" class="ui-input" value="" placeholder="이름을 입력하세요">
+                                                            <button type="submit" class="ui-button ui-button__certi ui-button__width-280 ui-button__font-xs"  data-toggle="modal" data-target="#ssamSearch"
+                                                            >검색</button>
+                                                        </div>
+                                                        <div class="ssamLineTop">
+                                                            <div class="ssamLine d-flex">
+                                                                <div class="name">김보미</div>
+                                                                <div class="phone ta-c">010-1234-5678</div>
+                                                                <div class="genderAge ta-r"><span>여</span>/<span>58세</span></div>
+                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
+                                                            </div>
+                                                            <div class="ssamLine d-flex">
+                                                                <div class="name">이일화</div>
+                                                                <div class="phone ta-c">010-1234-5678</div>
+                                                                <div class="genderAge ta-r"><span>여</span>/<span>61세</span></div>
+                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
+                                                            </div>
+                                                            <div class="ssamLine d-flex">
+                                                                <div class="name">박보미</div>
+                                                                <div class="phone ta-c">010-1234-5678</div>
+                                                                <div class="genderAge ta-r"><span>여</span>/<span>49세</span></div>
+                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
+                                                            </div>
+                                                            <div class="ssamLine d-flex">
+                                                                <div class="name">최보미</div>
+                                                                <div class="phone ta-c">010-1234-5678</div>
+                                                                <div class="genderAge ta-r"><span>여</span>/<span>52세</span></div>
+                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //인적 사항 보미쌤 찾기 모달 -->
+                            
+                            <!-- 인적 사항 사진 업로드 모달 -->
+                            <div class="modal fade" id="uploadImg" tabindex="-1" aria-labelledby="uploadImgLabel"
+                            aria-hidden="true" style="z-index: 1060;">
+                                <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                    <div class="modal-content modal-content__s modal-content__uploadImg">
+                                        <div class="modal-body modal-body__main">
+                                                <div class="modal-header">
+                                                    <div class="modal-title modal-title__font-l text-left mb-0">사진 올리기</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="uploadimg__wrap d-flex">
+                                                        <div>
+                                                            <img src="../resource/image/m-sub/no-picture.png" alt="">
+                                                            <p>사진 없음<br/>(올리지 않음)</p>
+                                                        </div>
+                                                        <div data-toggle="modal" data-target="#modalUploadImg">
+                                                            <img src="../resource/image/m-sub/upload.png" alt="">
+                                                            <p>사진 올리기</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        
+
+                                            <div class="modal-buttons modal-buttons__sticky">
+                                                <button type="button" class="ui-button ui-button__bg-purple">확인</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //인적 사항 사진 업로드 모달 -->
+
+                            <!-- 인적 사항 사진 찾기 모달 -->
+                            <div class="modal fade" id="modalUploadImg" tabindex="-1" aria-labelledby="modalUploadImgLabel"
+                            aria-hidden="true" style="z-index: 1060;">
+                                <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                    <div class="modal-content modal-content__s modal-content__modalUploadImg">
+                                        <div class="modal-body modal-body__main">
+                                                <div class="modal-header">
+                                                    <div class="modal-title modal-title__font-l text-left mb-0">사진 올리기</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="modalUploadImg__wrap d-flex searchImg radioForm">
+                                                        <label class="jRadioImage thumb-radio-image loading"><input type="radio" value="one" name="choose_image" tabindex="-1"><i class="thumb-image"><img alt="" src="../resource/image/m-sub/searchImg.jpg"></i></label>
+
+                                                        <label class="jRadioImage thumb-radio-image loading active"><input type="radio" value="two" name="choose_image" tabindex="-1" checked><i class="thumb-image"><img alt="" src="../resource/image/m-sub/searchImg.jpg"></i></label>
+
+
+                                                    </div>
+                                                </div>
+                                        
+
+                                            <div class="modal-buttons modal-buttons__sticky">
+                                                <button type="button" class="ui-button ui-button__bg-purple">확인</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //인적 사항 사진 찾기 모달 -->
+                        <!-- //모달 -->
 
 
                     </div>
@@ -130,7 +276,6 @@
         <section class="quick-menu">
             <div class="quick-menu__inner">
                 <!-- 전달사항 :: 선택 항목에 클래스 is-active 붙습니다. -->
-<<<<<<< HEAD
                 <button type="button" class="quick-menu__button quick-menu__button--search ">
                     <i></i>
                     <span class="quick-menu__button-text">일감찾기</span>
@@ -142,19 +287,6 @@
                 <button type="button" class="quick-menu__button quick-menu__button--note">
                     <i></i>
                     <span class="quick-menu__button-text">보미쌤 노트</span>
-=======
-                <button type="button" class="quick-menu__button quick-menu__button--enroll ">
-                    <i></i>
-                    <span class="quick-menu__button-text">간병신청</span>
-                </button>
-                <button type="button" class="quick-menu__button quick-menu__button--pay is-active">
-                    <i></i>
-                    <span class="quick-menu__button-text">결제관리</span>
-                </button>
-                <button type="button" class="quick-menu__button quick-menu__button--customer">
-                    <i></i>
-                    <span class="quick-menu__button-text">고객센터</span>
->>>>>>> 2eb63ec49ad7517188afd0d852db0fe2d6bdd032
                 </button>
                 <button type="button" class="quick-menu__button quick-menu__button--my">
                     <i></i>
@@ -166,10 +298,6 @@
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 2eb63ec49ad7517188afd0d852db0fe2d6bdd032
         <!-- footer -->
         <!-- [include] footer -->
         <footer data-include-file="../include/footer.html" class="footer-wrap js-include"></footer>

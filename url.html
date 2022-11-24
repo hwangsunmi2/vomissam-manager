@@ -223,6 +223,9 @@
     .index-status--moding {
       background-color: #ff4594;
     }
+    .index-status--waiting {
+      background-color: #aaa;
+    }
 
     .index-log {
       list-style: none;
@@ -346,7 +349,7 @@
             depth5: '',
             depth6: '',
             path: 'joinStep03.html',
-            status: 'ing',
+            status: 'end',
             create: '2022.11.18',
             log: [
               
@@ -416,7 +419,7 @@
             depth5: '1단계 - 팝업3개',
             depth6: '',
             path: 'registerInfo1.html',
-            status: 'ing',
+            status: 'end',
             create: '2022.11.24',
             log: [
               
@@ -430,7 +433,7 @@
             depth5: '2단계',
             depth6: '',
             path: 'registerInfo2.html',
-            status: 'ing',
+            status: 'end',
             create: '2022.11.24',
             log: [
               
@@ -444,7 +447,7 @@
             depth5: '3단계',
             depth6: '',
             path: 'registerInfo3.html',
-            status: 'ing',
+            status: 'end',
             create: '2022.11.24',
             log: [
               
@@ -458,7 +461,7 @@
             depth5: '4단계',
             depth6: '',
             path: 'registerInfo4.html',
-            status: 'ing',
+            status: 'end',
             create: '2022.11.24',
             log: [
               
@@ -472,11 +475,12 @@
             depth5: '서약서',
             depth6: '',
             path: 'writtenOath.html',
-            status: 'ing',
+            status: 'waiting',
             create: '2022.11.24',
-            log: [
-              
-            ],
+            log: [{
+              date: '2022.11.24',
+              text: '자료정리 후 업데이트'
+            }],
           },
         ],
       },
@@ -493,7 +497,7 @@
             status: 'ing',
             create: '2022.11.24',
             log: [
-              
+                
             ],
           },
           {
@@ -822,6 +826,8 @@
             text = '작업완료';
           } else if (val === 'design') {
             text = '디자인필요';
+          } else if (val === 'waiting') {
+            text = '대기중';
           }
 
           return val.length ? '<span class="index-status index-status--' + val + '">' + text + '</span>' :
