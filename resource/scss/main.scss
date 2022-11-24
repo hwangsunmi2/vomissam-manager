@@ -11,7 +11,7 @@
 //     }
 // }
 
-/* 현재 이용중인 간병 서비스 */ 
+/* index :: PREMIUM */ 
 .care-service{
     &__inner{
         position: relative;
@@ -19,6 +19,29 @@
         height: auto;
         padding: 9rem 5rem;
         background: #4b62c3;
+        &--purple {
+            padding: 9rem 5rem 9rem 8rem;
+            background: #795bdc;
+            .small-title{
+                span {
+                    display: inline-block;
+                    width:6rem;
+                    height:6rem;
+                    border-radius: 50%;
+                    color:#6349ba;
+                    font-size:4rem;
+                    font-weight:600;
+                    background-color: #fff;
+                }
+                p {
+                    display: inline-block;
+                    color:#fff;
+                    font-size:4.6rem;
+                    font-weight:500;
+                }
+            }
+        }
+        
     }
     &__text{
         &1{
@@ -770,7 +793,7 @@
     }
 }
 
-/* 오늘 할 일  */
+/* Case2 :: 오늘 할 일 */
 .todayList {
     margin-top:7rem;
     &>div {
@@ -836,7 +859,7 @@
         }
     }
 } 
-/* 매칭현황 */
+/* Case2 :: 매칭현황 */
 .matching {
     &__inner {
         overflow: visible;
@@ -944,7 +967,7 @@
     }
 }
 
-/* NEW  */
+/* Case2 :: NEW */
 .newNotice {
     &__inner {
         display: block;

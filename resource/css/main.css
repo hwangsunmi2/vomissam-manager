@@ -1,10 +1,30 @@
 @charset "UTF-8";
-/* 현재 이용중인 간병 서비스 */
+/* index :: PREMIUM */
 .care-service__inner {
   position: relative;
   height: auto;
   padding: 9rem 5rem;
   background: #4b62c3;
+}
+.care-service__inner--purple {
+  padding: 9rem 5rem 9rem 8rem;
+  background: #795bdc;
+}
+.care-service__inner--purple .small-title span {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  color: #6349ba;
+  font-size: 4rem;
+  font-weight: 600;
+  background-color: #fff;
+}
+.care-service__inner--purple .small-title p {
+  display: inline-block;
+  color: #fff;
+  font-size: 4.6rem;
+  font-weight: 500;
 }
 .care-service__text1 {
   margin-top: 9rem;
@@ -774,7 +794,7 @@
   margin-top: 8.5rem;
 }
 
-/* 오늘 할 일  */
+/* Case2 :: 오늘 할 일 */
 .todayList {
   margin-top: 7rem;
 }
@@ -841,7 +861,7 @@
   margin-left: 3.3rem;
 }
 
-/* 매칭현황 */
+/* Case2 :: 매칭현황 */
 .matching__inner {
   overflow: visible;
   display: block;
@@ -948,7 +968,7 @@
   font-size: 14px;
 }
 
-/* NEW  */
+/* Case2 :: NEW */
 .newNotice__inner {
   display: block;
   padding: 5rem;
