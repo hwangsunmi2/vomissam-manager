@@ -1,0 +1,56 @@
+@charset 'utf-8';
+@import './helper/index';
+
+.myInfo{
+    &-wrap{
+        margin-top:10rem;
+    }
+    &__tit{
+        padding:0 5rem;
+        font-size:6.6rem;
+        font-weight:600;
+        span{
+            font-size:10rem;
+            font-weight:500;
+        }
+    }
+    &-box{
+        overflow:hidden;
+        padding:6.5rem 7.5rem;
+        margin-top:10rem;
+        background-color:#795bdc;
+        border-radius:3rem;
+        &__img{
+            display:block;
+            float:left;
+            width:34rem;
+            height:34rem;
+            img{
+                width:100%;
+            }
+        }
+        &__item{
+            display:block;
+            float:left;
+            dt{
+                display:block;
+                float:left;
+                flex:.5 1 auto;
+                height:50%;
+                color:#fff;
+                font-size:4.4rem;
+                font-weight:200;
+                opacity:.5;
+            }
+            dd{
+                display:block;
+                float:left;
+                font-size:6rem;
+                color:#fff;
+            }
+            &:last-child{
+                width:calc(100% - 34rem);
+            }
+        }
+    }
+}

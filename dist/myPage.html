@@ -29,13 +29,106 @@
             <a href="#">본문 바로가기</a>
         </div>
         <!-- //skipNavigation -->
+
+        <!-- header -->
+        <!-- [include] header -->
+        <header>
+            <div class="header__inner">
+                <div class="page-back">
+                    <div class="page-back__inner">
+                        <button type="button" class="ui-button ui-button__page--back"></button>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <div class="header-title__inner">
+                        개인정보 등록하기
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-alarm">
+                        <div class="header-alarm__inner">
+                            <button type="button" class="header-alarm__button"></button>
+                        </div>
+                    </div>
+                    <div class="header-hamberger">
+                        <div class="header-hamberger__inner">
+                            <button type="button" class="header-hamberger__button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //[include] header -->
+        <!-- //header -->
+
         <!-- container -->
         <div class="container container-intro">
             <div class="container__inner">
-                
+                <div class="container-core">
+                    <div class="container-core__inner">
+                        <div class="sub-content">
+                            <div class="sub-item">
+                                <div class="myInfo-wrap">
+                                    <h2 class="myInfo__tit">
+                                        <span>김철수</span>
+                                        님 안녕하세요.
+                                    </h2>
+                                    <div class="myInfo-box">
+                                        <span class="myInfo-box__img">
+                                            <img src="../resource/image/m-sub/img-myInfo__profile01.png" alt="">
+                                        </span>
+                                        <dl class="myInfo-box__item">
+                                            <dt>이름</dt>
+                                            <dd>이강흥</dd>
+                                        </dl>
+                                        <dl class="myInfo-box__item">
+                                            <dt>국적</dt>
+                                            <dd>유고슬라비아</dd>
+                                        </dl>
+                                        <dl class="myInfo-box__item">
+                                            <dt>연락처</dt>
+                                            <dd>010-1234-5678</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- //container -->
+
+        <!-- quick-menu -->
+        <section class="quick-menu">
+            <div class="quick-menu__inner">
+                <!-- 전달사항 :: 선택 항목에 클래스 is-active 붙습니다. -->
+                <button type="button" class="quick-menu__button quick-menu__button--search ">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">일감찾기</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--calculate is-active">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">간병비 정산</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--note">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">보미쌤 노트</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--my">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">내정보관리</span>
+                </button>
+            </div>
+        </section>
+        <!-- //quick-menu -->
+
+        <!-- footer -->
+        <!-- [include] footer -->
+        <footer data-include-file="../include/footer.html" class="footer-wrap js-include"></footer>
+        <!-- //[include] footer -->
+        <!-- //footer -->
+
     </div>
 </body>
 </html>
