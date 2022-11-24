@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보미쌤</title>
+
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="../resource/css/reset.css">
+    <link rel="stylesheet" href="../resource/css/font.css">
+    <link rel="stylesheet" href="../resource/css/common.css">
+
+    <link rel="stylesheet" href="../resource/css/lib/swiper.min.css">
+    <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../resource/css/ux-common.css">
+    <!-- //공통 css -->
+
+    <!-- 각 페이지 css -->
+    <link rel="stylesheet" href="../resource/css/enroll.css">
+    <!-- //각 페이지 css -->
+
+    <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/swiper.min.js"></script>
+    <script type="text/javascript" src="../resource/js/include.js"></script>
+    <script type="text/javascript" src="../resource/js/common.js"></script>
+    <script type="text/javascript" src="../resource/js/sub.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- skipNavigation -->
+        <div id="skipNavigation" title="스킵내비게이션">
+            <a href="#nav">메뉴 바로가기</a>
+            <a href="#">본문 바로가기</a>
+        </div>
+        <!-- //skipNavigation -->
+
+        <!-- header -->
+        <!-- [include] header -->
+        <header>
+            <div class="header__inner">
+                <div class="page-back">
+                    <div class="page-back__inner">
+                        <button type="button" class="ui-button ui-button__page--back"></button>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <div class="header-title__inner">
+                        개인정보 등록하기
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-alarm">
+                        <div class="header-alarm__inner">
+                            <button type="button" class="header-alarm__button"></button>
+                        </div>
+                    </div>
+                    <div class="header-hamberger">
+                        <div class="header-hamberger__inner">
+                            <button type="button" class="header-hamberger__button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //[include] header -->
+        <!-- //header -->
+
+
+        <!-- container -->
+        <div class="container container__sub container__sub--enroll container__sub--pb-0">
+            <div class="container__inner">
+                <div class="container-core">
+                    <div class="container-core__inner container-core__flex">
+                        <section class="sub-content">
+
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
+                                    <div class="enroll-title">학력 사항</div>
+
+                                    <div class="ui-buttons ui-buttons__thirds">
+                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">고졸 이하</button>
+                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">전문대 졸</button>
+                                        <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">대졸 이상</button>
+                                    </div>
+
+                                    <div class="ui-form ui-form__flex--row indentType mt__rem-4">
+                                        <div class="ui-form__cell width-200">대학교명</div>
+                                        <div class="ui-form__cell flex">
+                                            <input type="text" class="ui-input" placeholder="학교명">
+                                        </div>
+                                        
+                                    </div>
+                                    <p class="text-ex-indent ml__rem-20">* 대학 졸업자에 한하여 기재</p>
+                                    
+
+                                    <div class="enroll-title-small">대학교명</p>
+                                        <div class="ui-buttons ui-buttons__second">
+                                            <button type="button"
+                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">고졸 이하</button>
+                                            <button type="button"
+                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">전문대 졸</button>
+                                            <button type="button"
+                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">대졸 이상</button>
+                                        </div>
+
+
+                                    <div class="enroll-title">돌봄 기술 정보 <p class="enroll-title-sub">*실제 간병 기간만 입력하세요</p>
+                                    </div>
+                                    <div class="ui-buttons ui-buttons__second">
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">콧줄식사보조</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">뱃줄식사보조</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">소변주머니 관리</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">기저귀 관리</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">침상 위 대소변기관리</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">장루 관리</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">침대와 휠체어 간의 이동 보조</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">체위(자세 변경)</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">욕창 관리</button>
+                                        <button type="button"
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">입, 목석션</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="page-bottom">
+                            <div class="page-bottom__inner ui-buttons">
+                                <button type="button"
+                                    class="ui-button ui-button__border-purple font-weight__m" data-toggle="modal" data-target="#careEnrollInfoCheck">다음</button>
+                            </div>
+                        </section>
+
+
+                    </div>
+                </div><!-- //container-core -->
+            </div>
+
+        </div>
+        <!-- //container -->
+
+        <!-- quick-menu -->
+        <section class="quick-menu">
+            <div class="quick-menu__inner">
+                <!-- 전달사항 :: 선택 항목에 클래스 is-active 붙습니다. -->
+                <button type="button" class="quick-menu__button quick-menu__button--enroll ">
+                    <i></i>
+                    <span class="quick-menu__button-text">간병신청</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--pay is-active">
+                    <i></i>
+                    <span class="quick-menu__button-text">결제관리</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--customer">
+                    <i></i>
+                    <span class="quick-menu__button-text">고객센터</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--my">
+                    <i></i>
+                    <span class="quick-menu__button-text">내정보관리</span>
+                </button>
+            </div>
+        </section>
+        <!-- //quick-menu -->
+
+        <!-- footer -->
+        <!-- [include] footer -->
+        <footer data-include-file="../include/footer.html" class="footer-wrap js-include"></footer>
+        <!-- //[include] footer -->
+        <!-- //footer -->
+
+
+    </div>
+
+</body>
+<script>
+
+</script>
+
+</html>
