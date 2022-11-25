@@ -12,6 +12,7 @@
 }
 .care-service__inner--purple .small-title span {
   display: inline-block;
+  padding: 1rem 1.6rem;
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
@@ -19,12 +20,97 @@
   font-size: 4rem;
   font-weight: 600;
   background-color: #fff;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .care-service__inner--purple .small-title p {
   display: inline-block;
+  margin-left: 2rem;
   color: #fff;
   font-size: 4.6rem;
   font-weight: 500;
+  vertical-align: middle;
+}
+.care-service__inner--purple .name {
+  padding-top: 5rem;
+  font-size: 9rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: -2px;
+}
+.care-service__inner--purple .text {
+  position: relative;
+  padding-top: 4.5rem;
+  line-height: 8rem;
+  font-size: 7rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+  color: #fff;
+}
+.care-service__inner--purple .text::after {
+  position: absolute;
+  width: 9.7rem;
+  height: 9.7rem;
+  background: url(../image/m-sub/icon-mainSmile.png) no-repeat;
+  content: "";
+}
+.care-service__inner--purple .premium__wrap {
+  margin-top: 8rem;
+}
+.care-service__inner--purple .premium__wrap .premium__box {
+  padding: 6rem 4rem;
+  width: 50%;
+  height: 28.5rem;
+  background-color: #6449bb;
+  border-radius: 1.3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.care-service__inner--purple .premium__wrap .premium__box + .premium__box {
+  margin-left: 2rem;
+}
+.care-service__inner--purple .premium__wrap .premium__box .text {
+  padding-top: 0;
+  padding-left: 8.5rem;
+  font-size: 5rem;
+}
+.care-service__inner--purple .premium__wrap .premium__box .text::after {
+  display: none;
+  content: "";
+}
+.care-service__inner--purple .premium__wrap .premium__box .text.calender {
+  position: relative;
+}
+.care-service__inner--purple .premium__wrap .premium__box .text.calender::before {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 5.5rem;
+  height: 5.2rem;
+  background: url(../image/m-sub/icon-mainCalender.png) no-repeat;
+  content: "";
+}
+.care-service__inner--purple .premium__wrap .premium__box .text.piggybank {
+  position: relative;
+}
+.care-service__inner--purple .premium__wrap .premium__box .text.piggybank::before {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 6.1rem;
+  height: 5.8rem;
+  background: url(../image/m-sub/icon-mainPiggybank.png) no-repeat;
+  content: "";
+}
+.care-service__inner--purple .premium__wrap .premium__box .num {
+  padding-top: 3rem;
+  font-size: 7rem;
+  color: #fff;
+  text-align: right;
+}
+.care-service__inner--purple .premium__wrap .premium__box .num span {
+  font-size: 5.5rem;
 }
 .care-service__text1 {
   margin-top: 9rem;
@@ -456,6 +542,9 @@
   margin-bottom: 7rem;
   font-size: 6rem;
   font-weight: 600;
+}
+.index-case__title.mt__rem-13 {
+  margin-top: 13rem;
 }
 .index-case-item {
   padding: 8rem 9rem;

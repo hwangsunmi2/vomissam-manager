@@ -5,6 +5,7 @@ $(document).ready(function () {
   carerList();
   todayList();
   mainTab();
+  check();
 
 });
 
@@ -65,5 +66,16 @@ function mainTab() {
       }
       $(this).addClass("on");
       $nListID.css('display','block');
+  });
+}
+
+function check() {
+  $(".ui-button__check--purple").click(function(){
+    $(this).addClass("is-active");
+    $(this).siblings().removeClass("is-active");
+  });
+
+  $(".ui-button__check--multi--purple").click(function(){
+    $(this).toggleClass("is-active");
   });
 }

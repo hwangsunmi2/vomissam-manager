@@ -25,6 +25,7 @@
             .small-title{
                 span {
                     display: inline-block;
+                    padding: 1rem 1.6rem;;
                     width:6rem;
                     height:6rem;
                     border-radius: 50%;
@@ -32,12 +33,98 @@
                     font-size:4rem;
                     font-weight:600;
                     background-color: #fff;
+                    vertical-align: middle;
+                    box-sizing: border-box;
                 }
                 p {
                     display: inline-block;
+                    margin-left:2rem;
                     color:#fff;
                     font-size:4.6rem;
                     font-weight:500;
+                    vertical-align: middle;
+                }
+            }
+            .name {
+                padding-top:5rem;
+                font-size: 9rem;
+                font-weight:500;
+                color:#fff;
+                letter-spacing: -2px;
+            }
+            .text {
+                position:relative;
+                padding-top:4.5rem;
+                line-height: 8rem;
+                font-size: 7rem;
+                font-weight:300;
+                letter-spacing: -1px;
+                color:#fff;
+                &::after {
+                    position:absolute;
+                    width:9.7rem;
+                    height:9.7rem;
+                    background: url(../image/m-sub/icon-mainSmile.png) no-repeat;
+                    content:'';
+                }
+            }
+
+            .premium__wrap {
+                margin-top:8rem;
+                .premium {
+                    &__box {
+                        padding:6rem 4rem;
+                        width:50%;
+                        height:28.5rem;
+                        background-color:#6449bb;
+                        border-radius: 1.3rem;
+                        box-sizing: border-box;
+                        &+.premium__box {
+                            margin-left:2rem;
+                        }
+                        .text {
+                            padding-top:0;
+                            padding-left:8.5rem;
+                            font-size:5rem;
+                            &::after{
+                                display: none;
+                                content:'';
+                            }
+                            &.calender {
+                                position:relative;
+                                &::before{
+                                    position:absolute;
+                                    top:1rem;
+                                    left:0;
+                                    width:5.5rem;
+                                    height:5.2rem;
+                                    background: url(../image/m-sub/icon-mainCalender.png) no-repeat;
+                                    content:'';
+                                }
+                            }
+                            &.piggybank {
+                                position:relative;
+                                &::before{
+                                    position:absolute;
+                                    top:1rem;
+                                    left:0;
+                                    width:6.1rem;
+                                    height:5.8rem;
+                                    background: url(../image/m-sub/icon-mainPiggybank.png) no-repeat;
+                                    content:'';
+                                }
+                            }
+                        }
+                        .num {
+                            padding-top:3rem;
+                            font-size:7rem;
+                            color:#fff;
+                            text-align:right;
+                            span {
+                                font-size:5.5rem;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -447,6 +534,10 @@
         font : {
             size: 6rem;
             weight:600;
+        }
+        
+        &.mt__rem-13 {
+            margin-top:13rem;
         }
     }
     &-item{
