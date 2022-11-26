@@ -1,6 +1,15 @@
 @charset 'utf-8';
 @import './helper/index';
 
+.sub{
+    &-item{
+        &.gradation{
+            &-bg{
+                padding:0 5rem 10rem 5rem;
+            }
+        }
+    }
+}
 .myInfo{
     &-wrap{
         margin-top:10rem;
@@ -25,6 +34,9 @@
             float:left;
             width:34rem;
             height:34rem;
+            margin-right:6rem;
+            border-radius:100%;
+            box-shadow:1px 1px 12px 0px rgb(0 0 0 / 55%);
             img{
                 width:100%;
             }
@@ -32,11 +44,12 @@
         &__item{
             display:block;
             float:left;
+            width:calc(50% - 40rem);
             dt{
                 display:block;
                 float:left;
-                flex:.5 1 auto;
-                height:50%;
+                width:100%;
+                margin-bottom:2.4rem;
                 color:#fff;
                 font-size:4.4rem;
                 font-weight:200;
@@ -45,12 +58,36 @@
             dd{
                 display:block;
                 float:left;
+                width:100%;
                 font-size:6rem;
                 color:#fff;
             }
             &:last-child{
-                width:calc(100% - 34rem);
+                width:calc(100% - 40rem);
+                margin-top:6rem;
             }
+        }
+    }
+}
+.ui{
+    &-buttons{
+        margin-bottom:-2rem;
+        margin-left:-2rem;
+        button{
+            width:calc(50% - 2rem);
+            margin-left:2rem;
+            margin-bottom:2rem;
+            padding:0 7rem;
+            background-color:#fff;
+            text-align:left;
+        }
+    }
+}
+
+.gradation{
+    &-bg{
+        &--white_gray{
+            background:linear-gradient(0deg, rgba(242,243,247,1) 0%, rgba(255,255,255,1) 100%);
         }
     }
 }

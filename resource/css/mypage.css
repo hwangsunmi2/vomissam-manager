@@ -137,6 +137,10 @@
             transform: rotateY(0deg);
   }
 }
+.sub-item.gradation-bg {
+  padding: 0 5rem 10rem 5rem;
+}
+
 .myInfo-wrap {
   margin-top: 10rem;
 }
@@ -161,6 +165,10 @@
   float: left;
   width: 34rem;
   height: 34rem;
+  margin-right: 6rem;
+  border-radius: 100%;
+  -webkit-box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.55);
+          box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.55);
 }
 .myInfo-box__img img {
   width: 100%;
@@ -168,14 +176,13 @@
 .myInfo-box__item {
   display: block;
   float: left;
+  width: calc(50% - 40rem);
 }
 .myInfo-box__item dt {
   display: block;
   float: left;
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5 1 auto;
-          flex: 0.5 1 auto;
-  height: 50%;
+  width: 100%;
+  margin-bottom: 2.4rem;
   color: #fff;
   font-size: 4.4rem;
   font-weight: 200;
@@ -184,9 +191,29 @@
 .myInfo-box__item dd {
   display: block;
   float: left;
+  width: 100%;
   font-size: 6rem;
   color: #fff;
 }
 .myInfo-box__item:last-child {
-  width: calc(100% - 34rem);
+  width: calc(100% - 40rem);
+  margin-top: 6rem;
+}
+
+.ui-buttons {
+  margin-bottom: -2rem;
+  margin-left: -2rem;
+}
+.ui-buttons button {
+  width: calc(50% - 2rem);
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 7rem;
+  background-color: #fff;
+  text-align: left;
+}
+
+.gradation-bg--white_gray {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(242, 243, 247)), to(rgb(255, 255, 255)));
+  background: linear-gradient(0deg, rgb(242, 243, 247) 0%, rgb(255, 255, 255) 100%);
 }

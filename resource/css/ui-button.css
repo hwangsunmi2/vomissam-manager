@@ -243,6 +243,30 @@
   margin-right: 5.5rem;
   background-image: url(../image/sub/icon/icon-pay__sep.png);
 }
+.ui-button__icon-default::before {
+  width: 7rem;
+  height: 8.6rem;
+  margin-right: 5.5rem;
+  background-image: url(../image/m-sub/img-mypage--defaultInfo.png);
+}
+.ui-button__icon-rights::before {
+  width: 8.8rem;
+  height: 7rem;
+  margin-right: 5.5rem;
+  background-image: url(../image/m-sub/img-mypage--rightsInfo.png);
+}
+.ui-button__icon-care::before {
+  width: 7rem;
+  height: 7.6rem;
+  margin-right: 5.5rem;
+  background-image: url(../image/m-sub/img-mypage--careInfo.png);
+}
+.ui-button__icon-careTech::before {
+  width: 7.1rem;
+  height: 7.1rem;
+  margin-right: 5.5rem;
+  background-image: url(../image/m-sub/img-mypage--careTechInfo.png);
+}
 .ui-button__left {
   padding: 0 4rem;
   text-align: left;
