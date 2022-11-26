@@ -217,3 +217,34 @@
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(242, 243, 247)), to(rgb(255, 255, 255)));
   background: linear-gradient(0deg, rgb(242, 243, 247) 0%, rgb(255, 255, 255) 100%);
 }
+
+.mypage-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10rem 7rem;
+  background: url("../image/sub/icon/icon-right.png") no-repeat 95% center;
+  background-size: 2.9rem 5.3rem;
+  border-bottom: 1px solid #e9eaec;
+}
+.mypage-link__tit {
+  font-size: 6rem;
+  font-weight: 600;
+  color: #000;
+}
+.mypage-link__img {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  margin-right: 8rem;
+  text-align: center;
+}
+.mypage-link__img img {
+  max-width: -webkit-fill-available;
+  min-width: auto;
+  max-height: -webkit-fill-available;
+  min-height: auto;
+}
