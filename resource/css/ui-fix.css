@@ -81,6 +81,9 @@
 .mt-95 {
   margin-top: 9.5rem;
 }
+.mt-100 {
+  margin-top: 10rem;
+}
 .mt-115 {
   margin-top: 11.5rem;
 }
@@ -153,6 +156,9 @@
 .bg-gray {
   background-color: #f8f8f8;
 }
+.bg-pubgray {
+  background-color: #f5f4f9;
+}
 
 .color-blue {
   color: #3c50a2;
@@ -194,4 +200,8 @@
 
 .ta-r {
   text-align: right;
+}
+
+.border-radius-3 {
+  border-radius: 3rem;
 }

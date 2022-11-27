@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +12,7 @@
     <link rel="stylesheet" href="../resource/css/lib/swiper.min.css">
     <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="../resource/css/ux-common.css">
-    <link rel="stylesheet" href="../resource/css/intro.css">
+    <link rel="stylesheet" href="../resource/css/mypage.css">
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
@@ -30,13 +29,165 @@
             <a href="#">본문 바로가기</a>
         </div>
         <!-- //skipNavigation -->
+
+        <!-- header -->
+        <!-- [include] header -->
+        <header>
+            <div class="header__inner">
+                <div class="page-back">
+                    <div class="page-back__inner">
+                        <button type="button" class="ui-button ui-button__page--back"></button>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <div class="header-title__inner">
+                        내 정보 관리
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-alarm">
+                        <div class="header-alarm__inner">
+                            <button type="button" class="header-alarm__button"></button>
+                        </div>
+                    </div>
+                    <div class="header-hamberger">
+                        <div class="header-hamberger__inner">
+                            <button type="button" class="header-hamberger__button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //[include] header -->
+        <!-- //header -->
+
         <!-- container -->
         <div class="container container-intro">
             <div class="container__inner">
-                
+                <div class="container-core">
+                    <div class="container-core__inner">
+                        <div class="sub-content">
+                            <div class="sub-item">
+                                <div class="myInfo-wrap">
+                                    <h2 class="myInfo__tit">
+                                        나의 간병 History
+                                    </h2>
+                                    <div class="myInfo-history--count history-count bg-pubgray border-radius-3">
+                                        <div class="history-count__item">
+                                            <span class="history-count__img">
+                                                <img src="../resource/image/m-sub/img-mypage--history01.png" alt="">
+                                            </span>
+                                            <p>지원한 간병</p>
+                                            <span class="color-purple">4</span>
+                                        </div>
+                                        <div class="history-count__item">
+                                            <span class="history-count__img">
+                                                <img src="../resource/image/m-sub/img-mypage--history02.png" alt="">
+                                            </span>
+                                            <p>완료한 간병</p>
+                                            <span>6</span>
+                                        </div>
+                                        <div class="history-count__item">
+                                            <span class="history-count__img">
+                                                <img src="../resource/image/m-sub/img-mypage--history03.png" alt="">
+                                            </span>
+                                            <p>취소한 간병</p>
+                                            <span>0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-item">
+                                <div class="myInfo-wrap">
+                                    <h2 class="myInfo__tit">
+                                        지원 활동 내역
+                                    </h2>
+                                    <div class="myInfo-history--list history-list border-radius-3 el-border--dashed">
+                                        <div class="history-list__head">
+                                            간병 활동이 없습니다.
+                                        </div>
+                                        <div class="history-list__body">
+                                            <div class="history-list__item">
+                                                <dl>
+                                                    <dt>간병 장소 :</dt>
+                                                    <dd>서울 삼성 병원</dd>
+                                                    <dt>간병 기간 :</dt>
+                                                    <dd>2022. 09. 19 ~ 2011. 09.26 (7일) </dd>
+                                                    <dt>간병 등급 :</dt>
+                                                    <dd>중증 1</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="history-list__item">
+                                                <dl>
+                                                    <dt>간병 장소 :</dt>
+                                                    <dd>서울 삼성 병원</dd>
+                                                    <dt>간병 기간 :</dt>
+                                                    <dd>2022. 09. 19 ~ 2011. 09.26 (7일) </dd>
+                                                    <dt>간병 등급 :</dt>
+                                                    <dd>중증 1</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="history-list__item">
+                                                <dl>
+                                                    <dt>간병 장소 :</dt>
+                                                    <dd>서울 삼성 병원</dd>
+                                                    <dt>간병 기간 :</dt>
+                                                    <dd>2022. 09. 19 ~ 2011. 09.26 (7일) </dd>
+                                                    <dt>간병 등급 :</dt>
+                                                    <dd>중증 1</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="history-list__item">
+                                                <dl>
+                                                    <dt>간병 장소 :</dt>
+                                                    <dd>서울 삼성 병원</dd>
+                                                    <dt>간병 기간 :</dt>
+                                                    <dd>2022. 09. 19 ~ 2011. 09.26 (7일) </dd>
+                                                    <dt>간병 등급 :</dt>
+                                                    <dd>중증 1</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- //container -->
+
+        <!-- quick-menu -->
+        <section class="quick-menu">
+            <div class="quick-menu__inner">
+                <!-- 전달사항 :: 선택 항목에 클래스 is-active 붙습니다. -->
+                <button type="button" class="quick-menu__button quick-menu__button--search ">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">일감찾기</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--calculate is-active">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">간병비 정산</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--note">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">보미쌤 노트</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--my">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">내정보관리</span>
+                </button>
+            </div>
+        </section>
+        <!-- //quick-menu -->
+
+        <!-- footer -->
+        <!-- [include] footer -->
+        <footer data-include-file="../include/footer.html" class="footer-wrap js-include"></footer>
+        <!-- //[include] footer -->
+        <!-- //footer -->
+
     </div>
 </body>
 </html>

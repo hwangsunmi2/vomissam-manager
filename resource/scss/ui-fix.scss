@@ -93,6 +93,9 @@
         &-95{
             margin-top:9.5rem;
         }
+        &-100{
+            margin-top:10rem;
+        }
         &-115{
             margin-top:11.5rem;
         }
@@ -181,6 +184,9 @@
     &-gray{
         background-color:#f8f8f8;
     }
+    &-pubgray{
+        background-color:#f5f4f9;
+    }
 }
 
 //color
@@ -216,8 +222,6 @@ $color-purple : #6349ba;
     flex: 1;
 }
 
-
-
 .ta-l {
     text-align: left;
 }
@@ -226,4 +230,12 @@ $color-purple : #6349ba;
 }
 .ta-r {
     text-align: right;
+}
+
+.border{
+    &-radius{
+        &-3{
+            border-radius:3rem;
+        }
+    }
 }
