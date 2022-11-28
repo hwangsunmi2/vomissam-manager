@@ -53,6 +53,7 @@
   width: 9.7rem;
   height: 9.7rem;
   background: url(../image/m-sub/icon-mainSmile.png) no-repeat;
+  background-size: cover;
   content: "";
 }
 .care-service__inner--purple .premium__wrap {
@@ -89,6 +90,7 @@
   width: 5.5rem;
   height: 5.2rem;
   background: url(../image/m-sub/icon-mainCalender.png) no-repeat;
+  background-size: cover;
   content: "";
 }
 .care-service__inner--purple .premium__wrap .premium__box .text.piggybank {
@@ -101,6 +103,7 @@
   width: 6.1rem;
   height: 5.8rem;
   background: url(../image/m-sub/icon-mainPiggybank.png) no-repeat;
+  background-size: cover;
   content: "";
 }
 .care-service__inner--purple .premium__wrap .premium__box .num {
@@ -172,6 +175,28 @@
 }
 .care-service-icon:nth-child(3) {
   background-image: url(../image/main/icon-care-service03.png);
+}
+
+/* index :: 선호지역 팝업 */
+#preferredArea .modal-body > .modal-body {
+  padding: 6.5rem 6rem 15rem 6rem;
+}
+#preferredArea .modal-body > .modal-body .ui-buttons__fourth {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#preferredArea .modal-body > .modal-body .ui-buttons__fourth .ui-button {
+  max-width: calc(25% - 2rem);
+  margin: 0;
+  text-align: center;
+}
+#preferredArea .modal-body > .modal-body .ui-buttons__fourth .ui-button:nth-child(n+5) {
+  margin-top: 2rem;
 }
 
 /* 동영상 콘텐츠 영역 */
@@ -527,6 +552,9 @@
 .index-case-box {
   padding: 13rem 5rem;
 }
+.index-case-box.overflow-hidden {
+  overflow: hidden;
+}
 .index-case-box__gray {
   background: #f3f5fb;
 }
@@ -546,22 +574,63 @@
 }
 .index-case-box .bgTop_gray::before {
   position: absolute;
-  width: 10%;
-  left: -10%;
+  width: 5%;
+  left: -5%;
   height: 3rem;
   background-color: #f2f3f7;
   content: "";
 }
 .index-case-box .bgTop_gray::after {
   position: absolute;
-  width: 10%;
-  right: -10%;
+  width: 5%;
+  right: -5%;
   height: 3rem;
   background-color: #f2f3f7;
   content: "";
 }
+.index-case-box .apply .carer-info {
+  margin: 0;
+}
+.index-case-box .apply .carer-detail {
+  margin-top: 0;
+}
+.index-case-box .apply .carer-buttons.on .carer-button__wish {
+  display: block;
+  background: #846cdd;
+}
+.index-case-box .apply .carer-buttons.on .carer-button__wish i {
+  display: inline-block;
+  width: 6.6rem;
+  height: 6.3rem;
+  background: url(../image/m-sub/icon-star-on.png);
+  background-size: cover;
+}
+.index-case-box .apply .carer-buttons.on .carer-button__choice {
+  display: block;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ab97eb), color-stop(60%, #ab97eb), to(rgba(171, 151, 235, 0.8)));
+  background: linear-gradient(0deg, #ab97eb 0%, #ab97eb 60%, rgba(171, 151, 235, 0.8) 100%);
+}
+.index-case-box .apply .carer-buttons.off .carer-button__wish {
+  display: block;
+  background: #846cdd;
+}
+.index-case-box .apply .carer-buttons.off .carer-button__wish i {
+  display: inline-block;
+  width: 6.6rem;
+  height: 6.3rem;
+  background: url(../image/m-sub/icon-star-off.png);
+  background-size: cover;
+}
+.index-case-box .apply .carer-buttons.off .carer-button__choice {
+  display: block;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ab97eb), color-stop(60%, #ab97eb), to(rgba(171, 151, 235, 0.8)));
+  background: linear-gradient(0deg, #ab97eb 0%, #ab97eb 60%, rgba(171, 151, 235, 0.8) 100%);
+}
+.index-case-box .apply .carer-buttons.basic button {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ab97eb), color-stop(60%, #ab97eb), to(rgba(171, 151, 235, 0.8)));
+  background: linear-gradient(0deg, #ab97eb 0%, #ab97eb 60%, rgba(171, 151, 235, 0.8) 100%);
+}
 .index-case-box .carer-info {
-  border: 1px solid seagreen;
   margin: 12.7rem 0 5rem 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -578,7 +647,6 @@
 .index-case-box .carer-info > div.ellipse {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid pink;
 }
 .index-case-box .carer-info > div.ellipse .choice {
   padding: 4rem;
@@ -590,6 +658,25 @@
 }
 .index-case-box .carer-info > div.ellipse .choice + .choice {
   margin-left: 2rem;
+}
+.index-case-box .carer-info > div.ellipse .choice i {
+  display: inline-block;
+  margin-right: 1.5rem;
+  width: 5.1rem;
+  height: 4.9rem;
+  background-image: url(../image/m-sub/icon-star-line-gray.png);
+  background-size: contain;
+  vertical-align: top;
+}
+.index-case-box .carer-info > div.ellipse .choice .ui-select {
+  padding: 0;
+  height: auto;
+  color: #656565;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../image/m-sub/icon_arrowDown_g.png) no-repeat right 0 center;
+  background-size: 3.6rem 2rem;
+  border: 0;
 }
 .index-case__title {
   margin-bottom: 7rem;
@@ -867,6 +954,9 @@
   background: -webkit-gradient(linear, left bottom, left top, from(#8999de), color-stop(60%, #8999de), to(rgba(97, 122, 176, 0.8)));
   background: linear-gradient(0deg, #8999de 0%, #8999de 60%, rgba(97, 122, 176, 0.8) 100%);
 }
+.carer-button__choice__on {
+  display: block;
+}
 .carer-button__wish {
   display: none;
   width: 16.7rem;
@@ -874,6 +964,9 @@
       -ms-flex: none;
           flex: none;
   background: #4a61c0;
+}
+.carer-button__wish__on {
+  display: block;
 }
 .carer-button__wish i {
   display: inline-block;
@@ -1120,7 +1213,7 @@
   display: block;
   padding: 5rem;
   height: auto;
-  margin: 13rem 5rem 0 5rem;
+  margin: 0 5rem 0 5rem;
   background: #edecf1;
   border-radius: 1.5rem;
   -webkit-box-sizing: border-box;
