@@ -238,6 +238,18 @@
 
 //line-gray
 .line-gray{
+    &__xsmall{
+        width:calc(100% + 10rem);
+        margin-left: -5rem;
+        margin-right: -5rem;
+        height:.5rem;
+    }
+    &__small{
+        width:calc(100% + 10rem);
+        margin-left: -5rem;
+        margin-right: -5rem;
+        height:1rem;
+    }
     &__large{
         width:calc(100% + 10rem);
         margin-left: -5rem;

@@ -219,6 +219,18 @@
   color: #575c62;
 }
 
+.line-gray__xsmall {
+  width: calc(100% + 10rem);
+  margin-left: -5rem;
+  margin-right: -5rem;
+  height: 0.5rem;
+}
+.line-gray__small {
+  width: calc(100% + 10rem);
+  margin-left: -5rem;
+  margin-right: -5rem;
+  height: 1rem;
+}
 .line-gray__large {
   width: calc(100% + 10rem);
   margin-left: -5rem;
