@@ -1,5 +1,23 @@
 @import './helper/mixin';
 
+//display
+.d-flex{
+    display:flex;
+}
+.align{
+    &-center{
+        align-items:center;
+    }
+}
+.justify{
+    &-center{
+        justify-content: center;
+    }
+    &-between{
+        justify-content: space-between;
+    }
+}
+
 // width
 .width{
     &-80{
@@ -116,8 +134,20 @@
         &-60{
             margin-bottom:6rem;
         }
+        &-70{
+            margin-bottom:7rem;
+        }
+        &-80{
+            margin-bottom:8rem;
+        }
         &-90{
             margin-bottom:9rem;
+        }
+        &-100{
+            margin-bottom:10rem;
+        }
+        &-110{
+            margin-bottom:11rem;
         }
         &-120{
             margin-bottom:12rem;
@@ -220,6 +250,12 @@ $color-purple : #6349ba;
 
 .flex{
     flex: 1;
+    &-2{
+        flex:1 1 20%;
+    }
+    &-4{
+        flex:1 1 40%;
+    }
 }
 
 .ta-l {

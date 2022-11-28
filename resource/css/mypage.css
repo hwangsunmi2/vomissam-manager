@@ -207,6 +207,10 @@
   margin-top: 6rem;
   padding: 9rem 8rem;
 }
+.myInfo__btn--del {
+  font-size: 4.8rem;
+  color: #9196a5;
+}
 
 .history-list {
   padding: 0;
@@ -347,4 +351,116 @@
   min-width: auto;
   max-height: -webkit-fill-available;
   min-height: auto;
+}
+
+.bank-list__inner {
+  overflow: auto;
+  height: 111rem;
+}
+.bank-list-box {
+  padding: 10rem 7.5rem;
+  border-radius: 3rem;
+  -webkit-box-shadow: 4px 5px 11px rgba(0, 0, 0, 0.089);
+          box-shadow: 4px 5px 11px rgba(0, 0, 0, 0.089);
+}
+.bank-list > div + div {
+  margin-top: 5rem;
+}
+.bank-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4.8rem;
+  color: #9196a5;
+}
+.bank-item__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 18.2rem;
+  height: 18.2rem;
+  margin-right: 3.5rem;
+  padding: 4rem;
+  background-color: #eff0f5;
+  border-radius: 100%;
+}
+.bank-item__img img {
+  width: 100%;
+}
+.bank-item__txt {
+  padding: 2rem 0;
+}
+.bank-item > button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4.8rem;
+  color: #9196a5;
+}
+.bank-item > p span {
+  display: block;
+  margin-bottom: 4.5rem;
+  font-size: 5.4rem;
+  font-weight: 600;
+  color: #000;
+}
+.bank-regist {
+  padding: 10rem 5rem;
+}
+.bank-regist__tit {
+  margin-bottom: 5rem;
+  font-size: 5.5rem;
+  font-weight: 500;
+}
+.bank-regist__tit span {
+  font-size: 4.8rem;
+  color: #9196a5;
+}
+.bank-regist .bank-list {
+  overflow: hidden;
+  margin: 8rem 0;
+}
+.bank-regist .bank-list__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.bank-regist .bank-item {
+  width: 50%;
+  margin-bottom: 8rem;
+}
+.bank-regist .bank-item:nth-last-child(2), .bank-regist .bank-item:last-child {
+  margin-bottom: 0;
+}
+.bank-regist .bank-item__img {
+  width: 8.4rem;
+  height: 8.4rem;
+  padding: 0;
+  background: none;
+}
+.bank-regist .bank-item__txt span {
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #000;
+}
+
+.ui-checkbox__list.agree {
+  border-bottom: none;
+}
+.ui-checkbox__list.agree .ui-label__text {
+  font-size: 5rem;
 }
