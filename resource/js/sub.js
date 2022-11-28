@@ -110,7 +110,7 @@ $(function(){
       });
 
     //acordion
-    $('.acordion-notice__btn').on('click', function(){
+    $('.acordion-list__btn').on('click', function(){
         $(this).toggleClass('is-click').next().slideToggle();
     });
 });

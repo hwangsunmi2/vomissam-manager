@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,14 +12,9 @@
     <link rel="stylesheet" href="../resource/css/lib/swiper.min.css">
     <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="../resource/css/ux-common.css">
-    <link rel="stylesheet" href="../resource/css/intro.css">
+    <link rel="stylesheet" href="../resource/css/bominote.css">
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="../resource/js/lib/swiper.min.js"></script>
-    <script type="text/javascript" src="../resource/js/include.js"></script>
-    <script type="text/javascript" src="../resource/js/common.js"></script>
-    <script type="text/javascript" src="../resource/js/main.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -30,13 +24,176 @@
             <a href="#">본문 바로가기</a>
         </div>
         <!-- //skipNavigation -->
+        <!-- header -->
+        <!-- [include] header -->
+        <header>
+            <div class="header__inner">
+                <div class="page-back">
+                    <div class="page-back__inner">
+                        <button type="button" class="ui-button ui-button__page--back"></button>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <div class="header-title__inner">
+                        내 정보 관리
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-alarm">
+                        <div class="header-alarm__inner">
+                            <button type="button" class="header-alarm__button"></button>
+                        </div>
+                    </div>
+                    <div class="header-hamberger">
+                        <div class="header-hamberger__inner">
+                            <button type="button" class="header-hamberger__button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //[include] header -->
+        <!-- //header -->
         <!-- container -->
         <div class="container container-intro">
             <div class="container__inner">
-                
+                <div class="container-core">
+                    <div class="container-core__inner">
+                        <div class="sub-content">
+                            <div class="sub-item">
+                                <div class="bomiNote-wrap">
+                                    <h2 class="bomiNote__tit">
+                                        나의 간병 정보
+                                    </h2>
+                                    <div class="bomiNote-info bg-pubgray border-radius-3 mt-60">
+                                        <div class="bomiNote-info__list">
+                                            <div class="bomiNote-info__item">
+                                                <dl>
+                                                    <dt>
+                                                        <span class="bomiNote-info__img">
+                                                            <img src="../resource/image/m-sub/icon-mainCalender.png" alt="">
+                                                        </span>
+                                                        간병 시작 일시
+                                                    </dt>
+                                                    <dd>2022. 8. 25 14시</dd>
+                                                    <dt>
+                                                        <span class="bomiNote-info__img">
+                                                            <img src="../resource/image/m-sub/img-bomiNote--info02.png" alt="">
+                                                        </span>
+                                                        간병 종료 일시  
+                                                    </dt>
+                                                    <dd>2022. 9. 04. 16시</dd>
+                                                    <dt>
+                                                        <span class="bomiNote-info__img">
+                                                            <img src="../resource/image/m-sub/img-bomiNote--info03.png" alt="">
+                                                        </span>
+                                                        간병장소
+                                                    </dt>
+                                                    <dd>신촌세브란스병원</dd>
+                                                    <dt>
+                                                        <span class="bomiNote-info__img">
+                                                            <img src="../resource/image/m-sub/img-bomiNote--info04.png" alt="">
+                                                        </span>
+                                                        환자명
+                                                    </dt>
+                                                    <dd>김이박 환자</dd>
+                                                    <dt>
+                                                        <span class="bomiNote-info__img">
+                                                            <img src="../resource/image/m-sub/img-bomiNote--info05.png" alt="">
+                                                        </span>
+                                                        새 간병지원 가능일 
+                                                    </dt>
+                                                    <dd>2022. 9. 12일 16시 이후</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-item">
+                                <h2 class="bomiNote__tit">
+                                    오늘 내가 해야할 일
+                                </h2>
+                                <div class="bomiNote-diary mt-60">
+                                    <span class="bomiNote-diary__img">
+                                        <img src="../resource/image/m-sub/img-bomiNote--toDoList.png" alt="">
+                                    </span>
+                                    <p>일일 돌봄 일지</p>
+                                    <a href="">작성</a>
+                                </div>
+                            </div>
+                            <div class="sub-item">
+                                <h2 class="bomiNote__tit d-flex justify-between">
+                                    보호자 요청 사항
+                                    <button type="button" class="bomiNote__btn--del">자세히보기</button>
+                                </h2>
+                                <div class="acordion-list mt-60">
+                                    <button type="button" class="acordion-list__btn">오늘 회진은 어땠나요 ?</button>
+                                    <div class="acordion-list__view">
+                                        <span class="acordion-view__date">요청일시 : 2022-10-19</span>
+                                        <span class="acordion-view__cont">
+                                            오후 3시경 흉부 CT 촬영을 하였습니다.
+                                            오후4시에는 대장내시경 촬영이 있었으며,
+                                            회복실에서 편안하게 회복 하셨습니다.                                            
+                                        </span>
+                                    </div>
+                                    <button type="button" class="acordion-list__btn">오늘 특별한 치료 등이 있었나요 ?</button>
+                                    <!-- acordion-list__btn 클릭시 is-click 추가 -->
+                                    <div class="acordion-list__view">
+                                        <span class="acordion-view__date">요청일시 : 2022-10-19</span>
+                                        <span class="acordion-view__cont">
+                                            오후 3시경 흉부 CT 촬영을 하였습니다.
+                                            오후4시에는 대장내시경 촬영이 있었으며,
+                                            회복실에서 편안하게 회복 하셨습니다.                                            
+                                        </span>
+                                    </div>
+                                    <button type="button" class="acordion-list__btn">환자분의 식사량은 어떻게 되나요?</button>
+                                    <div class="acordion-list__view">
+                                        <span class="acordion-view__date">요청일시 : 2022-10-19</span>
+                                        <span class="acordion-view__cont">
+                                            오후 3시경 흉부 CT 촬영을 하였습니다.
+                                            오후4시에는 대장내시경 촬영이 있었으며,
+                                            회복실에서 편안하게 회복 하셨습니다.                                            
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- //container -->
+
+        <!-- quick-menu -->
+        <section class="quick-menu">
+            <div class="quick-menu__inner">
+                <!-- 전달사항 :: 선택 항목에 클래스 is-active 붙습니다. -->
+                <button type="button" class="quick-menu__button quick-menu__button--search ">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">일감찾기</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--calculate is-active">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">간병비 정산</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--note">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">보미쌤 노트</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--my">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">내정보관리</span>
+                </button>
+            </div>
+        </section>
+        <!-- //quick-menu -->
+
+        <!-- footer -->
+        <!-- [include] footer -->
+        <footer data-include-file="../include/footer.html" class="footer-wrap js-include"></footer>
+        <!-- //[include] footer -->
+        <!-- //footer -->
     </div>
 </body>
 </html>

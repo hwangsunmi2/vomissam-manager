@@ -296,6 +296,76 @@ html, body, .wrap{
     height:3rem;
     background: #f2f3f7;
 }
+.acordion{
+    &-list{
+        &__btn{
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 7.5rem 5rem;
+            padding-right: 16rem;
+            font-size: 5.6rem;
+            font-weight: 600;
+            color: #222;
+            background: url("../image/sub/icon/icon-down.png") no-repeat 95% center;
+            background-size: 5.3rem 2.9rem;
+            border: 1px solid #d8dce2;
+            border-radius:2rem;
+            line-height: 1.2;
+            transition:all .3s ease;
+            text-align: left;
+            &.is-click{
+                border-bottom:none;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                background: url("../image/m-sub/icon-up--purple.png") no-repeat 95% center;
+                background-size: 5.3rem 2.9rem;
+                border:1px solid #747478;
+                border-bottom:none;
+                + .acordion{
+                    &-list{
+                        &__view{
+                            border:1px solid #747478;
+                            border-top:none;
+                        }
+                    }
+                }
+            }
+        }
+        &__view{
+            position: relative;
+            display: none;
+            padding: 5rem;
+            font-size: 4.8rem;
+            font-weight: 500;
+            color: #222;
+            line-height: 1.5;
+            background-color: #f6f8fb;
+            border:1px solid #d8dce2;
+            border-top:none;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            + .acordion-list__btn{
+                margin-top:4.5rem;
+            }
+        }
+    }
+    &-view{
+        &__date{
+            display:block;
+            font-size:4.4rem;
+            color:#9196a5;
+            text-align:right;
+        }
+        &__cont{
+            display:block;
+            margin-top:4.5rem;
+            padding-left:7rem;
+            line-height:1.8;
+            background:url('../image/m-sub/icon-reply.png') no-repeat 0 2rem/4rem 3.8rem;
+        }
+    }
+}
 
 
 /* footer */ 
