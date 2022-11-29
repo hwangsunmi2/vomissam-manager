@@ -141,12 +141,32 @@
   margin-top: 10rem;
 }
 .bomiNote__tit {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
   font-size: 6.6rem;
   font-weight: 600;
 }
 .bomiNote__tit span {
   font-size: 10rem;
   font-weight: 500;
+}
+.bomiNote__tit span.bomiNote__tit__capt {
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  font-size: 6rem;
+}
+.bomiNote__tit--paren {
+  display: block;
+  width: 100%;
+  padding-left: 7rem;
+}
+.bomiNote__tit + .ui-buttons {
+  margin-top: 6.5rem;
+}
+.bomiNote__subtit {
+  font-size: 5.5rem;
 }
 .bomiNote-info {
   padding: 9rem 8rem;
@@ -188,6 +208,7 @@
   width: 100%;
 }
 .bomiNote-diary {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,7 +263,110 @@
   border-radius: 1.5rem;
   color: #6349ba;
 }
+.bomiNote-diary-write {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4.5rem 9rem;
+  padding-right: 12rem;
+}
+.bomiNote-diary-write > p {
+  font-size: 7.2rem;
+}
+.bomiNote-write__img {
+  width: 23rem;
+  margin-bottom: -5rem;
+}
+.bomiNote-write__img img {
+  width: 100%;
+}
+.bomiNote-write__txt span {
+  display: block;
+  margin-bottom: 4.5rem;
+  font-size: 5rem;
+  font-weight: 300;
+}
 .bomiNote__btn--del {
   font-size: 4.8rem;
   color: #9196a5;
+}
+
+.ui-form__cell.ml-110 {
+  margin-left: 11rem !important;
+}
+
+.acordion-list__view {
+  padding: 2.5rem 4rem;
+}
+.acordion-view__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.acordion-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24rem;
+  height: 8rem;
+  margin-right: auto;
+  border-radius: 5rem;
+  color: #fff;
+  font-size: 1.7rem;
+}
+.acordion-date button {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.acordion-date--purple {
+  background-color: #795bdc;
+}
+.acordion-date--gray {
+  background-color: #9daaca;
+}
+
+.modal-title {
+  text-align: left;
+}
+.modal-box {
+  border: 1px solid #747478;
+  border-radius: 2rem;
+}
+.modal-box__tit {
+  padding: 7.5rem 4.5rem;
+}
+.modal-box__body {
+  padding: 4.5rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: #f8f8fb;
+}
+.modal-box__date {
+  display: block;
+  font-size: 4.4rem;
+  color: #9196a5;
+  text-align: right;
+}
+.modal-box .ui-form {
+  overflow: auto;
+  margin-top: 5rem;
+}
+.modal-box__textarea {
+  width: 100%;
+  height: 51rem;
+  padding: 5rem 4rem;
+  border: 1px solid #d5d9df;
+  border-radius: 2rem;
+  resize: none;
+  outline: none;
 }

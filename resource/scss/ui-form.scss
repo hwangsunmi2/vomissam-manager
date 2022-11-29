@@ -47,6 +47,9 @@
             border-radius: 1.5rem;
             font-size: 5.5rem;
         }
+        textarea{
+            line-height:1.5;
+        }
         &__button{
             display: flex;
         }
@@ -174,6 +177,10 @@
         &__height-265{
             padding:5.5rem;
             height: 26.5rem;
+        }
+        &__height-350{
+            padding:5.5rem;
+            height: 35rem;
         }
         &::placeholder{
             color:#9196a5;

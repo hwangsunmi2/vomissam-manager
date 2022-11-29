@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,14 +12,9 @@
     <link rel="stylesheet" href="../resource/css/lib/swiper.min.css">
     <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="../resource/css/ux-common.css">
-    <link rel="stylesheet" href="../resource/css/intro.css">
+    <link rel="stylesheet" href="../resource/css/bominote.css">
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="../resource/js/lib/swiper.min.js"></script>
-    <script type="text/javascript" src="../resource/js/include.js"></script>
-    <script type="text/javascript" src="../resource/js/common.js"></script>
-    <script type="text/javascript" src="../resource/js/main.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -30,13 +24,131 @@
             <a href="#">본문 바로가기</a>
         </div>
         <!-- //skipNavigation -->
-        <!-- container -->
+        <!-- header -->
+        <!-- [include] header -->
+        <header>
+            <div class="header__inner">
+                <div class="page-back">
+                    <div class="page-back__inner">
+                        <button type="button" class="ui-button ui-button__page--back"></button>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <div class="header-title__inner">
+                        요청 사항 관리
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-alarm">
+                        <div class="header-alarm__inner">
+                            <button type="button" class="header-alarm__button"></button>
+                        </div>
+                    </div>
+                    <div class="header-hamberger">
+                        <div class="header-hamberger__inner">
+                            <button type="button" class="header-hamberger__button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //[include] header -->
+        <!-- //header -->
+        <!-- //container -->
         <div class="container container-intro">
             <div class="container__inner">
-                
+                <div class="container-core">
+                    <div class="container-core__inner">
+                        <div class="sub-content">
+                            <div class="sub-item">
+                                <h2 class="bomiNote__tit">
+                                    보호자 요청 사항
+                                </h2>
+                                <div class="acordion-list mt-60">
+                                    <button type="button" class="acordion-list__btn">오늘 회진은 어땠나요 ?</button>
+                                    <div class="acordion-list__view">
+                                        <span class="acordion-view__date">
+                                            <em class="acordion-date acordion-date--purple">
+                                                <button type="button"  data-toggle="modal" data-target="#registAsk">
+                                                    답변등록
+                                                </button>
+                                            </em>
+                                            요청일시 : 2022-10-19
+                                        </span>
+                                    </div>
+                                    <button type="button" class="acordion-list__btn">오늘 특별한 치료 등이 있었나요 ?</button>
+                                    <!-- acordion-list__btn 클릭시 is-click 추가 -->
+                                    <div class="acordion-list__view">
+                                        <span class="acordion-view__date">
+                                            <em class="acordion-date acordion-date--gray">답변완료</em>
+                                            요청일시 : 2022-10-19
+                                        </span>
+                                        <span class="acordion-view__cont">
+                                            오후 3시경 흉부 CT 촬영을 하였습니다.
+                                            오후4시에는 대장내시경 촬영이 있었으며,
+                                            회복실에서 편안하게 회복 하셨습니다.                                          
+                                        </span>
+                                    </div>
+                                    <button type="button" class="acordion-list__btn">의료침대보랑 배게커버를 교환해 주세요.</button>
+                                    <div class="acordion-list__view">
+                                        <span class="acordion-view__date">
+                                            <em class="acordion-date acordion-date--gray">답변완료</em>
+                                            요청일시 : 2022-10-19
+                                        </span>
+                                        <span class="acordion-view__cont">
+                                            금일 침대보와 배게 커버를 교체 완료하였습니다.
+                                            아울러 환자복도 새로 갈아 입으셨습니다.
+                                        </span>
+                                    </div>
+                                    <button type="button" class="acordion-list__btn">환자분의 식사량은 어떻게 되나요?</button>
+                                    <div class="acordion-list__view">
+                                        <span class="acordion-view__date">
+                                            <em class="acordion-date acordion-date--gray">답변완료</em>
+                                            요청일시 : 2022-10-19
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- //container -->
+
+        <!-- 모달 -->
+        <div class="modal fade" id="registAsk" tabindex="-1" aria-labelledby="registAskLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-auto ">
+                <div class="modal-content modal-content__email">
+                    <div class="modal-body modal-body__main">
+                        <div class="modal-core">
+                            <div class="modal-title ta-l">
+                                답변등록
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-box">
+                                    <p class="modal-box__tit">
+                                        오늘 회진은 어땠나요?
+                                    </p>
+                                    <div class="modal-box__body">
+                                        <span class="modal-box__date ta-r">요청일시 : 2022-10-19</span>
+                                        <div class="ui-form">
+                                            <textarea name="" id="" class="modal-box__textarea" placeholder="답변 내용을 입력하세요."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-buttons">
+                            <button type="button" class="ui-button ui-button__bg-purple" data-dismiss="modal">확인</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- //모달 -->
+
     </div>
 </body>
 </html>
