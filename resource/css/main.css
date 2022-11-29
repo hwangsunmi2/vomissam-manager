@@ -1413,3 +1413,33 @@
   padding-left: 4rem;
   font-size: 5.5rem;
 }
+
+/* Case3 :: 오늘 할 일 */
+.case3 {
+  padding: 5rem;
+  background-color: #fff;
+  border-radius: 3rem;
+  -webkit-box-shadow: 2rem 2rem 4rem rgba(67, 76, 133, 0.28);
+  box-shadow: 2rem 2rem 4rem rgba(67, 76, 133, 0.28);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.case3 .end {
+  padding-top: 13rem;
+  font-size: 6.5rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 8rem;
+  word-break: keep-all;
+}
+.case3 .endText {
+  padding-top: 7rem;
+  font-size: 5.5rem;
+  text-align: center;
+  line-height: 7rem;
+}
+
+/* Case3 :: 팝업*/
+#nursingEnd sub-text {
+  word-wrap: keep-all;
+}
