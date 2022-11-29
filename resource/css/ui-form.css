@@ -70,6 +70,9 @@
   border-radius: 1.5rem;
   font-size: 5.5rem;
 }
+.ui-form textarea {
+  line-height: 1.5;
+}
 .ui-form__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,6 +226,10 @@
 .ui-textarea__height-265 {
   padding: 5.5rem;
   height: 26.5rem;
+}
+.ui-textarea__height-350 {
+  padding: 5.5rem;
+  height: 35rem;
 }
 .ui-textarea::-webkit-input-placeholder {
   color: #9196a5;
