@@ -419,55 +419,57 @@
                         </section>
 
                         <!-- 모달 -->
-                        <div class="modal fade" id="serviceEnroll" tabindex="-1" aria-labelledby="serviceEnrollLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-auto ">
-                                <div class="modal-content modal-content__email">
-                                    <div class="modal-body modal-body__main">
-                                        
-                                        
-                                        
-                                        <div class="modal-core">
-                                            <div class="modal-title">
-                                                보미쌤 간병 신청 시 <br>
-                                                꼭 필요한 사항에 대한 안내
-                                            </div>
-                                            <div class="modal-box__gray">
-                                                <ul class="ui-list-dashed">
-                                                    <li>보미쌤의 간병에 대한 Moto 등</li>
-                                                    <li>간병 신청 시 유의 사항</li>
-                                                    <li>보미쌤의 간병에 대한 Moto 등</li>
-                                                    <li>간병 신청 시 유의 사항</li>
-                                                </ul>
-                                                <div class="mt-80">간병비 정책</div>
-                                                <div class="mt-40">간병 신청 최소 기간 : 기간제 0일, 시간제 0일 <br>
-                                                    간병 신청 접수 가능일 : 간병 시작일로부터 3일 전<br>
-                                                    간병인의 중식비 포함<br>
-                                                    1개월 이상인 경우 주휴무일 정책.</div>
-                                                <div class="mt-80">등등 간병신청인이 알아야 할 사항 들….</div>
-                                            </div>
-                                            <div class="mt-60">
-                                                <div class="ui-checkbox__list">
-                                                    <div class="ui-checkbox__inner">
-                                                        <div class="ui-checkbox-block">
-                                                            <input type="checkbox" class="ui-checkbox" id="checkbox1" checked>
-                                                            <label for="checkbox1" class="ui-label">
-                                                              <span class="ui-checkbox-object"></span>
-                                                              <span class="ui-label__text">약관 전체동의</span>
-                                                            </label>
-                                                          </div>
+                            <!-- 간병 시작 알림 팝업 -->
+                            <div class="modal fade" id="ssamSearch" tabindex="-1" aria-labelledby="ssamSearchLabel"
+                            aria-hidden="true" style="z-index: 1060;">
+                                <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                    <div class="modal-content modal-content__s modal-content__ssamSearch">
+                                        <div class="modal-body modal-body__main">
+                                                <div class="modal-header">
+                                                    <div class="modal-title modal-title__font-l text-left mb-0">보미쌤 검색</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="ssamSearch__wrap">
+
+                                                        <div class="ui-form ui-form__button ui-form__flex--row">
+                                                            <input type="text" class="ui-input" value="" placeholder="이름을 입력하세요">
+                                                            <button type="submit" class="ui-button ui-button__certi ui-button__width-280 ui-button__font-xs"  data-toggle="modal" data-target="#ssamSearch"
+                                                            >검색</button>
+                                                        </div>
+                                                        <div class="ssamLineTop">
+                                                            <div class="ssamLine d-flex">
+                                                                <div class="name">김보미</div>
+                                                                <div class="phone ta-c">010-1234-5678</div>
+                                                                <div class="genderAge ta-r"><span>여</span>/<span>58세</span></div>
+                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
+                                                            </div>
+                                                            <div class="ssamLine d-flex">
+                                                                <div class="name">이일화</div>
+                                                                <div class="phone ta-c">010-1234-5678</div>
+                                                                <div class="genderAge ta-r"><span>여</span>/<span>61세</span></div>
+                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
+                                                            </div>
+                                                            <div class="ssamLine d-flex">
+                                                                <div class="name">박보미</div>
+                                                                <div class="phone ta-c">010-1234-5678</div>
+                                                                <div class="genderAge ta-r"><span>여</span>/<span>49세</span></div>
+                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
+                                                            </div>
+                                                            <div class="ssamLine d-flex">
+                                                                <div class="name">최보미</div>
+                                                                <div class="phone ta-c">010-1234-5678</div>
+                                                                <div class="genderAge ta-r"><span>여</span>/<span>52세</span></div>
+                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
                                         </div>
-                                        
-                                        <div class="modal-buttons">
-                                            <button type="button" class="ui-button ui-button__bg-blue" data-dismiss="modal">간병 신청하기</button>
-                                        </div>
+
                                     </div>
-                                    
                                 </div>
                             </div>
-                        </div>
+                            <!-- //간병 시작 알림 팝업 -->
                         <!-- //모달 -->
 
                     </div>

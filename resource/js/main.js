@@ -51,22 +51,12 @@ function todayList() {
 
 //메인 Tab
 function mainTab() {
-  var $notice = $('.tab_wrap');
-  var $noticeTab = $notice.find('h3');
-  var $noticeCont = $notice.find('.tab_cont');
-
-  $noticeTab.on('click focusin', function(e) {  
-      e.preventDefault();
-      var tabID = this.id.split("_")[1];
-      console.log('tabID',tabID);
-      var $nListID = $('#list_' + tabID);
-      if ($nListID.css("display") == "none") {
-          $noticeTab.removeClass('on');
-          $noticeCont.css('display','none');
-      }
-      $(this).addClass("on");
-      $nListID.css('display','block');
-  });
+  $(".tab ul li.item").click(function(){ 
+    $(".tab ul li.item").removeClass('on');
+    $(".tab .conBox").removeClass('on');
+    $(this).addClass('on');
+    $("#"+$(this).data('id')).addClass('on');
+});
 }
 
 function check() {

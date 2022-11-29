@@ -518,6 +518,7 @@
             width: 33.5rem;
             color:#575c62;
             flex: none;
+
         }
         &__text{
             flex: 1;
@@ -594,6 +595,7 @@
                 &-buttons{
                     &.on {
                         .carer-button {
+                            background: linear-gradient(0deg, #ab97eb 0%, #ab97eb 60%, rgba(171, 151, 235, 0.8) 100%);
                             &__wish {
                                 display:block;
                                 background: #846cdd;
@@ -888,7 +890,7 @@
         margin-left: 0;
     }
     &-detail{
-        margin-top: 5.5rem;        
+        margin-top: 0;        
         &__list{
             display: flex;
             justify-content: space-between;
@@ -907,6 +909,7 @@
             color:#575c62;
             flex: none;
             line-height: 9.4rem;
+            text-align: left;
         }
         &__text{
             line-height: 9.4rem;
@@ -1050,6 +1053,187 @@
     }
 }
 
+/* Case1 :: 오늘 할 일 */
+.case1 {
+    padding:5rem;
+    background-color:#fff;
+    border-radius: 3rem;
+    -webkit-box-shadow: 2rem 2rem 4rem rgb(67 76 133 / 28%);
+    box-shadow: 2rem 2rem 4rem rgb(67 76 133 / 28%);
+    box-sizing:border-box;
+    .dDay {
+        padding-top:4rem;
+        padding-bottom: 9rem;
+        font-size:6.5rem;
+        text-align: center;
+        letter-spacing: -1px;
+        line-height:8rem;
+        border-bottom: 0.4rem solid #dddddd;
+        span {
+            position:relative;
+            font-size:6.5rem;
+            color:#dd5458;
+            font-weight:500;
+            z-index: 1;
+            &::after {
+                position:absolute;
+                left:-0.5rem;
+                bottom:0.9rem;
+                width:110%;
+                height:3rem;
+                background-color: #f8ddde;
+                z-index: -1;
+                content:'';
+            }
+        }
+    }
+    .text {
+        padding-top:9rem;
+        text-align:left;
+        p {
+            padding:0 20rem;
+            font-size:5.5rem;
+            line-height:8rem;
+        }
+    }
+}
+
+/* Case1 :: 간병 매칭현황 */
+.matching {
+    overflow: hidden;
+    &__inner {
+        overflow: visible;
+        display: block;
+        height: auto;
+        margin: 13rem 5rem 0 5rem;
+        box-sizing: border-box;
+
+        .tab {
+            position: relative;
+            overflow: visible;
+            padding-top:3rem;
+
+
+            .top {
+                overflow:visible;
+                position:relative;
+                padding:0;
+                margin:0; 
+                list-style:none;
+                width:100%;
+                height:auto;
+                justify-content: space-between;
+                border-bottom:1px solid #dcdce2;
+                &::before {
+                    position:absolute;
+                    width:10%;
+                    height:1px;
+                    left:-10%;
+                    bottom:-1px;
+                    background-color: #dcdce2;
+                    content:'';
+                }
+                &::after {
+                    position:absolute;
+                    width:10%;
+                    height:1px;
+                    right:-10%;
+                    bottom:-1px;
+                    background-color: #dcdce2;
+                    content:'';
+                }
+                li{
+                    display:inline-block;
+                    margin-left: -4px;
+                    width:25%;
+                    height:12rem;
+                    text-align:center;
+                    cursor:pointer;
+                    &:first-child {
+                        margin-left:0;
+                    }
+                    a {
+                        color:#928ea0;
+                        font-size:5.5rem;
+                        font-weight:400;
+                    }
+                    .plus {
+                        padding-right:40px;
+                        text-align:right;
+                        background-color:#fff;
+                    }
+                    &.on{
+                        background:#fff; 
+                        a {
+                            position:relative;
+                            color:#3d3651;
+                            font-weight:500;
+                            &::after {
+                                position:absolute;
+                                width:100%;
+                                height:0.8rem;
+                                left:0;
+                                bottom:-5.4rem;
+                                background-color: #3d3651;
+                                border-radius: 0.3rem;
+                                content:'';
+                            }
+                        }
+                        
+                    }
+                } 
+            }
+            .carer {
+                &-list {
+                    margin-top:8rem;
+                }
+            }
+            .conBox {
+                display:none; 
+                width:100%;
+                height:auto; 
+                min-height:200px;
+                background:#fff;
+                text-align:center;
+                box-sizing: border-box;
+                .hidden {
+                    position: absolute;
+                    left: -20000px;
+                }
+                .line {
+                    width:100%;
+                    padding:20px 40px;
+                    text-align: left;
+                    box-sizing: border-box;
+                }
+                a {
+                    width:100%;
+                    display:inline-block;
+                    font-size:18px;
+                }
+                em {
+                    float:right;
+                    font-size:14px;
+                }
+                &.on{
+                    display:block;
+                    padding: 20px 0;
+                    margin-top: -1px;
+                    padding-bottom: 12rem;
+                }
+            }
+        }
+    }
+}
+/* Case1 :: 팝업 */
+#nursingCare {
+    .sub-text {
+        padding:0 2rem;
+        word-break: keep-all;
+    }
+}
+
+
 /* Case2 :: 오늘 할 일 */
 .todayList {
     margin-top:7rem;
@@ -1117,112 +1301,7 @@
     }
 } 
 /* Case2 :: 매칭현황 */
-.matching {
-    &__inner {
-        overflow: visible;
-        display: block;
-        height: auto;
-        margin: 13rem 5rem 0 5rem;
-        padding-bottom:12rem;
-        box-sizing: border-box;
 
-        .tab_wrap {
-            position: relative;
-            overflow: visible;
-            padding-top:3rem;
-            height:185vh;
-            h3  {
-                position: relative;
-                padding: 0;
-                margin:0; 
-                float: left;
-                width: 25%;
-                height: 12rem;
-                line-height: 60px;
-                box-sizing: border-box;
-                text-align: center;
-                border-bottom:1px solid #dcdce2;
-                cursor: pointer;
-                z-index: 2;
-
-                &:before {
-                    position:absolute;
-                    width:7%;
-                    height:1px;
-                    top:11.9rem;
-                    left:-7%;
-                    background-color: #dcdce2;
-                    content:'';
-                }
-                &::after {
-                    position:absolute;
-                    width:7%;
-                    height:1px;
-                    top:11.9rem;
-                    right:-7%;
-                    background-color: #dcdce2;
-                    content:'';
-                }
-
-                &:first-child {
-                    margin-left:0;
-                }
-                &.on {
-                    background:#fff;
-                    a {
-                        position:relative;
-                        color:#3d3651;
-                        font-weight:500;
-                        content:'';
-                        &::after {
-                            position:absolute;
-                            width: 100%;
-                            height: 0.3rem;
-                            bottom: -5.3rem;
-                            left: 0;
-                            background-color:#3d3651;
-                            border-radius: 3rem;
-                            content:'';
-                        }
-                    }
-                }
-                a {
-                    font-size: 5.5rem;
-                    font-weight: 400;
-                    color: #928ea0;
-                    text-align:center;
-                }
-            }
-            .tab_cont {
-                position:absolute;
-                display:none;
-                padding:8rem 0;
-                width:100%;
-                top:15rem;
-                box-sizing:border-box;
-                &.on {
-                    display:block;
-                }
-                ul {
-                    margin:0;
-                    padding:0;
-                    li {
-                        position: relative;
-                        width: 100%;
-                        line-height: 26px;
-                        list-style: none;
-                        font-size:18px;
-                        box-sizing: border-box;
-                        em {
-                            float:right;
-                            font-size:14px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 /* Case2 :: NEW */
 .newNotice {

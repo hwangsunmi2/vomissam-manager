@@ -127,8 +127,20 @@
 .mb-60 {
   margin-bottom: 6rem;
 }
+.mb-70 {
+  margin-bottom: 7rem;
+}
+.mb-80 {
+  margin-bottom: 8rem;
+}
 .mb-90 {
   margin-bottom: 9rem;
+}
+.mb-100 {
+  margin-bottom: 10rem;
+}
+.mb-110 {
+  margin-bottom: 11rem;
 }
 .mb-120 {
   margin-bottom: 12rem;
@@ -1823,6 +1835,18 @@
   color: #575c62;
 }
 
+.line-gray__xsmall {
+  width: calc(100% + 10rem);
+  margin-left: -5rem;
+  margin-right: -5rem;
+  height: 0.5rem;
+}
+.line-gray__small {
+  width: calc(100% + 10rem);
+  margin-left: -5rem;
+  margin-right: -5rem;
+  height: 1rem;
+}
 .line-gray__large {
   width: calc(100% + 10rem);
   margin-left: -5rem;
