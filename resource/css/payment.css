@@ -308,3 +308,12 @@
   padding-top: 10rem;
   border-top: 1px dashed #dfe0e2;
 }
+.sub-item__box--receipt.calculate {
+  margin-top: 4rem;
+}
+.sub-item__box--receipt.calculate .title {
+  padding-bottom: 7rem;
+  font-size: 6rem;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}

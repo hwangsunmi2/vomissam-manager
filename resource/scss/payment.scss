@@ -187,5 +187,14 @@
             }
         }
     }
-        
+    &.calculate {
+        margin-top:4rem;
+        .title{
+            padding-bottom:7rem;
+            font-size:6rem;
+            text-align: center;
+            border-bottom:1px solid #000;
+        }
+    }
+
 }
