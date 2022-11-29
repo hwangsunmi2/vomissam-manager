@@ -250,6 +250,16 @@
                     margin: 0;
                 }
             }
+            &.agree {
+
+                :checked+.ui-radio-object,
+                :checked+.ui-label .ui-radio-object{
+                    border-color: #795bdc;
+                    background-color: #795bdc;
+                    background-image: url('../image/common/icon/icon-check.png');
+                    background-size: 4.5rem 3.1rem;
+                }
+            }
         }
         &:checked+.ui-radio-object,
         &:checked+.ui-label .ui-radio-object{

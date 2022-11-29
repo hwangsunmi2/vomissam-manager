@@ -1286,6 +1286,106 @@
 }
 
 /* Case2 :: 매칭현황 */
+/* Case2 :: 환자 상태 점검하기 팝업 */
+#checking .modal-sub-header {
+  padding-top: 7rem;
+  font-size: 6rem;
+  font-weight: 600;
+}
+#checking .modal-sub-header.seconde {
+  padding-top: 3rem;
+}
+#checking .modal-body .checking__wrap {
+  margin: 7rem 6rem 0 6rem;
+  padding: 8rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f3f6fb;
+  border-radius: 3rem;
+}
+#checking .modal-body .checking__wrap .rating {
+  padding: 4.8rem 0;
+  color: #6349ba;
+  border: 1px solid #6349ba;
+  font-size: 6rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+#checking .modal-body .checking__wrap .rating span {
+  font-weight: 600;
+  font-size: 6rem;
+}
+#checking .modal-body .checking__wrap .rating-detail {
+  padding-top: 8rem;
+}
+#checking .modal-body .checking__wrap .rating-detail dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#checking .modal-body .checking__wrap .rating-detail dl + dl {
+  margin-top: 6rem;
+}
+#checking .modal-body .checking__wrap .rating-detail dl dt {
+  font-size: 5.4rem;
+  font-weight: 300;
+  color: #575c62;
+}
+#checking .modal-body .checking__wrap .rating-detail dl dd {
+  font-size: 5.4rem;
+  color: #000;
+}
+#checking .modal-body .checking__wrap .rating-detail dl dd input {
+  padding: 6rem 7rem;
+  margin-top: 5rem;
+  width: 100%;
+  border-radius: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#checking .modal-body .checking__wrap .rating-detail dl dd input::-webkit-input-placeholder {
+  color: #9196a5;
+  font-weight: 300;
+}
+#checking .modal-body .checking__wrap .rating-detail dl dd input::-moz-placeholder {
+  color: #9196a5;
+  font-weight: 300;
+}
+#checking .modal-body .checking__wrap .rating-detail dl dd input:-ms-input-placeholder {
+  color: #9196a5;
+  font-weight: 300;
+}
+#checking .modal-body .checking__wrap .rating-detail dl dd input::-ms-input-placeholder {
+  color: #9196a5;
+  font-weight: 300;
+}
+#checking .modal-body .checking__wrap .rating-detail dl dd input::placeholder {
+  color: #9196a5;
+  font-weight: 300;
+}
+#checking .modal-body .agreeBox {
+  margin: 7rem 6rem 15rem 6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#checking .modal-body .agreeBox .agree + .agree {
+  margin-top: 5rem;
+}
+#checking .modal-body .agreeBox .agreeinput {
+  margin-top: 4rem;
+  width: 100%;
+  padding: 6rem 7rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1rem;
+}
+
 /* Case2 :: NEW */
 .newNotice__inner {
   display: block;

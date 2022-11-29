@@ -1302,6 +1302,95 @@
 } 
 /* Case2 :: 매칭현황 */
 
+/* Case2 :: 환자 상태 점검하기 팝업 */
+#checking {
+    .modal {
+        &-sub {
+            &-header {
+                padding-top:7rem;
+                font-size:6rem;
+                font-weight:600;
+                &.seconde {
+                    padding-top:3rem;
+                }
+            }
+        }
+        &-body {
+            .checking__wrap {
+                margin:7rem 6rem 0 6rem;
+                padding:8rem;
+                box-sizing: border-box;
+                background-color: #f3f6fb;
+                border-radius: 3rem;
+                .rating {
+                    padding:4.8rem 0;
+                    color:#6349ba;
+                    border:1px solid  #6349ba;
+                    font-size:6rem;
+                    background-color: #fff;
+                    border-radius:1.5rem;
+                    box-sizing: border-box;
+                    text-align: center;
+                    span {
+                        font-weight:600;
+                        font-size:6rem;
+                    }
+                }
+                .rating-detail {
+                    padding-top:8rem;
+                   
+                    dl {
+                        display:flex;
+                        justify-content: space-between;
+                        &+dl {
+                            margin-top:6rem;
+                        }
+                        dt {
+                            font-size:5.4rem;
+                            font-weight:300;
+                            color:#575c62;
+                        }
+                        dd {
+                            font-size:5.4rem;
+                            color:#000;
+                            input {
+                                padding:6rem 7rem;
+                                margin-top: 5rem;
+                                width:100%;
+                                border-radius: 1rem;
+                                box-sizing: border-box;
+                                &::placeholder {
+                                    color:#9196a5;
+                                    font-weight:300;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                
+            }
+            .agreeBox {
+                margin: 7rem 6rem 15rem 6rem;
+                box-sizing: border-box;
+                .agree {
+                    &+.agree {
+                        margin-top:5rem;
+                    }
+                }
+                .agreeinput {
+                    margin-top:4rem;
+                    width:100%;
+                    padding: 6rem 7rem;
+                    box-sizing: border-box;
+                    border-radius: 1rem;
+                }
+                
+            }
+        }   
+        
+    }
+}
 
 /* Case2 :: NEW */
 .newNotice {

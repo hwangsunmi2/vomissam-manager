@@ -1276,6 +1276,13 @@
 .ui-radio-block .ui-label {
   margin: 0;
 }
+.ui-radio-block.agree :checked + .ui-radio-object,
+.ui-radio-block.agree :checked + .ui-label .ui-radio-object {
+  border-color: #795bdc;
+  background-color: #795bdc;
+  background-image: url("../image/common/icon/icon-check.png");
+  background-size: 4.5rem 3.1rem;
+}
 .ui-radio:checked + .ui-radio-object, .ui-radio:checked + .ui-label .ui-radio-object {
   border-color: #4b62c3;
   background-color: #4b62c3;
@@ -2087,7 +2094,7 @@
 .modal-title {
   margin-bottom: 7.5rem;
   font-size: 6.5rem;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   line-height: 9rem;
 }

@@ -67,6 +67,9 @@
 .ml-30 {
   margin-left: 3rem;
 }
+.ml-110 {
+  margin-left: 11rem;
+}
 .mt-10 {
   margin-top: 1rem;
 }
@@ -1040,6 +1043,9 @@
   border-radius: 1.5rem;
   font-size: 5.5rem;
 }
+.ui-form textarea {
+  line-height: 1.5;
+}
 .ui-form__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1194,6 +1200,10 @@
   padding: 5.5rem;
   height: 26.5rem;
 }
+.ui-textarea__height-350 {
+  padding: 5.5rem;
+  height: 35rem;
+}
 .ui-textarea::-webkit-input-placeholder {
   color: #9196a5;
 }
@@ -1265,6 +1275,13 @@
 }
 .ui-radio-block .ui-label {
   margin: 0;
+}
+.ui-radio-block.agree :checked + .ui-radio-object,
+.ui-radio-block.agree :checked + .ui-label .ui-radio-object {
+  border-color: #795bdc;
+  background-color: #795bdc;
+  background-image: url("../image/common/icon/icon-check.png");
+  background-size: 4.5rem 3.1rem;
 }
 .ui-radio:checked + .ui-radio-object, .ui-radio:checked + .ui-label .ui-radio-object {
   border-color: #4b62c3;
@@ -2077,7 +2094,7 @@
 .modal-title {
   margin-bottom: 7.5rem;
   font-size: 6.5rem;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   line-height: 9rem;
 }
