@@ -145,55 +145,33 @@
                                 <button type="button"
                                     class="ui-button ui-button__border-gray ui-button__color-gray font-weight__m">돌아가기</button>
                                 <button type="button" class="ui-button ui-button__border-purple font-weight__m"
-                                    onclick="">지원하기</button>
+                                    onclick=""  data-toggle="modal" data-target="#complete" >지원하기</button>
                             </div>
                         </section>
 
                         <!-- 모달 -->
                             <!-- 인적 사항 보미쌤 찾기 모달 -->
-                            <div class="modal fade" id="ssamSearch" tabindex="-1" aria-labelledby="ssamSearchLabel"
+                            <div class="modal fade" id="complete" tabindex="-1" aria-labelledby="completeLabel"
                             aria-hidden="true" style="z-index: 1060;">
                                 <div class="modal-dialog modal-dialog-centered modal-auto ">
                                     <div class="modal-content modal-content__s modal-content__ssamSearch">
                                         <div class="modal-body modal-body__main">
-                                                <div class="modal-header">
-                                                    <div class="modal-title modal-title__font-l text-left mb-0">보미쌤 검색</div>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="ssamSearch__wrap">
-
-                                                        <div class="ui-form ui-form__button ui-form__flex--row">
-                                                            <input type="text" class="ui-input" value="" placeholder="이름을 입력하세요">
-                                                            <button type="submit" class="ui-button ui-button__certi ui-button__width-280 ui-button__font-xs"  data-toggle="modal" data-target="#ssamSearch"
-                                                            >검색</button>
-                                                        </div>
-                                                        <div class="ssamLineTop">
-                                                            <div class="ssamLine d-flex">
-                                                                <div class="name">김보미</div>
-                                                                <div class="phone ta-c">010-1234-5678</div>
-                                                                <div class="genderAge ta-r"><span>여</span>/<span>58세</span></div>
-                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
-                                                            </div>
-                                                            <div class="ssamLine d-flex">
-                                                                <div class="name">이일화</div>
-                                                                <div class="phone ta-c">010-1234-5678</div>
-                                                                <div class="genderAge ta-r"><span>여</span>/<span>61세</span></div>
-                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
-                                                            </div>
-                                                            <div class="ssamLine d-flex">
-                                                                <div class="name">박보미</div>
-                                                                <div class="phone ta-c">010-1234-5678</div>
-                                                                <div class="genderAge ta-r"><span>여</span>/<span>49세</span></div>
-                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
-                                                            </div>
-                                                            <div class="ssamLine d-flex">
-                                                                <div class="name">최보미</div>
-                                                                <div class="phone ta-c">010-1234-5678</div>
-                                                                <div class="genderAge ta-r"><span>여</span>/<span>52세</span></div>
-                                                                <div class="choice ta-r"><a href="javascript:void(0);">선택</a></div>
-                                                            </div>
-                                                        </div>
+                                                <div class="modal-core">
+                                                    <div class="img-wrap">
+                                                        <img src="../resource/image/m-sub/icon-complete.png" alt="" style="display:block;margin:0 auto;width:28.5rem; height:28.5rem;">
                                                     </div>
+        
+                                                    <div class="sub-text text-center mt-120">
+                                                        선택하신 일감에 지원을 하셨습니다.
+                                                    </div>
+                                                    <div class="sub-text text-center mt-80">
+                                                        지원을 완료하시려면 ‘확인’ 버튼을<br/>지원을 취소하시려면 ‘취소’ 버튼을 클릭하세요.
+                                                    </div>
+        
+                                                </div>
+                                                <div class="modal-buttons modal-buttons__sticky">
+                                                    <button type="button" class="ui-button ui-button__border-purple" data-dismiss="modal">취소</button>
+                                                    <button type="button" class="ui-button ui-button__bg-purple">확인(지원완료)</button>
                                                 </div>
                                         </div>
 
