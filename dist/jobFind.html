@@ -18,10 +18,12 @@
 
 
     <link rel="stylesheet" href="../resource/css/enroll.css">
+    <link rel="stylesheet" href="../resource/css/jobFind.css">
     
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/include.js"></script>
     
     
 </head>
@@ -40,7 +42,6 @@
         <!-- //[include] header -->
         <!-- //header -->
 
-
         <!-- container -->
         <div class="container container-main">
 
@@ -48,27 +49,6 @@
 
                 <div class="container-core">
                     <div class="container-core__inner">
-
-                        <section class="care-service">
-                            <div class="care-service__inner--purple">
-                                <div class="care-service__now">
-                                    <div class="small-title"><span>P</span><p>PREMIUM</p></div>
-                                    <div class="name">이일화 님,</div>
-                                    <div class="text">함께한 기간과 수익금을 확인하세요.</div>
-                                </div>
-                                <div class="premium__wrap d-flex">
-                                    <div class="premium__box">
-                                        <div class="text calender">함께한 기간</div>
-                                        <div class="num">1,236<span>일</span></div>
-                                    </div>
-                                    <div class="premium__box">
-                                        <div class="text piggybank">수익금</div>
-                                        <div class="num">1,538,000<span>원</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>   
-
                         <section class="index-case-box">
                             <div class="index-case-box__inner">
                                 <div class="index-case__title">선호 지역</div>
@@ -121,11 +101,11 @@
                                     <li class="carer-list">
                                         <div class="carer-item">
                                             <div class="carer-content">
-                                                <div class="carer-info">
+                                                <div class="carer-info jobFind bgWhite">
                                                     <div class="carer-detail">
                                                         <dl class="carer-detail__list">
                                                             <dt class="carer-detail__title">병원명</dt>
-                                                            <dd class="carer-detail__text">신촌세브란스 병원</dd>
+                                                            <dd class="carer-detail__text">신촌세브란스 병원<a href="javascript:void(0);">위치보기</a></dd>
                                                         </dl>
                                                         <dl class="carer-detail__list">
                                                             <dt class="carer-detail__title">환자 정보</dt>
@@ -144,12 +124,18 @@
                                                             <dd class="carer-detail__text">일 120,000원</dd>
                                                         </dl>
                                                         <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병구분</dt>
-                                                            <dd class="carer-detail__text">익스프레스</dd>
+                                                            <dt class="carer-detail__title">전염성질환</dt>
+                                                            <dd class="carer-detail__text">없음</dd>
                                                         </dl>
                                                         <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병비용</dt>
-                                                            <dd class="carer-detail__text">일 120,000원</dd>
+                                                            <dt class="carer-detail__title">거동 가능 여부</dt>
+                                                            <dd class="carer-detail__text">부분적 도움</dd>
+                                                        </dl>
+                                                        <dl class="d-block">
+                                                            <dt class="sub-dt">보호자 요청사항</dt>
+                                                            <dd>
+                                                                <input placeholder="잘 보살펴 주세요. 잘 부탁드립니다.">
+                                                            </dd>
                                                         </dl>
                                                     </div>
                                                 </div>
@@ -161,53 +147,6 @@
                                         </div>
                                     </li>
                                     <!-- //지원하기 on -->
-
-                                    <!-- 지원하기 off -->
-                                    <li class="carer-list">
-                                        <div class="carer-item">
-                                            <div class="carer-content">
-                                                <div class="carer-info">
-                                                    <div class="carer-detail">
-                                                        <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">병원명</dt>
-                                                            <dd class="carer-detail__text">신촌세브란스 병원</dd>
-                                                        </dl>
-                                                        <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">환자 정보</dt>
-                                                            <dd class="carer-detail__text">여, 73세, 55kg</dd>
-                                                        </dl>
-                                                        <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병시작일(기간)</dt>
-                                                            <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
-                                                        </dl>
-                                                        <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병구분</dt>
-                                                            <dd class="carer-detail__text">익스프레스</dd>
-                                                        </dl>
-                                                        <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병비용</dt>
-                                                            <dd class="carer-detail__text">일 120,000원</dd>
-                                                        </dl>
-                                                        <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병구분</dt>
-                                                            <dd class="carer-detail__text">익스프레스</dd>
-                                                        </dl>
-                                                        <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병비용</dt>
-                                                            <dd class="carer-detail__text">일 120,000원</dd>
-                                                        </dl>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="carer-buttons off">
-                                                <button type="button" class="carer-button carer-button__wish"><i></i></button>
-                                                <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer"><i></i>지원하기</button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- //지원하기 off -->
-
-
                                     <!-- 상세보기 -->
                                     <li class="carer-list">
                                         <div class="carer-item">

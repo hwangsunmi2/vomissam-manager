@@ -137,9 +137,52 @@
             transform: rotateY(0deg);
   }
 }
+.apply .carer-detail__text a {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 4rem;
+  padding: 1.5rem 4rem;
+  font-size: 4.4rem;
+  background-color: #9f96c4;
+  color: #fff;
+  border-radius: 5rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
 .jobFind {
   border-radius: 3rem;
   background-color: #f5f4f9;
+}
+.jobFind.bgWhite {
+  background-color: #fff;
+}
+.jobFind.bgWhite .d-block {
+  margin-top: 2rem;
+}
+.jobFind.bgWhite .d-block input {
+  padding: 6rem 7rem;
+  margin-top: 5rem;
+  width: 100%;
+  border-radius: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.jobFind.bgWhite .d-block input::-webkit-input-placeholder {
+  color: #000;
+}
+.jobFind.bgWhite .d-block input::-moz-placeholder {
+  color: #000;
+}
+.jobFind.bgWhite .d-block input:-ms-input-placeholder {
+  color: #000;
+}
+.jobFind.bgWhite .d-block input::-ms-input-placeholder {
+  color: #000;
+}
+.jobFind.bgWhite .d-block input::placeholder {
+  color: #000;
 }
 .jobFind .rating-detail dl {
   -webkit-box-align: center;
