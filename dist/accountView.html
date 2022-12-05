@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>보미쌤</title>
 
+    <!-- 공통 css -->
     <link rel="stylesheet" href="../resource/css/reset.css">
     <link rel="stylesheet" href="../resource/css/font.css">
     <link rel="stylesheet" href="../resource/css/common.css">
     <link rel="stylesheet" href="../resource/css/lib/swiper.min.css">
     <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../resource/css/lib/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../resource/css/ux-common.css">
-    <link rel="stylesheet" href="../resource/css/intro.css">
+    <!-- //공통 css -->
+
+    <!-- 각 페이지 css -->
+    <link rel="stylesheet" href="../resource/css/payment.css">
+    <link rel="stylesheet" href="../resource/css/custom.css">
+    <!-- //각 페이지 css -->
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/moment.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/swiper.min.js"></script>
     <script type="text/javascript" src="../resource/js/include.js"></script>
     <script type="text/javascript" src="../resource/js/common.js"></script>
-    <script type="text/javascript" src="../resource/js/main.js"></script>
+    <script type="text/javascript" src="../resource/js/sub.js"></script>
+    
+    
+    
 </head>
 <body>
     <div class="wrap">
@@ -30,13 +42,295 @@
             <a href="#">본문 바로가기</a>
         </div>
         <!-- //skipNavigation -->
+
+        <!-- header -->
+        <!-- [include] header -->
+        <header>
+            <div class="header__inner">
+                <div class="page-back">
+                    <div class="page-back__inner">
+                        <button type="button" class="ui-button ui-button__page--back"></button>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <div class="header-title__inner">
+                        결제 내역
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-alarm">
+                        <div class="header-alarm__inner">
+                            <button type="button" class="header-alarm__button"></button>
+                        </div>
+                    </div>
+                    <div class="header-hamberger">
+                        <div class="header-hamberger__inner">
+                            <button type="button" class="header-hamberger__button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </header>
+        <!-- //[include] header -->
+        <!-- //header -->
+
+
         <!-- container -->
-        <div class="container container-intro">
+        <div class="container">
+
             <div class="container__inner">
-                
+
+                <div class="container-core">
+                    <div class="container-core__inner container-core__flex">
+                        <section class="sub-content">
+                            <section class="sub-items sub-item--totalPayment">
+                                <div class="sub-item">
+                                    <div class="sub-item__box sub-item__box--gray date-box border-radius--3">
+                                        <span class="sub-title4 font-weight-bold">기간</span>
+                                        <div class="ui-form d-flex align-center js-datepicker-range mt-40">
+                                            <div class="form-flex-cell flex-4">
+                                                <div class="ui-input-block ui-input-block--date input-width-date">
+                                                <input type="text" class="ui-input js-datepicker-range__min ui-input__height-s" title="시작 날짜" value="2021-12-08" />
+                                                </div>
+                                            </div>
+                                            <div class="form-flex-cell form-flex-cell--date-hyphen mx-4">~</div>
+                                            <div class="form-flex-cell flex-4">
+                                                <div class="ui-input-block ui-input-block--date input-width-date">
+                                                <input type="text" class="ui-input js-datepicker-range__max ui-input__height-s" title="마지막 날짜" value="2021-12-10" />
+                                                </div>
+                                            </div>
+                                            <button type="button" class="ui-button ui-button__bg-purple flex-2 ml-4 ui-button__height-135 font-size__xxs">검색</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-item">
+                                    <div class="sub-item__box sub-item__blue sub-item__box--totalPay">
+                                        <p class="totalPay__txt">
+                                            총 결제 금액
+                                            <span>￦ <em>3,880,900</em> 원</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="sub-item details">
+                                    <div class="sub-item__box--gray sub-item__box--border">
+                                        <div class="sub-list__dl d-flex">
+                                            <div class="text">
+                                                <dl class="sub-dl">
+                                                    <dt class="sub-dt">근무 기간 : </dt>
+                                                    <dd class="sub-dd sub-dd__left">2022. 09. 19 ~ 2011. 09. 26 (7일)</dd>
+                                                </dl>
+                                                <dl class="sub-dl">
+                                                    <dt class="sub-dt">간병비 : </dt>
+                                                    <dd class="sub-dd sub-dd__left ">일 120,000 / 총 840,000원 </dd>
+                                                </dl>
+                                                <dl class="sub-dl">
+                                                    <dt class="sub-dt">공제 금액 : </dt>
+                                                    <dd class="sub-dd sub-dd__left">35,000원</dd>
+                                                </dl>
+                                                <dl class="sub-dl">
+                                                    <dt class="sub-dt">정산금액 : </dt>
+                                                    <dd class="sub-dd sub-dd__left">815,000원</dd>
+                                                </dl>   
+                                            </div>
+                                            <div class="detailsView">
+                                                <button type="button" data-toggle="modal" data-target="#detailPop">상세보기</button>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-item details">
+                                    <div class="sub-item__box--gray sub-item__box--border">
+                                        <div class="sub-list__dl d-flex">
+                                            <div class="text">
+                                                <dl class="sub-dl">
+                                                    <dt class="sub-dt">근무 기간 : </dt>
+                                                    <dd class="sub-dd sub-dd__left">2022. 09. 19 ~ 2011. 09. 26 (7일)</dd>
+                                                </dl>
+                                                <dl class="sub-dl">
+                                                    <dt class="sub-dt">간병비 : </dt>
+                                                    <dd class="sub-dd sub-dd__left ">일 120,000 / 총 840,000원 </dd>
+                                                </dl>
+                                                <dl class="sub-dl">
+                                                    <dt class="sub-dt">공제 금액 : </dt>
+                                                    <dd class="sub-dd sub-dd__left">35,000원</dd>
+                                                </dl>
+                                                <dl class="sub-dl">
+                                                    <dt class="sub-dt">정산금액 : </dt>
+                                                    <dd class="sub-dd sub-dd__left">815,000원</dd>
+                                                </dl>   
+                                            </div>
+                                            <div class="detailsView">
+                                                <button type="button"data-toggle="modal" data-target="#detailPop">상세보기</button>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sub-item details">
+                                    <div class="sub-item__box--gray sub-item__box--border">
+                                        <div class="sub-list__dl d-flex">
+                                            <div class="text">
+                                                <dl class="sub-dl">
+                                                    <dt class="sub-dt">근무 기간 : </dt>
+                                                    <dd class="sub-dd sub-dd__left">2022. 09. 19 ~ 2011. 09. 26 (7일)</dd>
+                                                </dl>
+                                                <dl class="sub-dl">
+                                                    <dt class="sub-dt">간병비 : </dt>
+                                                    <dd class="sub-dd sub-dd__left ">일 120,000 / 총 840,000원 </dd>
+                                                </dl>
+                                                <dl class="sub-dl">
+                                                    <dt class="sub-dt">공제 금액 : </dt>
+                                                    <dd class="sub-dd sub-dd__left">35,000원</dd>
+                                                </dl>
+                                                <dl class="sub-dl">
+                                                    <dt class="sub-dt">정산금액 : </dt>
+                                                    <dd class="sub-dd sub-dd__left">815,000원</dd>
+                                                </dl>   
+                                            </div>
+                                            <div class="detailsView">
+                                                <button type="button" data-toggle="modal" data-target="#detailPop">상세보기</button>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+
+                        <!-- 모달 -->
+                        <div class="modal fade" id="detailPop" tabindex="-1" aria-labelledby="detailPopLabel"
+                            aria-hidden="true" style="z-index: 1060;">
+                                <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                    <div class="modal-content modal-content__s modal-content__ssamSearch">
+                                        <div class="modal-body modal-body__main">
+                                                <div class="modal-header">
+                                                    <div class="modal-title modal-title__font-l text-left mb-0">&lt;건별/월별/기간별 상세 내역 보기&gt;</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="dTable">
+                                                        <p>&lt;지급내역&gt;</p>
+                                                        <div class="board-table">
+                                                            <div class="board-table__lsit">
+                                                                <table>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th rowspan="2">근무일수</th>
+                                                                            <th colspan="4">지급금</th>
+                                                                            <th>과세표준액</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>지급간병비</th>
+                                                                            <th>교육비</th>
+                                                                            <th>기타추가금</th>
+                                                                            <th>특별수당</th>
+                                                                            <th>실지급계</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>22</td>
+                                                                            <td>3,300,000</td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td>3,300,000</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <div>표를 밀어보세요 ></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dTable">
+                                                        <p>&lt;공제내역&gt;</p>
+                                                        <div class="board-table">
+                                                            <div class="board-table__lsit">
+                                                                <table>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th rowspan="2">소득세</th>
+                                                                            <th colspan="5">공제금</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>식대</th>
+                                                                            <th>유니폼</th>
+                                                                            <th>일회비</th>
+                                                                            <th>보험료</th>
+                                                                            <th>차인지급액</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>108,900</td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td>3,191,100</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <div>표를 밀어보세요 ></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-buttons modal-buttons__sticky">
+                                                    <button type="button" class="ui-button ui-button__border-purple" data-dismiss="modal">닫기</button>
+                                                    <button type="button" class="ui-button ui-button__bg-purple">확인</button>
+                                                </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- //모달 -->
+                    </div>
+                </div>
+
+
             </div>
+
         </div>
         <!-- //container -->
+
+        <!-- quick-menu -->
+        <section class="quick-menu">
+            <div class="quick-menu__inner">
+                <!-- 전달사항 :: 선택 항목에 클래스 is-active 붙습니다. -->
+                <button type="button" class="quick-menu__button quick-menu__button--search ">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">일감찾기</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--calculate is-active">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">간병비 정산</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--note">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">보미쌤 노트</span>
+                </button>
+                <button type="button" class="quick-menu__button quick-menu__button--my">
+                    <i></i>
+                    <span class="quick-menu__button-text--purple">내정보관리</span>
+                </button>
+            </div>
+        </section>
+        <!-- //quick-menu -->
+
+        <!-- footer -->
+        <!-- [include] footer -->
+        <footer data-include-file="../include/footer.html" class="footer-wrap js-include"></footer>
+        <!-- //[include] footer -->
+        <!-- //footer -->
+
+       
+        
+
     </div>
+
 </body>
+<script>
+   
+</script>
 </html>

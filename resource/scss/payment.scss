@@ -259,5 +259,117 @@
             text-align: center;
             box-sizing: border-box;
         }
+        &--gray {
+            border-radius: 3rem;
+        }
+        .ui-input {
+            width: 100%;
+            padding-left: 5.5rem;
+            height: 13.5rem;
+            font-size: 5.5rem;
+            text-indent: 0;
+        }
+        &--totalPay {
+            padding:13.5rem 9rem;
+            color: #fff;
+            border-radius: 3rem;
+            background-image: url("../image/sub/img-totalPay.png");
+            background-position: 102% 130%;
+            background-repeat: no-repeat;
+            background-size: 42rem 32rem;
+            background-color: #795bdc;
+            box-sizing: border-box;
+            .totalPay {
+                &__txt {
+                    font-size: 6rem;
+                    span {
+                        display: block;
+                        margin-top: 5rem;
+                        font-size: 8rem;
+                        font-weight: 500;
+                        em {
+                            font-size: 8rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+        }
+        input {
+            background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_12_53)'%3E%3Cpath d='M12.7855 12H1.21446C0.545157 12 0 11.4863 0 10.8557V2.01907C0 1.38715 0.545157 0.874756 1.21446 0.874756H12.7855C13.4548 0.874756 14 1.38842 14 2.01907V10.8557C14 11.4863 13.4548 12 12.7855 12ZM1.21446 1.63763C0.991807 1.63763 0.809639 1.80928 0.809639 2.01907V10.8557C0.809639 11.0655 0.991807 11.2371 1.21446 11.2371H12.7855C13.0082 11.2371 13.1904 11.0655 13.1904 10.8557V2.01907C13.1904 1.80928 13.0082 1.63763 12.7855 1.63763H1.21446Z' fill='%23424242'/%3E%3Cpath d='M13.4602 4.30769H0.555942C0.331942 4.30769 0.151123 4.13731 0.151123 3.92625C0.151123 3.71519 0.331942 3.54482 0.555942 3.54482H13.4602C13.6842 3.54482 13.865 3.71519 13.865 3.92625C13.865 4.13731 13.6842 4.30769 13.4602 4.30769Z' fill='%23424242'/%3E%3Cpath d='M3.89573 2.51113C3.67173 2.51113 3.49091 2.34075 3.49091 2.12969V0.381437C3.49091 0.170375 3.67173 0 3.89573 0C4.11972 0 4.30054 0.170375 4.30054 0.381437V2.12969C4.30054 2.34075 4.11972 2.51113 3.89573 2.51113Z' fill='%23424242'/%3E%3Cpath d='M6.99936 2.51113C6.77536 2.51113 6.59454 2.34075 6.59454 2.12969V0.381437C6.59454 0.170375 6.77536 0 6.99936 0C7.22336 0 7.40418 0.170375 7.40418 0.381437V2.12969C7.40418 2.34075 7.22336 2.51113 6.99936 2.51113Z' fill='%23424242'/%3E%3Cpath d='M10.1029 2.51113C9.87894 2.51113 9.69812 2.34075 9.69812 2.12969V0.381437C9.69812 0.170375 9.87894 0 10.1029 0C10.3269 0 10.5078 0.170375 10.5078 0.381437V2.12969C10.5078 2.34075 10.3269 2.51113 10.1029 2.51113Z' fill='%23424242'/%3E%3Cpath d='M3.18458 5.57915H2.16309V6.45391H3.18458V5.57915Z' fill='%23424242'/%3E%3Cpath d='M5.38142 5.57915H4.35992V6.45391H5.38142V5.57915Z' fill='%23424242'/%3E%3Cpath d='M7.5782 5.57915H6.5567V6.45391H7.5782V5.57915Z' fill='%23424242'/%3E%3Cpath d='M9.77503 5.57915H8.75354V6.45391H9.77503V5.57915Z' fill='%23424242'/%3E%3Cpath d='M11.9719 5.57915H10.9504V6.45391H11.9719V5.57915Z' fill='%23424242'/%3E%3Cpath d='M3.18458 7.39098H2.16309V8.26574H3.18458V7.39098Z' fill='%23424242'/%3E%3Cpath d='M5.38142 7.39098H4.35992V8.26574H5.38142V7.39098Z' fill='%23424242'/%3E%3Cpath d='M7.5782 7.39098H6.5567V8.26574H7.5782V7.39098Z' fill='%23424242'/%3E%3Cpath d='M9.77503 7.39098H8.75354V8.26574H9.77503V7.39098Z' fill='%23424242'/%3E%3Cpath d='M11.9719 7.39098H10.9504V8.26574H11.9719V7.39098Z' fill='%23424242'/%3E%3Cpath d='M3.18458 9.20279H2.16309V10.0776H3.18458V9.20279Z' fill='%23424242'/%3E%3Cpath d='M5.38142 9.20279H4.35992V10.0776H5.38142V9.20279Z' fill='%23424242'/%3E%3Cpath d='M7.5782 9.20279H6.5567V10.0776H7.5782V9.20279Z' fill='%23424242'/%3E%3Cpath d='M9.77503 9.20279H8.75354V10.0776H9.77503V9.20279Z' fill='%23424242'/%3E%3Cpath d='M11.9719 9.20279H10.9504V10.0776H11.9719V9.20279Z' fill='%23424242'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_12_53'%3E%3Crect width='14' height='12' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+            background-position: 90% center;
+            background-size: 7rem 7rem;
+            background-repeat: no-repeat;
+        }
+        &--border {
+            border: none;
+        }
+    }
+    &--totalPayment {
+        .sub-item {
+            &+.sub-item {
+                margin-top: 7rem;
+            }
+            &:first-child {
+                margin-bottom: 13rem;
+            }
+            &.details {
+                border:1px solid #d8dce2;
+                background-color: #fff;
+                border-radius: 3rem;
+                margin:5rem 5rem 0 5rem;
+                .detailsView {
+                    button {
+                        display: inline-block;
+                        padding:3rem 4rem;
+                        background-color: #9f96c4;
+                        border-radius: 1.3rem;
+                        font-size:4.8rem;
+                        font-weight:500;
+                        color:#fff;
+                    }
+                    
+                }
+            }
+            &__box {
+                &--border {
+                    padding: 6rem;
+                    background-color: #fff;
+                    .sub-list__dl {
+                        align-items: center;
+                        justify-content: space-between;
+                        .sub-dt {
+                            padding-right:1.5rem;
+                            color:#6349ba;
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+#detailPop {
+    .modal-body {
+        padding-top:6rem;
+        .dTable {
+            padding:0 6rem 6rem 6rem;
+            p {
+                font-size:5.4rem;
+            }
+            .board-table {
+                padding-top:4rem;
+                border-top:1px solid #999999;
+                tr {
+                    border-bottom: 1px solid #e0e0e0;
+                }
+            }
+
+        }
     }
 }
