@@ -20,6 +20,7 @@
 
     <!-- 각 페이지 css -->
     <link rel="stylesheet" href="../resource/css/payment.css">
+    <link rel="stylesheet" href="../resource/css/mypage.css">
     <!-- //각 페이지 css -->
 
 
@@ -83,103 +84,102 @@
 
                 <div class="container-core">
                     <div class="container-core__inner container-core__flex">
-                        <section class="sub-content">
-                            <section class="sub-items">
+                        <section class="sub-items">
 
-                                <div class="sub-item">
-                                    <p class="sub-item__title">22년 09월 21일 입금액(예상)</p>
+                            <div class="sub-item">
+                                <p class="sub-item__title">22년 09월 21일 입금액(예상)</p>
 
-                                    <div class="ui-buttons mt-80">
-                                        <button type="button" class="ui-button ui-button__bg-purple ui-button__height-m ui-button__radius-s">858,370원</button>
-                                    </div>
-
-
-                                    <div class="sub-item__box sub-item__box--receipt calculate">
-                                        <div class="sub-list__dl">
-                                            <div class="title">정산내역</div>
-                                            <dl class="sub-dl">
-                                                <dt class="sub-dt">일 간병비</dt>
-                                                <dd class="sub-dd sub-dd__right">137,800 원</dd>
-                                            </dl>
-                                            <dl class="sub-dl">
-                                                <dt class="sub-dt">총 간병비</dt>
-                                                <dd class="sub-dd sub-dd__right ">2,342,600 원 (16일)</dd>
-                                            </dl>
-                                            <dl class="sub-dl sub-dl__center mt-60">
-                                                <dt class="sub-dt">적립금</dt>
-                                                <dd class="sub-dd sub-dd__right">
-                                                    <div class="ui-form ui-form__flex--row ui-form__flex--right">
-                                                        <div class="ui-form__cell ui-form__cell--s ml-0">
-                                                            <input type="text"
-                                                                class="ui-input ui-input__width-430 ui-input__height-s"
-                                                                placeholder="150,000">
-                                                        </div>
-                                                        <div class="ui-form__cell ml-20">
-                                                            <button type="button"
-                                                                class="ui-button  ui-button__width-auto ui-button__height-135  ui-button__bg-blue ui-button__font-xxs">전액사용</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="des-text2 mt-40">사용가능한 적립금 0원</div>
-                                                </dd>
-                                            </dl>
-                                        </div>
-
-                                        <div class="sub-list__dl">
-                                            <dl class="sub-dl">
-                                                <dt class="sub-dt">총 간병 비용</dt>
-                                                <dd class="sub-dd sub-dd__right"> 2,342,600 원</dd>
-                                            </dl>
-                                            <dl class="sub-dl">
-                                                <dt class="sub-dt">적립금 사용</dt>
-                                                <dd class="sub-dd sub-dd__right ">0 원</dd>
-                                            </dl>
-                                        </div>
-
-                                        <div class="total-cost__box ">
-                                            <div class="total-cost__box--inner">
-                                                <dl class="total-cost__list">
-                                                    <dt class="total-cost__title">총 합계 금액</dt>
-                                                    <dd class="total-cost__text">1,556,000원</dd>
-                                                </dl>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="sub-item">
-                                    <p class="sub-item__title">결제 방법 선택</p>
-                                    <div class="sub-item__box">
-                                        <div class="ui-buttons">
-                                            <button type="button"
-                                                class="ui-button  ui-button__border-gray ui-button__icon ui-button__icon-payAll ui-button__font-xs ui-button__check is-active">간병비 일괄
-                                                결제</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sub-item">
-                                    <p class="sub-item__title sub-item__title--subs">
-                                        구독형 결제를 이용하시겠습니까?
-                                        <button type="button" class="sub-item__btn--view"  data-toggle="modal" data-target="#detailServiceSubs">내용보기</button>
-                                    </p>
-                                    <div class="sub-item__box">
-                                        <div class="ui-buttons">
-                                            <button type="button"
-                                                class="ui-button  ui-button__border-gray ui-button__icon ui-button__icon-paySep ui-button__font-xs ui-button__check">구독형<span
-                                                    class="font-size__xxs">(분할결제)</span></button>
-                                        </div>
+                                <div class="sub-item__box expectation">
+                                    <div class="income">
+                                        858,370원
                                     </div>
                                 </div>
 
 
-                            </section>
+                                <div class="sub-item__box sub-item__box--receipt calculate">
+                                    <div class="sub-list__dl">
+                                        <div class="title">정산내역</div>
+                                        <div class="history">
+                                            <dl class="sub-dl">
+                                                <dt class="sub-dt">간병코드 : </dt>
+                                                <dd class="sub-dd sub-dd__left">VMS22103</dd>
+                                            </dl>
+                                            <dl class="sub-dl">
+                                                <dt class="sub-dt">일간병비 : </dt>
+                                                <dd class="sub-dd sub-dd__left">130,000원</dd>
+                                            </dl>
+                                            <dl class="sub-dl">
+                                                <dt class="sub-dt">간병기간 : </dt>
+                                                <dd class="sub-dd sub-dd__left">9.14~20(7일)</dd>
+                                            </dl>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="sub-list__dl">
+                                        <dl class="sub-dl">
+                                            <dt class="sub-dt">수입금액</dt>
+                                            <dd class="sub-dd sub-dd__right"> 910,000원</dd>
+                                        </dl>
+                                        <dl class="sub-dl">
+                                            <dt class="sub-dt">공제액</dt>
+                                            <dd class="sub-dd sub-dd__right "></dd>
+                                        </dl>
+                                    </div>
+
+                                    <div class="sub-list__dl">
+                                        <dl class="sub-dl">
+                                            <dt class="sub-dt">소득세</dt>
+                                            <dd class="sub-dd sub-dd__right">30,030원</dd>
+                                        </dl>
+                                        <dl class="sub-dl">
+                                            <dt class="sub-dt">보험료&수수료</dt>
+                                            <dd class="sub-dd sub-dd__right ">21,000원</dd>
+                                        </dl>
+                                    </div>
+
+                                    <div class="total-cost__box ">
+                                        <div class="total-cost__box--inner">
+                                            <dl class="total-cost__list">
+                                                <dt class="total-cost__title">지급액</dt>
+                                                <dd class="total-cost__text">858,370원</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sub-item">
+                                <p class="sub-item__title">현재까지 총 수입 <a class="gray" href="javascript:void(0);">상세내역보기</a></p>
+
+                                <div class="sub-item__box">
+                                    <div class="income">
+                                        15,890,000원
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </section>
 
 
                         <section class="page-bottom page-bottom__padding">
-                            <div class="page-bottom__inner">
-                                <div class="ui-buttons">
-                                    <button type="button" class="ui-button ui-button__border-gray">이전</button>
-                                    <button type="button" class="ui-button ui-button__border-blue">다음</button>
+                            <div class="myInfo-wrap">
+                                <div class="bank-list-box mt-60">
+                                    <div class="bank-list">
+                                        <div class="bank-item">
+                                            <span class="bank-item__img">
+                                                <img src="../resource/image/m-sub/img-bankLogo--shinhan.png" alt="">
+                                            </span>
+                                            <p class="bank-item__txt">
+                                                <span>신한은행</span>
+                                                110-12345678-123
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="plus-card mt-120">
+                                        <button type="button" class="button-plus-card">계좌 변경</button>
+                                    </div>
                                 </div>
                             </div>
                         </section>

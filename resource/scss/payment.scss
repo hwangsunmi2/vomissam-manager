@@ -164,11 +164,11 @@
     &::before{
         position: absolute;
         left: 0;
-        bottom: -1.3rem;
+        bottom: -2rem;
         width: 100%;
         height: 4.4rem;
         background: url(../image/sub/bg-receipt__bottom.png) no-repeat bottom;
-        background-size: 134rem 4.4rem;
+        background-size: 100% 4.4rem;
         content:""
     }
     .sub{
@@ -189,12 +189,75 @@
     }
     &.calculate {
         margin-top:4rem;
+        ::before {
+            position: absolute;
+            left: 0;
+            bottom: -1rem;
+            width: 100%;
+            height: 11.4rem;
+            background: url(../image/sub/bg-receipt__bottom.png) no-repeat bottom;
+            background-size: 100% 4.4rem;
+            content: "";
+        }
         .title{
             padding-bottom:7rem;
             font-size:6rem;
             text-align: center;
             border-bottom:1px solid #000;
         }
+        .history {
+            margin-top:10rem;
+            dl {
+                &+dl {
+                    margin-top:4rem;
+                }
+                dt {
+                    margin-right:1rem;
+                }
+                dd {
+                    color:#575c62;
+                }
+            }
+        }
     }
 
+}
+
+.sub-item{
+    &__title {
+        .gray{
+            float:right;
+            font-size:4.8rem;
+            font-weight:500;
+            color:#9196a5;
+        }
+    }
+    &__box {
+        &.expectation {
+            .income {
+                width:100%;
+                padding:6.3rem 0;
+                border:0.3rem solid #795bdc;
+                color:#fff;
+                font-size:8rem;
+                font-weight:500;
+                background-color: #795bdc;
+                border-radius: 3rem;
+                text-align: center;
+                box-sizing: border-box;
+            }
+        }
+        .income {
+            width:100%;
+            padding:6.3rem 0;
+            border:0.3rem solid #795bdc;
+            color:#6349ba;
+            font-size:8rem;
+            font-weight:500;
+            background-color: #f5f4f9;
+            border-radius: 3rem;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    }
 }
