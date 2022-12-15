@@ -495,13 +495,8 @@
 }
 .agreeView .form-check input[type=checkbox] {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  opacity: 0;
+  z-index: -1;
 }
 .agreeView .form-check input.termsService[type=checkbox] + label::before {
   position: absolute;
@@ -523,6 +518,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.agreeView .form-check input.termsService[type=checkbox]:checked + label::before {
+  background: #795bdc url(../image/common/icon/icon-check.png) no-repeat center center;
+  background-size: 4.5rem 3.1rem;
+  border: 1px solid #795bdc;
+}
 .agreeView .form-check .sub-item__btn--view {
   position: absolute;
   top: 8rem;
@@ -530,6 +530,7 @@
   width: 2.9rem;
   height: 5.1rem;
   background-image: url("../image/m-sub/icon-right-agree.png");
+  background-size: cover;
 }
 
 .attach-file__top {
