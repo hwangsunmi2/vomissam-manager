@@ -1491,6 +1491,7 @@
   border-radius: 0.3rem;
   background-color: #fff;
   background: #fff url(../image/m-sub/check_gray.png) no-repeat center center;
+  background-size: 4.5rem 3.1rem;
   border: 1px solid #ccc;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
