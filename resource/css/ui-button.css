@@ -12,13 +12,10 @@
   margin-left: 2rem;
 }
 .ui-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .ui-buttons__second {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: -1rem;
 }
 .ui-buttons__second .ui-button {
@@ -26,8 +23,7 @@
   margin: 1rem;
 }
 .ui-buttons__thirds {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: -1rem;
 }
 .ui-buttons__thirds .ui-button {
@@ -50,9 +46,7 @@
   margin-left: 2rem;
   background: #666666;
   color: #ffffff;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
 }
 .ui-button__bg-blue {
   background: #4b62c3;
@@ -77,21 +71,15 @@
 }
 .ui-button__width-xs {
   width: 42rem;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
 }
 .ui-button__width-s {
   width: 44rem;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
 }
 .ui-button__width-m {
   width: 66rem;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
 }
 .ui-button__width-auto {
   width: auto;
@@ -113,6 +101,11 @@
 .ui-button__height-135 {
   height: 13.5rem;
   line-height: 13.6rem;
+}
+.ui-button__height-300 {
+  height: 30rem;
+  padding-left: 5.8rem;
+  line-height: 8rem;
 }
 .ui-button__font-xxs {
   font-size: 4.6rem;
@@ -275,44 +268,39 @@
   font-weight: 500;
   color: #3c50a2;
   border-color: #4b62c3;
-  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 3.7rem center;
   background-size: 4.5rem 3.1rem;
-  -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
-          box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 .ui-button__check--purple.is-active {
   font-weight: 500;
   color: #6349ba;
   border-color: #6349ba;
-  background: url(../image/m-sub/check_purple.png) no-repeat right 5.8rem center;
+  background: url(../image/m-sub/check_purple.png) no-repeat right 3.7rem center;
   background-size: 4.5rem 3.1rem;
-  -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
-          box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 .ui-button__check--multi--purple.is-active {
   font-weight: 500;
   color: #6349ba;
   border-color: #6349ba;
-  background: url(../image/m-sub/check_purple.png) no-repeat right 5.8rem center;
+  background: url(../image/m-sub/check_purple.png) no-repeat right 3.7rem center;
   background-size: 4.5rem 3.1rem;
-  -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
-          box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 .ui-button__check--multi.is-active {
   font-weight: 500;
   color: #3c50a2;
   border-color: #4b62c3;
-  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 3.7rem center;
   background-size: 4.5rem 3.1rem;
-  -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
-          box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 .ui-button__click.is-active {
   font-weight: 500;
   color: #3c50a2;
   border-color: #4b62c3;
-  -webkit-box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
-          box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
+  box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 .ui-button__badge {
   padding: 1.7rem 2.8rem;
@@ -374,9 +362,7 @@
 }
 .button-google::before {
   display: inline-block;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
   width: 5.3rem;
   height: 5.5rem;
   margin-right: 4rem;
@@ -386,17 +372,13 @@
   content: "";
 }
 .button-plus-card {
-  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 15rem;
   font-size: 4.8rem;
@@ -426,11 +408,6 @@
   font-weight: 500;
 }
 
-@media (max-width: 1600px) {
-  .ui-buttons__second .ui-button__font-xs {
-    font-size: 3rem;
-  }
-}
 @media (max-width: 1024px) {
   .btn--download {
     width: 11.7rem;
@@ -445,15 +422,9 @@
     height: 5.4rem;
     font-size: 1.8rem;
   }
-  .ui-buttons__second .ui-button__font-xs {
-    font-size: 2.5rem;
-  }
 }
 @media (max-width: 768px) {
   .btn-wrap .btn {
     font-size: 14px;
-  }
-  .ui-buttons__second .ui-button__font-xs {
-    font-size: 3.2rem;
   }
 }

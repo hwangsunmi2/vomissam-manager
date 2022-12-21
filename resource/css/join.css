@@ -55,8 +55,7 @@
 }
 .icon.arrow-last {
   background-image: url("data:image/svg+xml;charset=utf8, ");
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .icon.arrow-prev {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -65,8 +64,7 @@
 .icon.arrow-next {
   background-image: url("data:image/svg+xml;charset=utf8, ");
   background-size: cover;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .icon.arrow-right {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -87,20 +85,6 @@
   background-image: url("data:image/svg+xml;charset=utf8, ");
 }
 
-@-webkit-keyframes wave {
-  0% {
-    opacity: 0;
-    background-position: left center;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    background-position: right center;
-    opacity: 0.4;
-  }
-}
-
 @keyframes wave {
   0% {
     opacity: 0;
@@ -114,28 +98,14 @@
     opacity: 0.4;
   }
 }
-@-webkit-keyframes rotateIcon {
-  50% {
-    opacity: 1;
-    -webkit-transform: rotateY(91deg);
-            transform: rotateY(91deg);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-}
 @keyframes rotateIcon {
   50% {
     opacity: 1;
-    -webkit-transform: rotateY(91deg);
-            transform: rotateY(91deg);
+    transform: rotateY(91deg);
   }
   100% {
     opacity: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
 }
 .join-top {
@@ -171,12 +141,8 @@
   padding: 5rem 4rem 7rem 4rem;
 }
 .joinStep-process__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   position: relative;
 }
 .joinStep-process__list::after {
@@ -210,17 +176,13 @@
   letter-spacing: -1px;
 }
 .joinStep-process__step .joinStep-process__img {
-  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 18rem;
   height: 18rem;

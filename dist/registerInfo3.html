@@ -81,6 +81,8 @@
                     <div class="container-core__inner container-core__flex">
                         <section class="sub-content">
 
+                            <!-- 2022.12.21 : mod : 레이아웃 수정 -->
+
                             <div class="enroll-box">
                                 <div class="enroll-box__inner">
                                     <div class="enroll-title">학력 사항</div>
@@ -92,52 +94,100 @@
                                     </div>
 
                                     <div class="ui-form ui-form__flex--row indentType mt__rem-4">
-                                        <div class="ui-form__cell width-200">대학교명</div>
+                                        <div class="ui-form__cell width-200 font-weight__r">대학교명</div>
                                         <div class="ui-form__cell flex">
                                             <input type="text" class="ui-input" placeholder="학교명">
                                         </div>
                                         
                                     </div>
-                                    <p class="text-ex-indent ml__rem-20">* 대학 졸업자에 한하여 기재</p>
                                     
+                                    <p class="text-ex-indent ml__rem-20 mt-40">* 대학 졸업자에 한하여 기재</p>
+                                    
+                                </div>
+                            </div>
 
-                                    <div class="enroll-title-small">대학교명</p>
-                                        <div class="ui-buttons ui-buttons__second">
-                                            <button type="button"
-                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">고졸 이하</button>
-                                            <button type="button"
-                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">전문대 졸</button>
-                                            <button type="button"
-                                                class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">대졸 이상</button>
-                                        </div>
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
 
-
-                                    <div class="enroll-title">돌봄 기술 정보 <p class="enroll-title-sub">*실제 간병 기간만 입력하세요</p>
-                                    </div>
+                                    <div class="enroll-title">경력 사항 <span class="enroll-title__sub">(경험하신 간병 장소를 모두 선택하세요)</span></div>
                                     <div class="ui-buttons ui-buttons__second">
                                         <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">콧줄식사보조</button>
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple ui-button__icon ui-button__icon-hospital">병원</button>
                                         <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">뱃줄식사보조</button>
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple ui-button__icon ui-button__icon-nursingHospital">요양병원</button>
                                         <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">소변주머니 관리</button>
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple ui-button__icon ui-button__icon-nursingHome">요양원</button>
                                         <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">기저귀 관리</button>
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple ui-button__icon ui-button__icon-home">재가</button>
+                                    </div>
+
+                                    <div class="ui-form ui-form__flex--row indentType mt__rem-4">
+                                        <div class="ui-form__cell width-200 font-weight__r">총 경력기간</div>
+                                        <div class="ui-form__cell flex">
+                                            <input type="text" class="ui-input" placeholder="">
+                                        </div>
+                                        <div class="ui-form__cell width-200 font-weight__r">년 이상</div>
+                                    </div>
+                                    <p class="text-ex-indent ml__rem-27 mt-40">* 실제 간병 기간만 입력하세요</p>
+                                    
+                                    
+                                    
+
+                                </div>
+                            </div>
+
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
+                                    <div class="enroll-title">자격증 <span class="enroll-title__sub">(보유자에 한함)</span></div>
+                                    <div class="ui-buttons ui-buttons__second">
                                         <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">침상 위 대소변기관리</button>
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple ui-button__icon ui-button__icon-nursing">간호사</button>
                                         <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">장루 관리</button>
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple ui-button__icon ui-button__icon-nursingAssistant">간호조무사</button>
                                         <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">침대와 휠체어 간의 이동 보조</button>
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple ui-button__icon ui-button__icon-caregiver">요양보호사</button>
                                         <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">체위(자세 변경)</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">욕창 관리</button>
-                                        <button type="button"
-                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple">입, 목석션</button>
+                                            class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--multi--purple ui-button__icon ui-button__icon-physicalTherapist">물리치료사</button>
+                                    </div>
+
+                                    <div class="ui-form ui-form__flex--row indentType mt__rem-4">
+                                        <div class="ui-form__cell width-200 font-weight__r">기타 자격</div>
+                                        <div class="ui-form__cell flex">
+                                            <input type="text" class="ui-input" placeholder="직접입력">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
+                                    <div class="enroll-title">한줄 자기소개</div>
+                                    <div class="ui-form mt-70">
+                                        <textarea name="" class="ui-textarea ui-textarea__height-265" placeholder="30자 이내로 작성하세요"></textarea>
+                                    </div>
+                                    <div class="ui-form ui-form__flex--row indentType mt__rem-4">
+                                        <div class="ui-form__cell line-height__80">위 작성된 모든 정보는 보미쌤이 될 경우 <br>프로필과 매칭에 활용되는 것에 동의합니다.</div>
+                                        <div class="ui-form__cell ml-auto">
+                                            <div class="ui-checkbox__list ml-40  agreeBox mt__rem-13">
+                                                <div class="ui-radio__list">
+                                                    <div class="ui-radio__inner">
+                                                        <div class="ui-radio-block ml-120 agree">
+                                                            <input type="radio" class="ui-radio" id="radio1" name="include" checked="">
+                                                            <label for="radio1" class="ui-label">
+                                                                <span class="ui-radio-object"></span>
+                                                                <span class="ui-label__text">동의하기</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--// 2022.12.21 : mod : 레이아웃 수정 -->
+
                         </section>
 
                         <section class="page-bottom">
@@ -179,10 +229,6 @@
         </section>
         <!-- //quick-menu -->
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 2eb63ec49ad7517188afd0d852db0fe2d6bdd032
         <!-- footer -->
         <!-- [include] footer -->
         <footer data-include-file="../include/footer.html" class="footer-wrap js-include"></footer>

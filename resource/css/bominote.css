@@ -54,8 +54,7 @@
 }
 .icon.arrow-last {
   background-image: url("data:image/svg+xml;charset=utf8, ");
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .icon.arrow-prev {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -64,8 +63,7 @@
 .icon.arrow-next {
   background-image: url("data:image/svg+xml;charset=utf8, ");
   background-size: cover;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .icon.arrow-right {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -86,20 +84,6 @@
   background-image: url("data:image/svg+xml;charset=utf8, ");
 }
 
-@-webkit-keyframes wave {
-  0% {
-    opacity: 0;
-    background-position: left center;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    background-position: right center;
-    opacity: 0.4;
-  }
-}
-
 @keyframes wave {
   0% {
     opacity: 0;
@@ -113,28 +97,14 @@
     opacity: 0.4;
   }
 }
-@-webkit-keyframes rotateIcon {
-  50% {
-    opacity: 1;
-    -webkit-transform: rotateY(91deg);
-            transform: rotateY(91deg);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-}
 @keyframes rotateIcon {
   50% {
     opacity: 1;
-    -webkit-transform: rotateY(91deg);
-            transform: rotateY(91deg);
+    transform: rotateY(91deg);
   }
   100% {
     opacity: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
 }
 .bomiNote-wrap {
@@ -172,27 +142,18 @@
   padding: 9rem 8rem;
 }
 .bomiNote-info dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: -5rem;
 }
 .bomiNote-info dl dt {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+  flex: 1 1 50%;
   margin-top: 5rem;
   font-size: 5.4rem;
 }
 .bomiNote-info dl dd {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+  flex: 1 1 50%;
   margin-top: 5rem;
   font-size: 5.6rem;
   font-weight: 500;
@@ -209,27 +170,17 @@
 }
 .bomiNote-diary {
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 4.5rem 6rem;
   background-color: #795bdc;
   border-radius: 2rem;
 }
 .bomiNote-diary__img {
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-end;
+  justify-content: center;
   width: 17rem;
   height: 17rem;
   margin-right: 4rem;
@@ -245,15 +196,9 @@
   color: #fff;
 }
 .bomiNote-diary > a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 20rem;
   height: 10rem;
   margin-left: auto;
@@ -264,9 +209,7 @@
   color: #6349ba;
 }
 .bomiNote-diary-write {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 4.5rem 9rem;
   padding-right: 12rem;
 }
@@ -299,23 +242,13 @@
   padding: 2.5rem 4rem;
 }
 .acordion-view__date {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .acordion-date {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 24rem;
   height: 8rem;
   margin-right: auto;

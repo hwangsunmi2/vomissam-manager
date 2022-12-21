@@ -118,6 +118,11 @@
             height:13.5rem;
             line-height: 13.6rem;
         }
+        &-300{
+            height:30rem;
+            padding-left: 5.8rem;
+            line-height: 8rem;
+        }
     }
     &__font{
         &-xxs{
@@ -326,7 +331,7 @@
             font-weight: 500;
             color:#3c50a2;
             border-color: #4b62c3;
-            background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+            background: url(../image/common/icon/icon-check__blue.png) no-repeat right 3.7rem center;
             background-size: 4.5rem 3.1rem;
             box-shadow: 1rem 1rem 3.3rem rgba(0,0,0,.13);
         }
@@ -335,7 +340,7 @@
                 font-weight: 500;
                 color:#6349ba;
                 border-color: #6349ba;
-                background: url(../image/m-sub/check_purple.png) no-repeat right 5.8rem center;
+                background: url(../image/m-sub/check_purple.png) no-repeat right 3.7rem center;
                 background-size: 4.5rem 3.1rem;
                 box-shadow: 1rem 1rem 3.3rem rgba(0,0,0,.13);
             }
@@ -346,7 +351,7 @@
                     font-weight: 500;
                     color:#6349ba;
                     border-color: #6349ba;
-                    background: url(../image/m-sub/check_purple.png) no-repeat right 5.8rem center;
+                    background: url(../image/m-sub/check_purple.png) no-repeat right 3.7rem center;
                     background-size: 4.5rem 3.1rem;
                     box-shadow: 1rem 1rem 3.3rem rgba(0,0,0,.13);
                 }
@@ -355,7 +360,7 @@
                 font-weight: 500;
                 color:#3c50a2;
                 border-color: #4b62c3;
-                background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+                background: url(../image/common/icon/icon-check__blue.png) no-repeat right 3.7rem center;
                 background-size: 4.5rem 3.1rem;
                 box-shadow: 1rem 1rem 3.3rem rgba(0,0,0,.13);
             }
@@ -489,17 +494,17 @@
 
 @include media-breakpoint-down(n-xl) {
     //1600
-    .ui-buttons{
-        &__second {
-            .ui-button{
-                &__font {
-                    &-xs {
-                        font-size: 3rem;
-                    }
-                }
-            }
-        }
-    }
+    // .ui-buttons{
+    //     &__second {
+    //         .ui-button{
+    //             &__font {
+    //                 &-xs {
+    //                     font-size: 3rem;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     
 }
 
@@ -524,17 +529,17 @@
 
     }
 
-    .ui-buttons{
-        &__second {
-            .ui-button{
-                &__font {
-                    &-xs {
-                        font-size: 2.5rem;
-                    }
-                }
-            }
-        }
-    }
+    // .ui-buttons{
+    //     &__second {
+    //         .ui-button{
+    //             &__font {
+    //                 &-xs {
+    //                     font-size: 2.5rem;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 @include media-breakpoint-down(n-sm) {
@@ -544,16 +549,16 @@
         font-size: 14px;
     }
 
-    .ui-buttons{
-        &__second {
-            .ui-button{
-                &__font {
-                    &-xs {
-                        font-size: 3.2rem;
-                    }
-                }
-            }
-        }
-    }
+    // .ui-buttons{
+    //     &__second {
+    //         .ui-button{
+    //             &__font {
+    //                 &-xs {
+    //                     font-size: 3.2rem;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 
 }

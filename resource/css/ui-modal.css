@@ -18,9 +18,7 @@
   padding: 10rem 8rem;
 }
 .modal-dialog {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .modal-content {
   max-width: calc(100% - 10rem);
@@ -28,8 +26,7 @@
   width: 100%;
   padding: 0;
   border: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border-radius: 2rem;
   /* 모달 사이즈 */
 }
@@ -135,8 +132,6 @@
   border-radius: 0 0 2rem 2rem;
 }
 .modal-buttons__sticky {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .modal-buttons__sticky .ui-button {
@@ -174,8 +169,7 @@
 }
 .modal .ssamSearch__wrap > div {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 1.3rem;
 }
 .modal .ssamSearch__wrap > div.ssamLineTop {
@@ -211,8 +205,7 @@
   width: 50%;
   padding: 10rem;
   border: 1px solid #d8dce2;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 1.3rem;
   text-align: center;
   cursor: pointer;
@@ -255,7 +248,6 @@
   width: 100%;
   height: auto;
   z-index: 1;
-  -webkit-transition: opacity 0.3s ease-in;
   transition: opacity 0.3s ease-in;
 }
 .modal .modalUploadImg__wrap .thumb-radio-image + .thumb-radio-image {
@@ -266,18 +258,6 @@
 }
 
 @media (max-width: 1600px) {
-  .modal .ssamSearch__wrap input::-webkit-input-placeholder {
-    font-size: 3rem;
-  }
-  .modal .ssamSearch__wrap input::-moz-placeholder {
-    font-size: 3rem;
-  }
-  .modal .ssamSearch__wrap input:-ms-input-placeholder {
-    font-size: 3rem;
-  }
-  .modal .ssamSearch__wrap input::-ms-input-placeholder {
-    font-size: 3rem;
-  }
   .modal .ssamSearch__wrap input::placeholder {
     font-size: 3rem;
   }
@@ -303,18 +283,6 @@
   }
 }
 @media (max-width: 1024px) {
-  .modal .ssamSearch__wrap input::-webkit-input-placeholder {
-    font-size: 5.5rem;
-  }
-  .modal .ssamSearch__wrap input::-moz-placeholder {
-    font-size: 5.5rem;
-  }
-  .modal .ssamSearch__wrap input:-ms-input-placeholder {
-    font-size: 5.5rem;
-  }
-  .modal .ssamSearch__wrap input::-ms-input-placeholder {
-    font-size: 5.5rem;
-  }
   .modal .ssamSearch__wrap input::placeholder {
     font-size: 5.5rem;
   }

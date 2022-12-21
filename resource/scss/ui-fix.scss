@@ -203,11 +203,21 @@
         }
     }
     &-weight{
+        &__l{
+            font-weight: 400;
+        }
         &__r{
             font-weight: 500;
         }
         &__m{
             font-weight: 600;
+        }
+    }
+}
+.line{
+    &-height{
+        &__80{
+            line-height: 8rem;
         }
     }
 }

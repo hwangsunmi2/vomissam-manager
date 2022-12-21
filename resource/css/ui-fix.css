@@ -1,24 +1,16 @@
 .d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .align-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .justify-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .justify-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .width-80 {
@@ -184,11 +176,18 @@
 .font-size__l {
   font-size: 6.5rem;
 }
+.font-weight__l {
+  font-weight: 400;
+}
 .font-weight__r {
   font-weight: 500;
 }
 .font-weight__m {
   font-weight: 600;
+}
+
+.line-height__80 {
+  line-height: 8rem;
 }
 
 .bg-gray {
@@ -223,19 +222,13 @@
 }
 
 .flex {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 .flex-2 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 20%;
-          flex: 1 1 20%;
+  flex: 1 1 20%;
 }
 .flex-4 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
+  flex: 1 1 40%;
 }
 
 .ta-l {

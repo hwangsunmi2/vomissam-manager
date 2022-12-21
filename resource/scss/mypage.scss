@@ -26,6 +26,7 @@
         overflow:hidden;
         padding:6.5rem 7.5rem;
         margin-top:10rem;
+        margin-bottom: 4rem;
         background-color:#795bdc;
         border-radius:3rem;
         &__img{
@@ -43,7 +44,7 @@
         &__item{
             display:block;
             float:left;
-            width:calc(50% - 40rem);
+            width:calc(50% - 20rem);
             dt{
                 display:block;
                 float:left;

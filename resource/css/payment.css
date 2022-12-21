@@ -54,8 +54,7 @@
 }
 .icon.arrow-last {
   background-image: url("data:image/svg+xml;charset=utf8, ");
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .icon.arrow-prev {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -64,8 +63,7 @@
 .icon.arrow-next {
   background-image: url("data:image/svg+xml;charset=utf8, ");
   background-size: cover;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .icon.arrow-right {
   background-image: url("data:image/svg+xml;charset=utf8, ");
@@ -86,20 +84,6 @@
   background-image: url("data:image/svg+xml;charset=utf8, ");
 }
 
-@-webkit-keyframes wave {
-  0% {
-    opacity: 0;
-    background-position: left center;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  100% {
-    background-position: right center;
-    opacity: 0.4;
-  }
-}
-
 @keyframes wave {
   0% {
     opacity: 0;
@@ -113,58 +97,33 @@
     opacity: 0.4;
   }
 }
-@-webkit-keyframes rotateIcon {
-  50% {
-    opacity: 1;
-    -webkit-transform: rotateY(91deg);
-            transform: rotateY(91deg);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-}
 @keyframes rotateIcon {
   50% {
     opacity: 1;
-    -webkit-transform: rotateY(91deg);
-            transform: rotateY(91deg);
+    transform: rotateY(91deg);
   }
   100% {
     opacity: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
 }
 .card-list-box {
   padding: 6.8rem 5rem;
   background: #ffffff;
-  -webkit-box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
-          box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
+  box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
   border-radius: 3rem;
 }
 .card-list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .card-list__item + .card-list__item {
   margin-top: 5rem;
 }
 .card-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 18.2rem;
   height: 18.2rem;
   margin-right: 3.2rem;
@@ -191,12 +150,8 @@
   padding: 5rem 4rem 7rem 4rem;
 }
 .payment-process__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   position: relative;
 }
 .payment-process__list::after {
@@ -225,17 +180,13 @@
   letter-spacing: -1px;
 }
 .payment-process__step .payment-process__img {
-  display: -webkit-box;
   display: flex;
   -ms-display: flexbox;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 18rem;
   height: 18rem;
@@ -287,8 +238,7 @@
 .sub-item__box--receipt {
   position: relative;
   padding: 10rem 8rem;
-  -webkit-box-shadow: 2.5rem 2.5rem 5rem rgba(0, 0, 0, 0.15);
-          box-shadow: 2.5rem 2.5rem 5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 2.5rem 2.5rem 5rem rgba(0, 0, 0, 0.15);
 }
 .sub-item__box--receipt::before {
   position: absolute;
@@ -356,8 +306,7 @@
   background-color: #795bdc;
   border-radius: 3rem;
   text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .sub-item__box .income {
   width: 100%;
@@ -369,8 +318,7 @@
   background-color: #f5f4f9;
   border-radius: 3rem;
   text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .sub-item__box--gray {
   border-radius: 3rem;
@@ -391,8 +339,7 @@
   background-repeat: no-repeat;
   background-size: 42rem 32rem;
   background-color: #795bdc;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .sub-item__box--totalPay .totalPay__txt {
   font-size: 6rem;
@@ -442,12 +389,8 @@
   background-color: #fff;
 }
 .sub-item--totalPayment .sub-item__box--border .sub-list__dl {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .sub-item--totalPayment .sub-item__box--border .sub-list__dl .sub-dt {
   padding-right: 1.5rem;
