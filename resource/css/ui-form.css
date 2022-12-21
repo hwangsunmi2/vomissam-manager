@@ -226,11 +226,18 @@
   background-image: url("../image/common/icon/icon-check.png");
   background-size: 4.5rem 3.1rem;
 }
+.ui-radio-block__width-100 {
+  width: 100%;
+  padding: 3.5rem 0;
+}
 .ui-radio:checked + .ui-radio-object, .ui-radio:checked + .ui-label .ui-radio-object {
   border-color: #4b62c3;
   background-color: #4b62c3;
   background-image: url("../image/common/icon/icon-check.png");
   background-size: 4.5rem 3.1rem;
+}
+.ui-radio__inner--col {
+  margin: -3.5rem 0;
 }
 .ui-checkbox__list.agree {
   padding-bottom: 8rem;

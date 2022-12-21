@@ -9,6 +9,9 @@
     padding-right: 0 !important;
     &-header {
         padding: 10rem 6rem 0 6rem;
+        &__s{
+            padding: 8rem 6rem 0 6rem;
+        }
     }
 
     &-body {
@@ -122,6 +125,12 @@
                 }
             }
         }
+        &__nursingEnd{
+            padding: 14rem 8rem 13rem 8rem ;
+        }
+        &__nursingCare{
+            padding: 10rem 8rem 13rem 8rem ;
+        }
     }
 
     &-tit {
@@ -146,6 +155,11 @@
             font : {
                 size: 6rem;
                 weight:500;
+            }
+            span{
+                font : {
+                    size: 6rem                    
+                }   
             }
         }
         &__font{

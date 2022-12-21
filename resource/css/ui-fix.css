@@ -165,7 +165,7 @@
   font-size: 4.6rem;
 }
 .font-size__xs {
-  font-size: 5rem;
+  font-size: 5rem !important;
 }
 .font-size__s {
   font-size: 5.5rem;
@@ -245,4 +245,8 @@
 
 .border-radius-3 {
   border-radius: 3rem;
+}
+
+.hide {
+  display: none;
 }

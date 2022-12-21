@@ -190,7 +190,7 @@
             font-size: 4.6rem;
         }
         &__xs{
-            font-size: 5rem;
+            font-size: 5rem !important;
         }
         &__s{
             font-size: 5.5rem;
@@ -287,4 +287,8 @@ $color-purple : #6349ba;
             border-radius:3rem;
         }
     }
+}
+
+.hide{
+    display: none;
 }

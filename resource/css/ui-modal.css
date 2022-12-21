@@ -11,6 +11,9 @@
 .modal-header {
   padding: 10rem 6rem 0 6rem;
 }
+.modal-header__s {
+  padding: 8rem 6rem 0 6rem;
+}
 .modal-body {
   padding: 0;
 }
@@ -90,6 +93,12 @@
   padding-top: 0;
   padding-bottom: 0;
 }
+.modal-core__nursingEnd {
+  padding: 14rem 8rem 13rem 8rem;
+}
+.modal-core__nursingCare {
+  padding: 10rem 8rem 13rem 8rem;
+}
 .modal-tit {
   margin-bottom: 2.5rem;
   font-size: 2rem;
@@ -106,6 +115,9 @@
 .modal-title2 {
   font-size: 6rem;
   font-weight: 500;
+}
+.modal-title2 span {
+  font-size: 6rem;
 }
 .modal-title__font-l {
   font-size: 7.5rem;

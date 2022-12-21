@@ -260,6 +260,12 @@
                     background-size: 4.5rem 3.1rem;
                 }
             }
+            &__width{
+                &-100{
+                    width:100%;
+                    padding: 3.5rem 0;
+                }
+            }
         }
         &:checked+.ui-radio-object,
         &:checked+.ui-label .ui-radio-object{
@@ -267,6 +273,11 @@
             background-color: #4b62c3;
             background-image: url('../image/common/icon/icon-check.png');
             background-size: 4.5rem 3.1rem;
+        }
+        &__inner{
+            &--col{
+                margin: -3.5rem 0;
+            }
         }
     }
     &-checkbox{

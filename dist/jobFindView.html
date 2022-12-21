@@ -84,8 +84,17 @@
 
                                     <div class="sub-item__box sub-item__box--gray date-box border-radius--3 jobFind">
                                         <div class="rating-detail">
+                                            <!-- 2022.12.21 : mod : 항목 및 순서 변경 -->
                                             <dl class="sub-dl">
-                                                <dt class="sub-dt">병원명</dt>
+                                                <dt class="sub-dt">간병시작일(기간)</dt>
+                                                <dd class="sub-dd sub-dd__right">2022.09.18 (10일 6시간)</dd>
+                                            </dl>
+                                            <dl class="sub-dl">
+                                                <dt class="sub-dt">간병 비용</dt>
+                                                <dd class="sub-dd sub-dd__right">일 120,000원 </dd>
+                                            </dl>
+                                            <dl class="sub-dl">
+                                                <dt class="sub-dt">간병 장소</dt>
                                                 <dd class="sub-dd sub-dd__right">신촌세브란스 병원<a href="javascript:void(0);">위치보기</a></dd>
                                             </dl>
                                             <dl class="sub-dl">
@@ -93,24 +102,17 @@
                                                 <dd class="sub-dd sub-dd__right">여, 73세, 55kg</dd>
                                             </dl>
                                             <dl class="sub-dl">
-                                                <dt class="sub-dt">간병시작일(기간)</dt>
-                                                <dd class="sub-dd sub-dd__right">2022.09.18 (10일 6시간)</dd>
+                                                <dt class="sub-dt">격리감염 질환</dt>
+                                                <dd class="sub-dd sub-dd__right">해당 없음</dd>
+                                            </dl>
+                                            
+                                            <dl class="sub-dl">
+                                                <dt class="sub-dt">대소변 처리</dt>
+                                                <dd class="sub-dd sub-dd__right">기저귀</dd>
                                             </dl>
                                             <dl class="sub-dl">
-                                                <dt class="sub-dt">간병구분</dt>
-                                                <dd class="sub-dd sub-dd__right">익스프레스</dd>
-                                            </dl>
-                                            <dl class="sub-dl">
-                                                <dt class="sub-dt">간병비용</dt>
-                                                <dd class="sub-dd sub-dd__right">일 120,000원 </dd>
-                                            </dl>
-                                            <dl class="sub-dl">
-                                                <dt class="sub-dt">전염성질환</dt>
-                                                <dd class="sub-dd sub-dd__right">없음</dd>
-                                            </dl>
-                                            <dl class="sub-dl">
-                                                <dt class="sub-dt">거동 가능 여부</dt>
-                                                <dd class="sub-dd sub-dd__right">부분적 도움</dd>
+                                                <dt class="sub-dt">환자 특이상태</dt>
+                                                <dd class="sub-dd sub-dd__right">야간 수면장애, 욕창</dd>
                                             </dl>
                                             <dl class="d-block">
                                                 <dt class="sub-dt">보호자 요청사항</dt>
@@ -118,6 +120,7 @@
                                                     <input placeholder="잘 보살펴 주세요. 잘 부탁드립니다.">
                                                 </dd>
                                             </dl>
+                                            <!--// 2022.12.21 : mod : 항목 및 순서 변경 -->
                                         </div>
                                     </div>
                                 </div>
@@ -125,15 +128,41 @@
                             <div class="enroll-box">
                                 <div class="enroll-box__inner">
                                     <div class="enroll-title">간병 비용 확인/입력</div>
-                                    <div class="contentGray">간병 비용은 매칭에 영향을 미칠 수 있으므로 신중하게 판단하셔야
-                                        합니다. 제시된 간병비를 수락하신다면 ‘지원하기’ 버튼을 클릭하세요.</div>
-                                    <div class="ui-form ui-form__flex--row indentType mt__rem-4">
-                                        <div class="ui-form__cell width-200">희망 간병비</div>
+
+                                    <!-- 2022.12.21 : mod : 레이아웃 수정 -->
+                                    <!-- <div class="contentGray">간병 비용은 매칭에 영향을 미칠 수 있으므로 신중하게 판단하셔야
+                                        합니다. 제시된 간병비를 수락하신다면 ‘지원하기’ 버튼을 클릭하세요.</div> -->
+
+                                    <div class="ui-checkbox__list ml-40">
+                                        <div class="ui-radio__list">
+                                            <div class="ui-radio__inner ui-radio__inner--col">
+                                                <div class="ui-radio-block ui-radio-block__width-100 mr-120 agree">
+                                                    <input type="radio" class="ui-radio" id="radio1" name="include" checked="">
+                                                    <label for="radio1" class="ui-label">
+                                                        <span class="ui-radio-object"></span>
+                                                        <span class="ui-label__text">환자 정보에 문제 없음</span>
+                                                    </label>
+                                                </div>
+                                                <div class="ui-radio-block ui-radio-block__width-100 agree">
+                                                    <input type="radio" class="ui-radio" id="radio2" name="include">
+                                                    <label for="radio2" class="ui-label">
+                                                        <span class="ui-radio-object"></span>
+                                                        <span class="ui-label__text">특이사항 있음(해당 내용 입력)</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ui-form ui-form__flex--row indentType mt-50 ml-110">
+                                        <div class="ui-form__cell font-size__xs width-200">희망 간병비</div>
                                         <div class="ui-form__cell flex">
                                             <input type="text" class="ui-input" placeholder="">
                                         </div>
-                                        
                                     </div>
+                                    <!--// 2022.12.21 : mod : 레이아웃 수정 -->
+
+
                                 </div>
                             </div>
                         </section>

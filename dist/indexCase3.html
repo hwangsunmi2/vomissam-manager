@@ -80,7 +80,7 @@
                                         <li class="item on" data-id="con1"><a href="javascript:void(0)">간병진행 중</a></li>
                                         <li class="item" data-id="con2"><a href="javascript:void(0)">예약완료</a></li>
                                         <li class="item" data-id="con3"><a href="javascript:void(0)">지원 중</a></li>
-                                        <li class="item" data-id="con4"><a href="javascript:void(0)">완료건</a></li>
+                                        <!-- 2022.12.21 : del : 완료건 삭제 -->
                                     </ul>
                                     <div id="con1" class="conBox on">
                                         <h4 class="hidden">간병진행 중</h4>
@@ -91,13 +91,15 @@
                                                             <div class="carer-content">
                                                                 <div class="carer-info">
                                                                     <div class="carer-detail">
+                                                                        <!-- 2022.12.21 : mod : 항목 간소화 및 순서 변경 -->
                                                                         <dl class="carer-detail__list">
-                                                                            <dt class="carer-detail__title">병원명</dt>
+                                                                            <!-- 2022.12.21 : mod : 텍스트 수정 -->
+                                                                            <dt class="carer-detail__title">간병장소</dt>
                                                                             <dd class="carer-detail__text">신촌세브란스 병원</dd>
                                                                         </dl>
                                                                         <dl class="carer-detail__list">
                                                                             <dt class="carer-detail__title">환자 정보</dt>
-                                                                            <dd class="carer-detail__text">야, 73세, 55kg</dd>
+                                                                            <dd class="carer-detail__text">여, 73세, 55kg</dd>
                                                                         </dl>
                                                                         <dl class="carer-detail__list">
                                                                             <dt class="carer-detail__title">간병시작일(기간)</dt>
@@ -117,7 +119,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="carer-buttons--purple">
-                                                                <button type="button" class="carer-button">상세보기</button> 
+                                                                <button type="button" class="carer-button">상세보기/지원하기</button> 
                                                                 <!-- 상세 보기를 눌렀을때 나오는 버튼들 -->
                                                                 <button type="button" class="carer-button carer-button__wish"><i></i></button>
                                                                 <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer">선택하기</button>
@@ -130,33 +132,30 @@
                                                         <div class="carer-content">
                                                             <div class="carer-info">
                                                                 <div class="carer-detail">
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">병원명</dt>
-                                                                        <dd class="carer-detail__text">신촌세브란스 병원</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">환자 정보</dt>
-                                                                        <dd class="carer-detail__text">야, 73세, 55kg</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">간병시작일(기간)</dt>
-                                                                        <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">간병구분</dt>
-                                                                        <dd class="carer-detail__text">익스프레스</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">간병비용</dt>
-                                                                        <dd class="carer-detail__text">일 120,000원</dd>
-                                                                    </dl>
-                                                                    <!-- 상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
-                                                                    <!-- //상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
-                                                                </div>
+                                                                        <dl class="carer-detail__list">
+                                                                            <dt class="carer-detail__title">간병시작일</dt>
+                                                                            <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
+                                                                        </dl>
+                                                                        <dl class="carer-detail__list">
+                                                                            <dt class="carer-detail__title">간병비용</dt>
+                                                                            <dd class="carer-detail__text">일 120,000원</dd>
+                                                                        </dl>
+                                                                        <dl class="carer-detail__list">
+                                                                            <!-- 2022.12.21 : mod : 텍스트 수정 -->
+                                                                            <dt class="carer-detail__title">간병장소</dt>
+                                                                            <dd class="carer-detail__text">신촌세브란스 병원</dd>
+                                                                        </dl>
+                                                                        <dl class="carer-detail__list">
+                                                                            <dt class="carer-detail__title">환자 정보</dt>
+                                                                            <dd class="carer-detail__text">여, 73세, 55kg</dd>
+                                                                        </dl>
+                                                                        <!-- 상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
+                                                                        <!-- //상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
+                                                                    </div>
                                                             </div>
                                                         </div>
                                                         <div class="carer-buttons--purple">
-                                                            <button type="button" class="carer-button">상세보기</button> 
+                                                            <button type="button" class="carer-button">상세보기/지원하기</button> 
                                                             <!-- 상세 보기를 눌렀을때 나오는 버튼들 -->
                                                             <button type="button" class="carer-button carer-button__wish"><i></i></button>
                                                             <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer">선택하기</button>
@@ -176,34 +175,33 @@
                                                         <div class="carer-item">
                                                             <div class="carer-content">
                                                                 <div class="carer-info">
+                                                                    <!-- 2022.12.21 : mod : 항목 간소화 및 순서 변경 -->
                                                                     <div class="carer-detail">
                                                                         <dl class="carer-detail__list">
-                                                                            <dt class="carer-detail__title">병원명</dt>
-                                                                            <dd class="carer-detail__text">신촌세브란스 병원</dd>
-                                                                        </dl>
-                                                                        <dl class="carer-detail__list">
-                                                                            <dt class="carer-detail__title">환자 정보</dt>
-                                                                            <dd class="carer-detail__text">야, 73세, 55kg</dd>
-                                                                        </dl>
-                                                                        <dl class="carer-detail__list">
-                                                                            <dt class="carer-detail__title">간병시작일(기간)</dt>
+                                                                            <dt class="carer-detail__title">간병시작일</dt>
                                                                             <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
-                                                                        </dl>
-                                                                        <dl class="carer-detail__list">
-                                                                            <dt class="carer-detail__title">간병구분</dt>
-                                                                            <dd class="carer-detail__text">익스프레스</dd>
                                                                         </dl>
                                                                         <dl class="carer-detail__list">
                                                                             <dt class="carer-detail__title">간병비용</dt>
                                                                             <dd class="carer-detail__text">일 120,000원</dd>
                                                                         </dl>
+                                                                        <dl class="carer-detail__list">
+                                                                            <!-- 2022.12.21 : mod : 텍스트 수정 -->
+                                                                            <dt class="carer-detail__title">간병장소</dt>
+                                                                            <dd class="carer-detail__text">신촌세브란스 병원</dd>
+                                                                        </dl>
+                                                                        <dl class="carer-detail__list">
+                                                                            <dt class="carer-detail__title">환자 정보</dt>
+                                                                            <dd class="carer-detail__text">여, 73세, 55kg</dd>
+                                                                        </dl>
                                                                         <!-- 상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
                                                                         <!-- //상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
                                                                     </div>
+                                                                    <!--// 2022.12.21 : mod : 항목 간소화 및 순서 변경 -->
                                                                 </div>
                                                             </div>
                                                             <div class="carer-buttons--purple">
-                                                                <button type="button" class="carer-button">상세보기</button> 
+                                                                <button type="button" class="carer-button">상세보기/지원하기</button> 
                                                                 <!-- 상세 보기를 눌렀을때 나오는 버튼들 -->
                                                                 <button type="button" class="carer-button carer-button__wish"><i></i></button>
                                                                 <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer">선택하기</button>
@@ -222,34 +220,33 @@
                                                         <div class="carer-item">
                                                             <div class="carer-content">
                                                                 <div class="carer-info">
+                                                                    <!-- 2022.12.21 : mod : 항목 간소화 및 순서 변경 -->
                                                                     <div class="carer-detail">
                                                                         <dl class="carer-detail__list">
-                                                                            <dt class="carer-detail__title">병원명</dt>
-                                                                            <dd class="carer-detail__text">신촌세브란스 병원</dd>
-                                                                        </dl>
-                                                                        <dl class="carer-detail__list">
-                                                                            <dt class="carer-detail__title">환자 정보</dt>
-                                                                            <dd class="carer-detail__text">야, 73세, 55kg</dd>
-                                                                        </dl>
-                                                                        <dl class="carer-detail__list">
-                                                                            <dt class="carer-detail__title">간병시작일(기간)</dt>
+                                                                            <dt class="carer-detail__title">간병시작일</dt>
                                                                             <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
-                                                                        </dl>
-                                                                        <dl class="carer-detail__list">
-                                                                            <dt class="carer-detail__title">간병구분</dt>
-                                                                            <dd class="carer-detail__text">익스프레스</dd>
                                                                         </dl>
                                                                         <dl class="carer-detail__list">
                                                                             <dt class="carer-detail__title">간병비용</dt>
                                                                             <dd class="carer-detail__text">일 120,000원</dd>
                                                                         </dl>
+                                                                        <dl class="carer-detail__list">
+                                                                            <!-- 2022.12.21 : mod : 텍스트 수정 -->
+                                                                            <dt class="carer-detail__title">간병장소</dt>
+                                                                            <dd class="carer-detail__text">신촌세브란스 병원</dd>
+                                                                        </dl>
+                                                                        <dl class="carer-detail__list">
+                                                                            <dt class="carer-detail__title">환자 정보</dt>
+                                                                            <dd class="carer-detail__text">여, 73세, 55kg</dd>
+                                                                        </dl>
                                                                         <!-- 상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
                                                                         <!-- //상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
                                                                     </div>
+                                                                    <!--// 2022.12.21 : mod : 항목 간소화 및 순서 변경 -->
                                                                 </div>
                                                             </div>
                                                             <div class="carer-buttons--purple">
-                                                                <button type="button" class="carer-button">상세보기</button> 
+                                                                <button type="button" class="carer-button">상세보기/지원하기</button> 
                                                                 <!-- 상세 보기를 눌렀을때 나오는 버튼들 -->
                                                                 <button type="button" class="carer-button carer-button__wish"><i></i></button>
                                                                 <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer">선택하기</button>
@@ -262,157 +259,66 @@
                                                         <div class="carer-content">
                                                             <div class="carer-info">
                                                                 <div class="carer-detail">
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">병원명</dt>
-                                                                        <dd class="carer-detail__text">신촌세브란스 병원</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">환자 정보</dt>
-                                                                        <dd class="carer-detail__text">야, 73세, 55kg</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">간병시작일(기간)</dt>
-                                                                        <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">간병구분</dt>
-                                                                        <dd class="carer-detail__text">익스프레스</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">간병비용</dt>
-                                                                        <dd class="carer-detail__text">일 120,000원</dd>
-                                                                    </dl>
-                                                                    <!-- 상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
-                                                                    <!-- //상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="carer-buttons--purple">
-                                                            <button type="button" class="carer-button">상세보기</button> 
-                                                            <!-- 상세 보기를 눌렀을때 나오는 버튼들 -->
-                                                            <button type="button" class="carer-button carer-button__wish"><i></i></button>
-                                                            <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer">선택하기</button>
-                                                            <!-- //상세 보기를 눌렀을때 나오는 버튼들 -->
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="carer-list">
-                                                    <div class="carer-item">
-                                                        <div class="carer-content">
-                                                            <div class="carer-info">
-                                                                <div class="carer-detail">
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">병원명</dt>
-                                                                        <dd class="carer-detail__text">신촌세브란스 병원</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">환자 정보</dt>
-                                                                        <dd class="carer-detail__text">야, 73세, 55kg</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">간병시작일(기간)</dt>
-                                                                        <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">간병구분</dt>
-                                                                        <dd class="carer-detail__text">익스프레스</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">간병비용</dt>
-                                                                        <dd class="carer-detail__text">일 120,000원</dd>
-                                                                    </dl>
-                                                                    <!-- 상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
-                                                                    <!-- //상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="carer-buttons--purple">
-                                                            <button type="button" class="carer-button">상세보기</button> 
-                                                            <!-- 상세 보기를 눌렀을때 나오는 버튼들 -->
-                                                            <button type="button" class="carer-button carer-button__wish"><i></i></button>
-                                                            <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer">선택하기</button>
-                                                            <!-- //상세 보기를 눌렀을때 나오는 버튼들 -->
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div id="con4" class="conBox">
-                                        <h4 class="hidden">완료건</h4>
-                                        <div id="list_1" class="tab_cont on carer-list-wrap">
-                                            <ul class="carer-list__list">
-                                                <li class="carer-list">
-                                                        <div class="carer-item">
-                                                            <div class="carer-content">
-                                                                <div class="carer-info">
-                                                                    <div class="carer-detail">
                                                                         <dl class="carer-detail__list">
-                                                                            <dt class="carer-detail__title">병원명</dt>
-                                                                            <dd class="carer-detail__text">신촌세브란스 병원</dd>
-                                                                        </dl>
-                                                                        <dl class="carer-detail__list">
-                                                                            <dt class="carer-detail__title">환자 정보</dt>
-                                                                            <dd class="carer-detail__text">야, 73세, 55kg</dd>
-                                                                        </dl>
-                                                                        <dl class="carer-detail__list">
-                                                                            <dt class="carer-detail__title">간병시작일(기간)</dt>
+                                                                            <dt class="carer-detail__title">간병시작일</dt>
                                                                             <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
-                                                                        </dl>
-                                                                        <dl class="carer-detail__list">
-                                                                            <dt class="carer-detail__title">간병구분</dt>
-                                                                            <dd class="carer-detail__text">익스프레스</dd>
                                                                         </dl>
                                                                         <dl class="carer-detail__list">
                                                                             <dt class="carer-detail__title">간병비용</dt>
                                                                             <dd class="carer-detail__text">일 120,000원</dd>
                                                                         </dl>
+                                                                        <dl class="carer-detail__list">
+                                                                            <!-- 2022.12.21 : mod : 텍스트 수정 -->
+                                                                            <dt class="carer-detail__title">간병장소</dt>
+                                                                            <dd class="carer-detail__text">신촌세브란스 병원</dd>
+                                                                        </dl>
+                                                                        <dl class="carer-detail__list">
+                                                                            <dt class="carer-detail__title">환자 정보</dt>
+                                                                            <dd class="carer-detail__text">여, 73세, 55kg</dd>
+                                                                        </dl>
                                                                         <!-- 상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
                                                                         <!-- //상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="carer-buttons--purple">
-                                                                <button type="button" class="carer-button">상세보기</button> 
-                                                                <!-- 상세 보기를 눌렀을때 나오는 버튼들 -->
-                                                                <button type="button" class="carer-button carer-button__wish"><i></i></button>
-                                                                <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer">선택하기</button>
-                                                                <!-- //상세 보기를 눌렀을때 나오는 버튼들 -->
                                                             </div>
                                                         </div>
+                                                        <div class="carer-buttons--purple">
+                                                            <button type="button" class="carer-button">상세보기/지원하기</button> 
+                                                            <!-- 상세 보기를 눌렀을때 나오는 버튼들 -->
+                                                            <button type="button" class="carer-button carer-button__wish"><i></i></button>
+                                                            <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer">선택하기</button>
+                                                            <!-- //상세 보기를 눌렀을때 나오는 버튼들 -->
+                                                        </div>
+                                                    </div>
                                                 </li>
                                                 <li class="carer-list">
                                                     <div class="carer-item">
                                                         <div class="carer-content">
                                                             <div class="carer-info">
                                                                 <div class="carer-detail">
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">병원명</dt>
-                                                                        <dd class="carer-detail__text">신촌세브란스 병원</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">환자 정보</dt>
-                                                                        <dd class="carer-detail__text">야, 73세, 55kg</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">간병시작일(기간)</dt>
-                                                                        <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">간병구분</dt>
-                                                                        <dd class="carer-detail__text">익스프레스</dd>
-                                                                    </dl>
-                                                                    <dl class="carer-detail__list">
-                                                                        <dt class="carer-detail__title">간병비용</dt>
-                                                                        <dd class="carer-detail__text">일 120,000원</dd>
-                                                                    </dl>
-                                                                    <!-- 상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
-                                                                    <!-- //상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
-                                                                </div>
+                                                                        <dl class="carer-detail__list">
+                                                                            <dt class="carer-detail__title">간병시작일</dt>
+                                                                            <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
+                                                                        </dl>
+                                                                        <dl class="carer-detail__list">
+                                                                            <dt class="carer-detail__title">간병비용</dt>
+                                                                            <dd class="carer-detail__text">일 120,000원</dd>
+                                                                        </dl>
+                                                                        <dl class="carer-detail__list">
+                                                                            <!-- 2022.12.21 : mod : 텍스트 수정 -->
+                                                                            <dt class="carer-detail__title">간병장소</dt>
+                                                                            <dd class="carer-detail__text">신촌세브란스 병원</dd>
+                                                                        </dl>
+                                                                        <dl class="carer-detail__list">
+                                                                            <dt class="carer-detail__title">환자 정보</dt>
+                                                                            <dd class="carer-detail__text">여, 73세, 55kg</dd>
+                                                                        </dl>
+                                                                        <!-- 상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
+                                                                        <!-- //상세보기 클릭했을때 나오는 정보 :: 클래스 .carer-detail__list--more 추가 -->
+                                                                    </div>
                                                             </div>
                                                         </div>
                                                         <div class="carer-buttons--purple">
-                                                            <button type="button" class="carer-button">상세보기</button> 
+                                                            <button type="button" class="carer-button">상세보기/지원하기</button> 
                                                             <!-- 상세 보기를 눌렀을때 나오는 버튼들 -->
                                                             <button type="button" class="carer-button carer-button__wish"><i></i></button>
                                                             <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer">선택하기</button>
@@ -423,6 +329,7 @@
                                             </ul>
                                         </div>
                                     </div>
+                                    <!-- 2022.12.21 : del : 완료건 삭제 -->
                                 </div>
 
                             </div>
@@ -438,10 +345,12 @@
                         <!-- 모달 -->
                         <div class="modal fade" id="nursingEnd" tabindex="-1" aria-labelledby="nursingEndLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-auto ">
-                                <div class="modal-content modal-content__email">
+                                <!-- 2022.12.21 : add : .modal-content__s 추가 -->
+                                <div class="modal-content modal-content__email  modal-content__s">
                                     <div class="modal-body modal-body__main">
                                         
-                                        <div class="modal-core">
+                                        <!-- 2022.12.21 : add : .modal-core__nursingEnd 추가 -->
+                                        <div class="modal-core modal-core__nursingEnd">
 
                                             <div class="img-wrap">
                                                 <img src="../resource/image/m-sub/icon-popCalender.png" alt="" style="display:block;margin:0 auto;width:46.8rem; height:30.1rem;">

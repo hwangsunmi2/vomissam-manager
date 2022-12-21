@@ -199,7 +199,7 @@
                     flex-flow: row wrap;
                     justify-content: space-between;
                     .ui-button {
-                        max-width: calc(25% - 2rem);
+                        max-width: calc(25% - 1.5rem);
                         margin: 0;
                         text-align: center;
                         &:nth-child(n+5) {
@@ -557,7 +557,7 @@
                 margin-top: 1rem;
             }
         }
-        .bgTop_gray {
+        @at-root .bgTop_gray {
             position:relative;
             width:100%;
             height:3rem;
@@ -577,6 +577,11 @@
                 height:3rem;
                 background-color: #f2f3f7;
                 content:'';
+            }
+            &-full{
+                &::after {
+                    display: none;
+                }
             }
         }
 
@@ -671,6 +676,7 @@
                                 vertical-align: top;
                             }
                             .ui-select{
+                                font-size: 5.2rem;
                                 padding:0;
                                 height:auto;
                                 color:#656565;
@@ -678,6 +684,11 @@
                                 background: url(../image/m-sub/icon_arrowDown_g.png) no-repeat right 0 center;
                                 background-size: 3.6rem 2rem;
                                 border:0;
+                            }
+                            &-width{
+                                &__510{
+                                    width: 51rem;
+                                }
                             }
                         }
                         
@@ -908,11 +919,11 @@
             width: 40rem;
             color:#575c62;
             flex: none;
-            line-height: 9.4rem;
+            line-height: 11.4rem;
             text-align: left;
         }
         &__text{
-            line-height: 9.4rem;
+            line-height: 11.4rem;
             word-break: keep-all;
             letter-spacing: -1px;
             vertical-align: middle;
@@ -1246,7 +1257,7 @@
         box-sizing:border-box;
         font-size:5rem;
         font-weight:500;
-        line-height:6rem;
+        line-height:6.5rem;
         letter-spacing: -1px;
         box-shadow: 11px 16px 40px 0px rgba(67, 76, 133, 0.28);
         opacity: 0.4;

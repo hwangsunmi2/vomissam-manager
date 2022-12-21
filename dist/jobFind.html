@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="../resource/css/lib/swiper.min.css">
     <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../resource/css/lib/bootstrap-datetimepicker.min.css">
 
     <link rel="stylesheet" href="../resource/css/ux-common.css">
     <link rel="stylesheet" href="../resource/css/main.css">
@@ -22,8 +23,13 @@
     
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/moment.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/swiper.min.js"></script>
     <script type="text/javascript" src="../resource/js/include.js"></script>
+    <script type="text/javascript" src="../resource/js/common.js"></script>
     
     
 </head>
@@ -67,21 +73,26 @@
                                 </div>
 
                                 <div class="index-case__title mt__rem-13">원하는 간병 시작일</div>
-                                <div class="calender">
-
+                                <!-- 2022.12.21 : add : 달력 추가 -->
+                                <div class="ui-calendar">
+                                    <div class="ui-calendar__inner">
+                                        
+                                        <input type='text' class="form-control hide ui-input__datepicker" id="" name=""  />
+                                    </div>
                                 </div>
-
+                                <!--// 2022.12.21 : add : 달력 추가 -->
                             </div> 
                         </section>
+                        <p class="bgTop_gray bgTop_gray-full"></p>
                         <section class="index-case-box overflow-hidden">
-                            <p class="bgTop_gray"></p>
-
                             <!-- 정보, 찜한일감, selectBox -->
                             <div class="carer-info d-flex">
                                 <div class="">총 23개의 정보</div>
                                 <div class="ellipse d-flex">
-                                    <button class="choice star"><i></i>찜한 일감</button>
-                                    <div class="choice ui-form__cell flex">
+                                    <!-- 2022.12.21 : mod : 텍스트 수정, <i></i> 삭제 -->
+                                    <button class="choice star">기간 긴 순</button>
+                                    <!-- 2022.12.21 : add : .choice-width__510 추가 -->
+                                    <div class="choice ui-form__cell flex choice-width__510">
                                         <div class="ui-form">
                                             <select name="" id="" class="ui-select">
                                             <option value="">최신등록순</option>
@@ -103,26 +114,29 @@
                                             <div class="carer-content">
                                                 <div class="carer-info jobFind bgWhite">
                                                     <div class="carer-detail">
+                                                        <!-- 2022.12.21 : mod : 항목 간소화 및 순서 변경 -->
                                                         <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">병원명</dt>
+                                                            <dt class="carer-detail__title">간병시작일</dt>
+                                                            <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
+                                                        </dl>
+                                                        <dl class="carer-detail__list">
+                                                            <dt class="carer-detail__title">간병비용</dt>
+                                                            <dd class="carer-detail__text">일 120,000원</dd>
+                                                        </dl>
+                                                        <dl class="carer-detail__list">
+                                                            <!-- 2022.12.21 : mod : 텍스트 수정 -->
+                                                            <dt class="carer-detail__title">간병장소</dt>
                                                             <dd class="carer-detail__text">신촌세브란스 병원<a href="javascript:void(0);">위치보기</a></dd>
                                                         </dl>
                                                         <dl class="carer-detail__list">
                                                             <dt class="carer-detail__title">환자 정보</dt>
                                                             <dd class="carer-detail__text">여, 73세, 55kg</dd>
                                                         </dl>
-                                                        <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병시작일(기간)</dt>
-                                                            <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
-                                                        </dl>
-                                                        <dl class="carer-detail__list">
+                                                        <!-- <dl class="carer-detail__list">
                                                             <dt class="carer-detail__title">간병구분</dt>
                                                             <dd class="carer-detail__text">익스프레스</dd>
                                                         </dl>
-                                                        <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병비용</dt>
-                                                            <dd class="carer-detail__text">일 120,000원</dd>
-                                                        </dl>
+                                                        
                                                         <dl class="carer-detail__list">
                                                             <dt class="carer-detail__title">전염성질환</dt>
                                                             <dd class="carer-detail__text">없음</dd>
@@ -136,13 +150,14 @@
                                                             <dd>
                                                                 <input placeholder="잘 보살펴 주세요. 잘 부탁드립니다.">
                                                             </dd>
-                                                        </dl>
+                                                        </dl> -->
+                                                        <!--// 2022.12.21 : mod : 항목 간소화 및 순서 변경 -->
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="carer-buttons on">
                                                 <button type="button" class="carer-button carer-button__wish"><i></i></button>
-                                                <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer"><i></i>지원하기</button>
+                                                <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer"><i></i>상세보기/지원하기</button>
                                             </div>
                                         </div>
                                     </li>
@@ -153,39 +168,49 @@
                                             <div class="carer-content">
                                                 <div class="carer-info">
                                                     <div class="carer-detail">
+                                                        <!-- 2022.12.21 : mod : 항목 간소화 및 순서 변경 -->
                                                         <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">병원명</dt>
-                                                            <dd class="carer-detail__text">신촌세브란스 병원</dd>
+                                                            <dt class="carer-detail__title">간병시작일</dt>
+                                                            <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
+                                                        </dl>
+                                                        <dl class="carer-detail__list">
+                                                            <dt class="carer-detail__title">간병비용</dt>
+                                                            <dd class="carer-detail__text">일 120,000원</dd>
+                                                        </dl>
+                                                        <dl class="carer-detail__list">
+                                                            <!-- 2022.12.21 : mod : 텍스트 수정 -->
+                                                            <dt class="carer-detail__title">간병장소</dt>
+                                                            <dd class="carer-detail__text">신촌세브란스 병원<a href="javascript:void(0);">위치보기</a></dd>
                                                         </dl>
                                                         <dl class="carer-detail__list">
                                                             <dt class="carer-detail__title">환자 정보</dt>
                                                             <dd class="carer-detail__text">여, 73세, 55kg</dd>
                                                         </dl>
-                                                        <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병시작일(기간)</dt>
-                                                            <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
-                                                        </dl>
-                                                        <dl class="carer-detail__list">
+                                                        <!-- <dl class="carer-detail__list">
                                                             <dt class="carer-detail__title">간병구분</dt>
                                                             <dd class="carer-detail__text">익스프레스</dd>
                                                         </dl>
+                                                        
                                                         <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병비용</dt>
-                                                            <dd class="carer-detail__text">일 120,000원</dd>
+                                                            <dt class="carer-detail__title">전염성질환</dt>
+                                                            <dd class="carer-detail__text">없음</dd>
                                                         </dl>
                                                         <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병구분</dt>
-                                                            <dd class="carer-detail__text">익스프레스</dd>
+                                                            <dt class="carer-detail__title">거동 가능 여부</dt>
+                                                            <dd class="carer-detail__text">부분적 도움</dd>
                                                         </dl>
-                                                        <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병비용</dt>
-                                                            <dd class="carer-detail__text">일 120,000원</dd>
-                                                        </dl>
+                                                        <dl class="d-block">
+                                                            <dt class="sub-dt">보호자 요청사항</dt>
+                                                            <dd>
+                                                                <input placeholder="잘 보살펴 주세요. 잘 부탁드립니다.">
+                                                            </dd>
+                                                        </dl> -->
+                                                        <!--// 2022.12.21 : mod : 항목 간소화 및 순서 변경 -->
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="carer-buttons basic">
-                                                <button type="button" class="carer-button carer-button__detail">상세보기</button> 
+                                                <button type="button" class="carer-button carer-button__detail">상세보기/지원하기</button> 
                                             </div>
                                         </div>
                                     </li>
@@ -197,39 +222,49 @@
                                             <div class="carer-content">
                                                 <div class="carer-info">
                                                     <div class="carer-detail">
+                                                        <!-- 2022.12.21 : mod : 항목 간소화 및 순서 변경 -->
                                                         <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">병원명</dt>
-                                                            <dd class="carer-detail__text">신촌세브란스 병원</dd>
+                                                            <dt class="carer-detail__title">간병시작일</dt>
+                                                            <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
+                                                        </dl>
+                                                        <dl class="carer-detail__list">
+                                                            <dt class="carer-detail__title">간병비용</dt>
+                                                            <dd class="carer-detail__text">일 120,000원</dd>
+                                                        </dl>
+                                                        <dl class="carer-detail__list">
+                                                            <!-- 2022.12.21 : mod : 텍스트 수정 -->
+                                                            <dt class="carer-detail__title">간병장소</dt>
+                                                            <dd class="carer-detail__text">신촌세브란스 병원<a href="javascript:void(0);">위치보기</a></dd>
                                                         </dl>
                                                         <dl class="carer-detail__list">
                                                             <dt class="carer-detail__title">환자 정보</dt>
                                                             <dd class="carer-detail__text">여, 73세, 55kg</dd>
                                                         </dl>
-                                                        <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병시작일(기간)</dt>
-                                                            <dd class="carer-detail__text">2022.09.18(10일 6시간)</dd>
-                                                        </dl>
-                                                        <dl class="carer-detail__list">
+                                                        <!-- <dl class="carer-detail__list">
                                                             <dt class="carer-detail__title">간병구분</dt>
                                                             <dd class="carer-detail__text">익스프레스</dd>
                                                         </dl>
+                                                        
                                                         <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병비용</dt>
-                                                            <dd class="carer-detail__text">일 120,000원</dd>
+                                                            <dt class="carer-detail__title">전염성질환</dt>
+                                                            <dd class="carer-detail__text">없음</dd>
                                                         </dl>
                                                         <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병구분</dt>
-                                                            <dd class="carer-detail__text">익스프레스</dd>
+                                                            <dt class="carer-detail__title">거동 가능 여부</dt>
+                                                            <dd class="carer-detail__text">부분적 도움</dd>
                                                         </dl>
-                                                        <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">간병비용</dt>
-                                                            <dd class="carer-detail__text">일 120,000원</dd>
-                                                        </dl>
+                                                        <dl class="d-block">
+                                                            <dt class="sub-dt">보호자 요청사항</dt>
+                                                            <dd>
+                                                                <input placeholder="잘 보살펴 주세요. 잘 부탁드립니다.">
+                                                            </dd>
+                                                        </dl> -->
+                                                        <!--// 2022.12.21 : mod : 항목 간소화 및 순서 변경 -->
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="carer-buttons basic">
-                                                <button type="button" class="carer-button carer-button__detail">상세보기</button> 
+                                                <button type="button" class="carer-button carer-button__detail">상세보기/지원하기</button> 
                                             </div>
                                         </div>
                                     </li>
@@ -335,39 +370,13 @@
 
 </body>
 <script>
-    // var lastScrollTop = 0;
-    // var delta = 5;
-    // var fixBox = document.querySelector('.quick_menu');
-    // var fixBoxHeight = fixBox.offsetHeight;
-    // var didScroll;
-    // //스크롤 이벤트 
-    // window.onscroll = function(e) {
-    //     didScroll = true;
-    // };
-
-    // //0.25초마다 스크롤 여부 체크하여 스크롤 중이면 hasScrolled() 호출
-    // setInterval(function(){
-    //     if(didScroll){
-    //         hasScrolled();
-    //         didScroll = false;
-    //     }
-    // }, 250);
-
-    // function hasScrolled(){
-    //     var nowScrollTop = window.scrollY;
-    //     if(Math.abs(lastScrollTop - nowScrollTop) <= delta){
-    //         return;
-    //     }
-    //     if(nowScrollTop > lastScrollTop && nowScrollTop > fixBoxHeight){
-    //         //Scroll down
-    //         fixBox.classList.remove('is-show');
-    //     }else{
-    //         if(nowScrollTop + window.innerHeight < document.body.offsetHeight){
-    //             //Scroll up
-    //             fixBox.classList.add('is-show');
-    //         }
-    //     }
-    //     lastScrollTop = nowScrollTop;
-    // }
+    /* 2022.12.21 : 달력 스크립트 추가 */ 
+    $('.ui-input__datepicker').datetimepicker({
+        locale: 'ko',
+        inline: true,
+        sideBySide: true,
+        keepOpen: true,
+        format: 'YYYY.MM.DD.'
+    });
 </script>
 </html>

@@ -21,8 +21,13 @@
     
 
     <script type="text/javascript" src="../resource/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/moment.min.js"></script>
     <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/swiper.min.js"></script>
     <script type="text/javascript" src="../resource/js/include.js"></script>
+    <script type="text/javascript" src="../resource/js/common.js"></script>
     
     
 </head>
@@ -87,8 +92,11 @@
                                 </div>
 
                                 <div class="index-case__title mt__rem-13">원하는 간병 시작일</div>
-                                <div class="calender">
-
+                                <div class="ui-calendar">
+                                    <div class="ui-calendar__inner">
+                                        <!-- 2022.12.21 : add : 달력 추가 -->
+                                        <input type='text' class="form-control hide ui-input__datepicker" id="" name=""  />
+                                    </div>
                                 </div>
 
                             </div> 
@@ -124,7 +132,8 @@
                                                 <div class="carer-info">
                                                     <div class="carer-detail">
                                                         <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">병원명</dt>
+                                                            <!-- 2022.12.21 : mod : 텍스트 수정 -->
+<dt class="carer-detail__title">간병장소</dt>
                                                             <dd class="carer-detail__text">신촌세브란스 병원</dd>
                                                         </dl>
                                                         <dl class="carer-detail__list">
@@ -156,7 +165,7 @@
                                             </div>
                                             <div class="carer-buttons on">
                                                 <button type="button" class="carer-button carer-button__wish"><i></i></button>
-                                                <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer"><i></i>지원하기</button>
+                                                <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer"><i></i>상세보기/지원하기</button>
                                             </div>
                                         </div>
                                     </li>
@@ -169,7 +178,8 @@
                                                 <div class="carer-info">
                                                     <div class="carer-detail">
                                                         <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">병원명</dt>
+                                                            <!-- 2022.12.21 : mod : 텍스트 수정 -->
+<dt class="carer-detail__title">간병장소</dt>
                                                             <dd class="carer-detail__text">신촌세브란스 병원</dd>
                                                         </dl>
                                                         <dl class="carer-detail__list">
@@ -201,7 +211,7 @@
                                             </div>
                                             <div class="carer-buttons off">
                                                 <button type="button" class="carer-button carer-button__wish"><i></i></button>
-                                                <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer"><i></i>지원하기</button>
+                                                <button type="button" class="carer-button carer-button__choice" data-toggle="modal" data-target="#chooseCarer"><i></i>상세보기/지원하기</button>
                                             </div>
                                         </div>
                                     </li>
@@ -215,7 +225,8 @@
                                                 <div class="carer-info">
                                                     <div class="carer-detail">
                                                         <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">병원명</dt>
+                                                            <!-- 2022.12.21 : mod : 텍스트 수정 -->
+<dt class="carer-detail__title">간병장소</dt>
                                                             <dd class="carer-detail__text">신촌세브란스 병원</dd>
                                                         </dl>
                                                         <dl class="carer-detail__list">
@@ -259,7 +270,8 @@
                                                 <div class="carer-info">
                                                     <div class="carer-detail">
                                                         <dl class="carer-detail__list">
-                                                            <dt class="carer-detail__title">병원명</dt>
+                                                            <!-- 2022.12.21 : mod : 텍스트 수정 -->
+<dt class="carer-detail__title">간병장소</dt>
                                                             <dd class="carer-detail__text">신촌세브란스 병원</dd>
                                                         </dl>
                                                         <dl class="carer-detail__list">
@@ -312,10 +324,12 @@
                         <div class="modal fade" id="preferredArea" tabindex="-1" aria-labelledby="preferredAreaLabel"
                             aria-hidden="true" style="z-index: 1060;">
                                 <div class="modal-dialog modal-dialog-centered modal-auto ">
-                                    <div class="modal-content modal-content__s modal-content__ssamSearch">
+                                    <!-- 2022.12.21 : del : .modal-content__s 삭제 -->
+                                    <div class="modal-content modal-content__ssamSearch">
                                         <div class="modal-body modal-body__main">
-                                                <div class="modal-header">
-                                                    <div class="modal-title modal-title__font-l text-left mb-0">선호지역 선택 (최대 3개까지 선택 가능)</div>
+                                                <!-- 2022.12.21 : mod : .modal-header -> .modal-header__s 수정 -->
+                                                <div class="modal-header__s">
+                                                    <div class="modal-title2 text-left mb-0">선호지역 선택하기 <span>( 3개까지 중복 선택 가능)</span></div>
                                                 </div>
                                                 <div class="modal-body">
                                                     <div class="ui-buttons__fourth d-flex">
@@ -396,39 +410,13 @@
 
 </body>
 <script>
-    // var lastScrollTop = 0;
-    // var delta = 5;
-    // var fixBox = document.querySelector('.quick_menu');
-    // var fixBoxHeight = fixBox.offsetHeight;
-    // var didScroll;
-    // //스크롤 이벤트 
-    // window.onscroll = function(e) {
-    //     didScroll = true;
-    // };
-
-    // //0.25초마다 스크롤 여부 체크하여 스크롤 중이면 hasScrolled() 호출
-    // setInterval(function(){
-    //     if(didScroll){
-    //         hasScrolled();
-    //         didScroll = false;
-    //     }
-    // }, 250);
-
-    // function hasScrolled(){
-    //     var nowScrollTop = window.scrollY;
-    //     if(Math.abs(lastScrollTop - nowScrollTop) <= delta){
-    //         return;
-    //     }
-    //     if(nowScrollTop > lastScrollTop && nowScrollTop > fixBoxHeight){
-    //         //Scroll down
-    //         fixBox.classList.remove('is-show');
-    //     }else{
-    //         if(nowScrollTop + window.innerHeight < document.body.offsetHeight){
-    //             //Scroll up
-    //             fixBox.classList.add('is-show');
-    //         }
-    //     }
-    //     lastScrollTop = nowScrollTop;
-    // }
+    /* 2022.12.21 : 달력 스크립트 추가 */ 
+    $('.ui-input__datepicker').datetimepicker({
+        locale: 'ko',
+        inline: true,
+        sideBySide: true,
+        keepOpen: true,
+        format: 'YYYY.MM.DD.'
+    });
 </script>
 </html>
