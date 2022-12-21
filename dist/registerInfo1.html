@@ -64,7 +64,7 @@
                             <button type="button" class="header-hamberger__button"></button>
                         </div>
                     </div>
-                </div>+++++
+                </div>
             </div>
         </header>
         <!-- //[include] header -->
@@ -133,6 +133,17 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- 2022.12.21 : add : 비상 연락처 추가 -->
+                            <div class="enroll-box">
+                                <div class="enroll-box__inner">
+                                    <div class="enroll-title">비상 연락처</div>
+                                    <div class="ui-form ui-form__flex--row">
+                                        <input type="text" class="ui-input" value="" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 2022.12.21 : add : 비상 연락처 추가 -->
                             
                         </section>
 
@@ -204,20 +215,20 @@
                             <div class="modal fade" id="uploadImg" tabindex="-1" aria-labelledby="uploadImgLabel"
                             aria-hidden="true" style="z-index: 1060;">
                                 <div class="modal-dialog modal-dialog-centered modal-auto ">
-                                    <div class="modal-content modal-content__s modal-content__uploadImg">
+                                    <div class="modal-content modal-content__uploadImg">
                                         <div class="modal-body modal-body__main">
                                                 <div class="modal-header">
                                                     <div class="modal-title modal-title__font-l text-left mb-0">사진 올리기</div>
                                                 </div>
                                                 <div class="modal-body">
                                                     <div class="uploadimg__wrap d-flex">
-                                                        <div>
-                                                            <img src="../resource/image/m-sub/no-picture.png" alt="">
-                                                            <p>사진 없음<br/>(올리지 않음)</p>
+                                                        <div data-toggle="modal" data-target="#modalUploadImg" class="uploadimg-box">
+                                                            <img src="../resource/image/m-sub/upload.png" alt="" style="width:20rem">
+                                                            <p class="uploadimg-text">사진 올리기</p>
                                                         </div>
-                                                        <div data-toggle="modal" data-target="#modalUploadImg">
-                                                            <img src="../resource/image/m-sub/upload.png" alt="">
-                                                            <p>사진 올리기</p>
+                                                        <div data-toggle="modal" data-target="#defaultImg" class="uploadimg-box">
+                                                            <img src="../resource/image/m-sub/no-picture.png" alt="" style="width:20.2rem; height:20.1rem">
+                                                            <p class="uploadimg-text">사진 없음<br/>(기본 이미지)</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -237,7 +248,7 @@
                             <div class="modal fade" id="modalUploadImg" tabindex="-1" aria-labelledby="modalUploadImgLabel"
                             aria-hidden="true" style="z-index: 1060;">
                                 <div class="modal-dialog modal-dialog-centered modal-auto ">
-                                    <div class="modal-content modal-content__s modal-content__modalUploadImg">
+                                    <div class="modal-content modal-content__modalUploadImg">
                                         <div class="modal-body modal-body__main">
                                                 <div class="modal-header">
                                                     <div class="modal-title modal-title__font-l text-left mb-0">사진 올리기</div>
@@ -262,6 +273,36 @@
                                 </div>
                             </div>
                             <!-- //인적 사항 사진 찾기 모달 -->
+
+                            <!-- 기본 이미지 모달 -->
+                            <div class="modal fade" id="defaultImg" tabindex="-1" aria-labelledby="defaultImgLabel"
+                            aria-hidden="true" style="z-index: 1060;">
+                                <div class="modal-dialog modal-dialog-centered modal-auto ">
+                                    <div class="modal-content modal-content__modalUploadImg">
+                                        <div class="modal-body modal-body__main">
+                                                <div class="modal-header">
+                                                    <div class="modal-title modal-title__font-l text-left mb-0">기본 이미지 선택하기</div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="modalUploadImg__wrap d-flex searchImg radioForm">
+                                                        <label class="jRadioImage thumb-radio-image loading"><input type="radio" value="one" name="choose_image" tabindex="-1"><i class="thumb-image"><img alt="" src="../resource/image/m-sub/defaultImg-female.jpg"></i></label>
+
+                                                        <label class="jRadioImage thumb-radio-image loading active"><input type="radio" value="two" name="choose_image" tabindex="-1" checked><i class="thumb-image"><img alt="" src="../resource/image/m-sub/defaultImg-male.jpg"></i></label>
+
+
+                                                    </div>
+                                                </div>
+                                        
+
+                                            <div class="modal-buttons modal-buttons__sticky">
+                                                <button type="button" class="ui-button ui-button__bg-purple">확인</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //기본 이미지 모달 -->
                         <!-- //모달 -->
 
 

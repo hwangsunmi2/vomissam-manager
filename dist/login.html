@@ -49,13 +49,43 @@
 
             <div class="container__inner">
 
-                <div class="login-first m-login">
+                <!-- 2022.12.21 : mod : 레이아웃 수정 -->
+
+                <div class="loading">
+                    <div class="loading__inner">
+                        <div class="loading__bg"></div>
+                        <div class="loading-logo">
+                            <div class="img-wrap">
+                                <img src="../resource/image/common/logo-gradient.png" alt="">
+                            </div>
+                            <div class="loading-logo__text">
+                                VIP 간병 서비스 <span>보미쌤</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loading-footer__logo">
+
+                    </div>
+                </div>
+
+                <div class="intro-slide swiper-container">
+                    <div class="intro-fixed">
+                        <h1 class="intro-title">간병문화<span>를 바꾸는</span> <br> <span>사람들</span> 보미쌤</h1>
+                    </div>
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="intro-slide01"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="login-first">
                     <h1 class="login-first__title"><strong>VIP 간병전문가</strong> <br>
-                        <span class="color-purple">보미쌤</span>을 찾으세요?</h1>
+                        <span class="color-purple">보미쌤</span>을 선택해 보세요</h1>
                     <p class="login-first__text">
-                        이제 간병인 말고, 보미쌤이라 불러주세요. <br> 
-                        최초의 VIP간병 전문가 보미쌤이 <br>
-                        여러분의 가족을 돌봐드립니다.</p>
+                        내 인생을 바꾸는 최고의 선택 ! <br>
+                        나는 이제 VIP 간병전문가 보미쌤 입니다.</p>
                     <div class="login-first__bottom">
                         <div class="button-wrap button-wrap__intro manager__btn">
                             <button type="button">보미쌤 회원 가입하기</button>
@@ -72,6 +102,7 @@
                         </div>
                     </div>
                 </div>
+                <!--// 2022.12.21 : mod : 레이아웃 수정 -->
 
 
             </div>
@@ -91,7 +122,27 @@
 
 </body>
 <script type="text/javascript">
-   
+    window.onbeforeunload = function () {
+        //현재 페이지에서 다른 페이지로 넘어갈 때 표시해주는 기능
+        $('.loading').show(); 
+        setTimeout(function(){
+            $('.intro-slide').show();
+        },2000)
+    } 
+    $(window).load(function () { 
+        //페이지가 로드 되면 로딩 화면을 없애주는 것
+        
+        setTimeout(function(){
+            $('.loading').fadeOut(300);
+        },2000)
+        setTimeout(function(){
+            $('.intro-slide').fadeOut(300);
+        },4000)
+        
+
+
+        
+    });
 </script>
 
 </html>

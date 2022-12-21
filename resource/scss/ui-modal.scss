@@ -276,35 +276,41 @@
         &__wrap {
             width:100%;
             padding:7rem 6rem 15rem 6rem;
-            &>div {
-                width:50%;
-                padding:10rem;
-                border:1px solid #d8dce2;
-                box-sizing:border-box;
-                border-radius: 1.3rem;
+            
+        }
+        &-box{
+            width:50%;
+            height: 60rem;
+            padding: 4rem;
+            padding-top:10rem;
+            border:1px solid #d8dce2;
+            box-sizing:border-box;
+            border-radius: 1.3rem;
+            text-align: center;
+            cursor: pointer;
+            img {
+                width:100%;
                 text-align: center;
-                cursor: pointer;
-                img {
-                    width:100%;
-                    text-align: center;
-                    margin:0 auto;
-                }
-                p {
-                    margin-top:6rem;
-                    height:14rem;
-                    line-height: 7rem;
-                    text-align:center;
-                    vertical-align: middle;
-                    font-size:5.5rem;
-                }
-                &+div {
-                    margin-left:2rem;
-                    p {
-                        height:14rem;
-                        line-height:14rem;
-                    }
-                }
+                margin:0 auto;
             }
+            &+div {
+                margin-left:2rem;
+                // p {
+                //     height:14rem;
+                //     line-height:14rem;
+                // }
+            }
+        }
+        &-text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:14rem;
+            margin-top:6rem;
+            line-height: 7rem;
+            text-align:center;
+            vertical-align: middle;
+            font-size:5.5rem;
         }
     }
 
@@ -321,7 +327,7 @@
                         width:50%;
                         height:auto; 
                         cursor: pointer; 
-                        border:3px solid #d8dce2;
+                        border:.3rem solid #d8dce2;
                         border-radius: 1.3rem;
                         img {
                             width:100%; 
@@ -333,7 +339,7 @@
                             margin-left:2rem;
                         }
                         &.active {
-                            border:3px solid #795bdc;
+                            border:.3rem solid #795bdc;
                         }
                     }
                     
@@ -379,14 +385,14 @@
     .modal {
         .uploadimg__wrap {
             &> div {
-                padding: 4rem;
+                //padding: 4rem;
                 font-size:5.5rem;
-                &+div {
-                    p{
-                        height:8rem;
-                        line-height: 8rem;
-                    }
-                }
+                // &+div {
+                //     p{
+                //         height:8rem;
+                //         line-height: 8rem;
+                //     }
+                // }
                 
             }
         }

@@ -1993,34 +1993,35 @@
   width: 100%;
   padding: 7rem 6rem 15rem 6rem;
 }
-.modal .uploadimg__wrap > div {
+.modal .uploadimg-box {
   width: 50%;
-  padding: 10rem;
+  height: 60rem;
+  padding: 4rem;
+  padding-top: 10rem;
   border: 1px solid #d8dce2;
   box-sizing: border-box;
   border-radius: 1.3rem;
   text-align: center;
   cursor: pointer;
 }
-.modal .uploadimg__wrap > div img {
+.modal .uploadimg-box img {
   width: 100%;
   text-align: center;
   margin: 0 auto;
 }
-.modal .uploadimg__wrap > div p {
-  margin-top: 6rem;
+.modal .uploadimg-box + div {
+  margin-left: 2rem;
+}
+.modal .uploadimg-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 14rem;
+  margin-top: 6rem;
   line-height: 7rem;
   text-align: center;
   vertical-align: middle;
   font-size: 5.5rem;
-}
-.modal .uploadimg__wrap > div + div {
-  margin-left: 2rem;
-}
-.modal .uploadimg__wrap > div + div p {
-  height: 14rem;
-  line-height: 14rem;
 }
 .modal .modalUploadImg__wrap {
   padding: 7rem 6rem 15rem 6rem;
@@ -2033,7 +2034,7 @@
   width: 50%;
   height: auto;
   cursor: pointer;
-  border: 3px solid #d8dce2;
+  border: 0.3rem solid #d8dce2;
   border-radius: 1.3rem;
 }
 .modal .modalUploadImg__wrap .thumb-radio-image img {
@@ -2046,7 +2047,7 @@
   margin-left: 2rem;
 }
 .modal .modalUploadImg__wrap .thumb-radio-image.active {
-  border: 3px solid #795bdc;
+  border: 0.3rem solid #795bdc;
 }
 
 @media (max-width: 1600px) {
@@ -2066,12 +2067,7 @@
 @media (max-width: 1400px) {
   /* 모달 사진 업로드 */
   .modal .uploadimg__wrap > div {
-    padding: 4rem;
     font-size: 5.5rem;
-  }
-  .modal .uploadimg__wrap > div + div p {
-    height: 8rem;
-    line-height: 8rem;
   }
 }
 @media (max-width: 1024px) {
