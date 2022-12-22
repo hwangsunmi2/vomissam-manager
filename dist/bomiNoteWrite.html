@@ -107,11 +107,10 @@
 
                                     <div class="bomiNote-box__sub">
                                         <h3 class="bomiNote__subtit">식사 량</h3>
-                                        <div class="ui-buttons ui-buttons__second">
-                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">한공기</button>
-                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">반공기</button>
-                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">반공기 미만</button>
-                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">경관식(ml)</button>
+                                        <div class="ui-buttons ui-buttons__thirds">
+                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">전부</button>
+                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">반</button>
+                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">소량</button>
                                         </div>
                                     </div>
                                 </div>
@@ -130,13 +129,24 @@
                                     <h2 class="bomiNote__tit bomiNote__tit--paren">
                                         <span class="bomiNote__tit__capt">4)</span>대/소변 상태
                                     </h2>
-                                    <div class="ui-buttons ui-buttons__thirds">
-                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">정산 대변</button>
-                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">정상 소변</button>
-                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">비정상 대변</button>
-                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">비정상 소변</button>
-                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">대변 안봄</button>
-                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">소변 안봄</button>
+                                    <div class="ui-form ui-form__flex--row mt-70">
+                                        <div class="ui-form__cell">대변</div>
+                                        <div class="ui-form__cell flex">
+                                            <input type="text" class="ui-input " placeholder="">
+                                        </div>
+                                        <div class="ui-form__cell">회</div>
+                                        <div class="ui-form__cell ml-110">소변</div>
+                                        <div class="ui-form__cell flex">
+                                            <input type="text" class="ui-input " placeholder="">
+                                        </div>
+                                        <div class="ui-form__cell">회</div>
+                                    </div>
+
+                                    <div class="bomiNote-box__sub">
+                                        <h3 class="bomiNote__subtit mt-70">특이사항</h3>
+                                        <div class="ui-form mt-70">
+                                            <textarea name="" class="ui-textarea ui-textarea__height-350" placeholder="특이사항을 입력하세요"></textarea>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -180,30 +190,10 @@
                                     </div>
                                 </div>
 
-                                <div class="bomiNote-box">
-                                    <h2 class="bomiNote__tit bomiNote__tit--paren mt-120">
-                                        <span class="bomiNote__tit__capt">8)</span>
-                                        오늘 특별히 시행된 검사/시술/수술이 있으면 
-                                        기록해주세요. <span class="bomiNote__tit--ps">(일상적인 검사, 치료는 제외)</span>
-                                    </h2>
-                                    <div class="ui-form">
-                                        <textarea name="" class="ui-textarea ui-textarea__height-350" placeholder="특별한 내용은 없음."></textarea>
-                                    </div>
-                                </div>
 
                                 <div class="bomiNote-box">
-                                    <h2 class="bomiNote__tit bomiNote__tit--paren mt-120">
-                                        <span class="bomiNote__tit__capt">9)</span>
-                                        의료진 전달 사항이 있으면 기록해주세요. <span class="bomiNote__tit--ps">(회진 포함<span class="bomiNote__tit--ps bomiNote__tit--ps__pink">*</span>)</span>
-                                    </h2>
-                                    <div class="ui-form">
-                                        <textarea name="" class="ui-textarea ui-textarea__height-350" placeholder="특별한 내용은 없음."></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="bomiNote-box">
-                                    <h2 class="bomiNote__tit bomiNote__tit--paren bomiNote__tit--paren__normal">
-                                        <span class="bomiNote__tit__capt">10)</span>간병인 요청 사항</span>
+                                    <h2 class="bomiNote__tit bomiNote__tit--paren">
+                                        <span class="bomiNote__tit__capt">8)</span>간병인 요청 사항</span>
                                     </h2>
                                     <div class="ui-form">
                                         <textarea name="" class="ui-textarea ui-textarea__height-350" placeholder="특별한 내용은 없음."></textarea>
