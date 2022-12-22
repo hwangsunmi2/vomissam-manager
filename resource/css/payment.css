@@ -314,7 +314,7 @@
   border: 0.3rem solid #795bdc;
   color: #6349ba;
   font-size: 8rem;
-  font-weight: 500;
+  font-weight: 600;
   background-color: #f5f4f9;
   border-radius: 3rem;
   text-align: center;
@@ -374,6 +374,7 @@
   background-color: #fff;
   border-radius: 3rem;
   margin: 5rem 5rem 0 5rem;
+  padding: 0;
 }
 .sub-item--totalPayment .sub-item.details .detailsView button {
   display: inline-block;
@@ -403,13 +404,58 @@
 #detailPop .modal-body .dTable {
   padding: 0 6rem 6rem 6rem;
 }
+#detailPop .modal-body .dTable-title {
+  font-weight: 500;
+}
 #detailPop .modal-body .dTable p {
   font-size: 5.4rem;
 }
 #detailPop .modal-body .dTable .board-table {
-  padding-top: 4rem;
   border-top: 1px solid #999999;
+}
+#detailPop .modal-body .dTable .board-table__lsit {
+  overflow-x: scroll;
 }
 #detailPop .modal-body .dTable .board-table tr {
   border-bottom: 1px solid #e0e0e0;
+}
+#detailPop .modal-body .dTable .board-table th, #detailPop .modal-body .dTable .board-table td {
+  min-width: 27.5rem;
+  padding: 3rem 0;
+  font-size: 5rem;
+  text-align: center;
+}
+#detailPop .modal-body .dTable .board-table thead {
+  position: relative;
+  background: #f8f8f8;
+}
+#detailPop .modal-body .dTable .board-table thead th {
+  border-right: 0.2rem solid #e0e0e0;
+}
+#detailPop .modal-body .dTable .board-table thead::before {
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  width: 0.2rem;
+  height: 100%;
+  background: #f8f8f8;
+  content: "";
+}
+#detailPop .modal-body .dTable .board-table tbody td + td {
+  border-left: 0.2rem solid #e0e0e0;
+}
+#detailPop .modal-body .dTable .table-scroll__txt {
+  margin-top: 4rem;
+  font-size: 4.8rem;
+  color: #9196a5;
+  text-align: right;
+}
+#detailPop .modal-body .dTable .table-scroll__txt::after {
+  display: inline-block;
+  width: 1.8rem;
+  height: 3.3rem;
+  margin-left: 3rem;
+  background: url(../image/m-sub/icon-table_scoll.png);
+  background-size: cover;
+  content: "";
 }

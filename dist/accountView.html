@@ -99,14 +99,15 @@
                                                 <input type="text" class="ui-input js-datepicker-range__max ui-input__height-s" title="마지막 날짜" value="2021-12-10" />
                                                 </div>
                                             </div>
-                                            <button type="button" class="ui-button ui-button__bg-purple flex-2 ml-4 ui-button__height-135 font-size__xxs">검색</button>
+                                            <!-- 2022.12.22 : mod : 클래스 변경 .ui-button__font-xxs -->
+                                            <button type="button" class="ui-button ui-button__bg-purple flex-2 ml-4 ui-button__height-135 ui-button__font-xxs">검색</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="sub-item">
                                     <div class="sub-item__box sub-item__blue sub-item__box--totalPay">
                                         <p class="totalPay__txt">
-                                            총 결제 금액
+                                            총 수입금액
                                             <span>￦ <em>3,880,900</em> 원</span>
                                         </p>
                                     </div>
@@ -117,7 +118,7 @@
                                         <div class="sub-list__dl d-flex">
                                             <div class="text">
                                                 <dl class="sub-dl">
-                                                    <dt class="sub-dt">근무 기간 : </dt>
+                                                    <dt class="sub-dt">간병 기간 : </dt>
                                                     <dd class="sub-dd sub-dd__left">2022. 09. 19 ~ 2011. 09. 26 (7일)</dd>
                                                 </dl>
                                                 <dl class="sub-dl">
@@ -144,7 +145,7 @@
                                         <div class="sub-list__dl d-flex">
                                             <div class="text">
                                                 <dl class="sub-dl">
-                                                    <dt class="sub-dt">근무 기간 : </dt>
+                                                    <dt class="sub-dt">간병 기간 : </dt>
                                                     <dd class="sub-dd sub-dd__left">2022. 09. 19 ~ 2011. 09. 26 (7일)</dd>
                                                 </dl>
                                                 <dl class="sub-dl">
@@ -171,7 +172,7 @@
                                         <div class="sub-list__dl d-flex">
                                             <div class="text">
                                                 <dl class="sub-dl">
-                                                    <dt class="sub-dt">근무 기간 : </dt>
+                                                    <dt class="sub-dt">간병 기간 : </dt>
                                                     <dd class="sub-dd sub-dd__left">2022. 09. 19 ~ 2011. 09. 26 (7일)</dd>
                                                 </dl>
                                                 <dl class="sub-dl">
@@ -200,20 +201,22 @@
                         <div class="modal fade" id="detailPop" tabindex="-1" aria-labelledby="detailPopLabel"
                             aria-hidden="true" style="z-index: 1060;">
                                 <div class="modal-dialog modal-dialog-centered modal-auto ">
-                                    <div class="modal-content modal-content__s modal-content__ssamSearch">
-                                        <div class="modal-body modal-body__main">
+                                    <!-- 2022.12.22 : del : .modal-content__s 삭제 -->
+                                    <div class="modal-content  modal-content__ssamSearch">
+                                        <!-- 2022.12.22 : add : .pt-0 추가 -->
+                                        <div class="modal-body modal-body__main pt-0">
                                                 <div class="modal-header">
                                                     <div class="modal-title modal-title__font-l text-left mb-0">&lt;건별/월별/기간별 상세 내역 보기&gt;</div>
                                                 </div>
                                                 <div class="modal-body">
                                                     <div class="dTable">
-                                                        <p>&lt;지급내역&gt;</p>
+                                                        <p class="dTable-title">&lt;지급내역&gt;</p>
                                                         <div class="board-table">
                                                             <div class="board-table__lsit">
                                                                 <table>
                                                                     <thead>
                                                                         <tr>
-                                                                            <th rowspan="2">근무일수</th>
+                                                                            <th rowspan="2">간병 일수</th>
                                                                             <th colspan="4">지급금</th>
                                                                             <th>과세표준액</th>
                                                                         </tr>
@@ -236,12 +239,12 @@
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
-                                                                <div>표를 밀어보세요 ></div>
                                                             </div>
+                                                            <div class="table-scroll__txt">표를 밀어보세요</div>
                                                         </div>
                                                     </div>
                                                     <div class="dTable">
-                                                        <p>&lt;공제내역&gt;</p>
+                                                        <p class="dTable-title">&lt;공제내역&gt;</p>
                                                         <div class="board-table">
                                                             <div class="board-table__lsit">
                                                                 <table>
@@ -269,8 +272,8 @@
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
-                                                                <div>표를 밀어보세요 ></div>
                                                             </div>
+                                                            <div class="table-scroll__txt">표를 밀어보세요</div>
                                                         </div>
                                                     </div>
                                                 </div>

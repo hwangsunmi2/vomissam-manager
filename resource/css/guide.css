@@ -167,7 +167,7 @@
   font-size: 4.6rem;
 }
 .font-size__xs {
-  font-size: 5rem;
+  font-size: 5rem !important;
 }
 .font-size__s {
   font-size: 5.5rem;
@@ -178,11 +178,18 @@
 .font-size__l {
   font-size: 6.5rem;
 }
+.font-weight__l {
+  font-weight: 400;
+}
 .font-weight__r {
   font-weight: 500;
 }
 .font-weight__m {
   font-weight: 600;
+}
+
+.line-height__80 {
+  line-height: 8rem;
 }
 
 .bg-gray {
@@ -240,6 +247,10 @@
 
 .border-radius-3 {
   border-radius: 3rem;
+}
+
+.hide {
+  display: none;
 }
 
 /* button */
@@ -345,6 +356,11 @@
 .ui-button__height-135 {
   height: 13.5rem;
   line-height: 13.6rem;
+}
+.ui-button__height-300 {
+  height: 30rem;
+  padding-left: 5.8rem;
+  line-height: 8rem;
 }
 .ui-button__font-xxs {
   font-size: 4.6rem;
@@ -507,7 +523,7 @@
   font-weight: 500;
   color: #3c50a2;
   border-color: #4b62c3;
-  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 3.7rem center;
   background-size: 4.5rem 3.1rem;
   box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
@@ -515,7 +531,7 @@
   font-weight: 500;
   color: #6349ba;
   border-color: #6349ba;
-  background: url(../image/m-sub/check_purple.png) no-repeat right 5.8rem center;
+  background: url(../image/m-sub/check_purple.png) no-repeat right 3.7rem center;
   background-size: 4.5rem 3.1rem;
   box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
@@ -523,7 +539,7 @@
   font-weight: 500;
   color: #6349ba;
   border-color: #6349ba;
-  background: url(../image/m-sub/check_purple.png) no-repeat right 5.8rem center;
+  background: url(../image/m-sub/check_purple.png) no-repeat right 3.7rem center;
   background-size: 4.5rem 3.1rem;
   box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
@@ -531,7 +547,7 @@
   font-weight: 500;
   color: #3c50a2;
   border-color: #4b62c3;
-  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 5.8rem center;
+  background: url(../image/common/icon/icon-check__blue.png) no-repeat right 3.7rem center;
   background-size: 4.5rem 3.1rem;
   box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
@@ -647,11 +663,6 @@
   font-weight: 500;
 }
 
-@media (max-width: 1600px) {
-  .ui-buttons__second .ui-button__font-xs {
-    font-size: 3rem;
-  }
-}
 @media (max-width: 1024px) {
   .btn--download {
     width: 11.7rem;
@@ -666,16 +677,10 @@
     height: 5.4rem;
     font-size: 1.8rem;
   }
-  .ui-buttons__second .ui-button__font-xs {
-    font-size: 2.5rem;
-  }
 }
 @media (max-width: 768px) {
   .btn-wrap .btn {
     font-size: 14px;
-  }
-  .ui-buttons__second .ui-button__font-xs {
-    font-size: 3.2rem;
   }
 }
 /** 소통마당 > 공지사항 */
@@ -1146,11 +1151,18 @@
   background-image: url("../image/common/icon/icon-check.png");
   background-size: 4.5rem 3.1rem;
 }
+.ui-radio-block__width-100 {
+  width: 100%;
+  padding: 3.5rem 0;
+}
 .ui-radio:checked + .ui-radio-object, .ui-radio:checked + .ui-label .ui-radio-object {
   border-color: #4b62c3;
   background-color: #4b62c3;
   background-image: url("../image/common/icon/icon-check.png");
   background-size: 4.5rem 3.1rem;
+}
+.ui-radio__inner--col {
+  margin: -3.5rem 0;
 }
 .ui-checkbox__list.agree {
   padding-bottom: 8rem;
@@ -1462,6 +1474,9 @@
 .text-ex-indent.ml__rem-25 {
   margin-left: 25rem;
 }
+.text-ex-indent.ml__rem-27 {
+  margin-left: 27rem;
+}
 .text-ex-indent.ml__rem-30 {
   margin-left: 30rem;
 }
@@ -1522,6 +1537,7 @@
 .sub-text {
   font-size: 6rem;
   line-height: 10rem;
+  word-break: keep-all;
 }
 .sub-item {
   padding: 0 5rem;
@@ -1787,6 +1803,85 @@
   content: "A";
 }
 
+/* 부트스트랩 datepicker */
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table th.picker-switch {
+  font-size: 7rem;
+  font-weight: 500;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table th.dow {
+  padding: 0;
+  padding-top: 4rem;
+  font-size: 5.5rem;
+  line-height: 18.4rem;
+  text-align: center;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table th.prev, .ui-input__datepicker + .bootstrap-datetimepicker-widget table th.picker-switch, .ui-input__datepicker + .bootstrap-datetimepicker-widget table th.next {
+  height: 13.5rem;
+  vertical-align: middle;
+  text-align: center;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td.day {
+  position: relative;
+  padding: 0;
+  font-size: 5.5rem;
+  line-height: 18.4rem;
+  text-align: center;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td.day:hover::before {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td.day.today::before {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 0;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td.active {
+  position: relative;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td.active::before {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td span.month {
+  position: relative;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td span.month.active {
+  position: relative;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td span.month.active::before {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td span.month:hover::before {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table thead tr:first-child th.picker-switch:hover {
+  background: transparent;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table .glyphicon-chevron-left, .ui-input__datepicker + .bootstrap-datetimepicker-widget table .glyphicon-chevron-right {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 2.4rem 4.4rem;
+  background-position: center;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table .glyphicon-chevron-left {
+  background-image: url(../image/common/icon/chevron-left.png);
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table .glyphicon-chevron-right {
+  background-image: url(../image/common/icon/chevron-right.png);
+}
+
 .modal {
   background: rgba(0, 0, 0, 0.5);
   padding: 10rem 0;
@@ -1798,6 +1893,9 @@
 }
 .modal-header {
   padding: 10rem 6rem 0 6rem;
+}
+.modal-header__s {
+  padding: 8rem 6rem 0 6rem;
 }
 .modal-body {
   padding: 0;
@@ -1878,6 +1976,12 @@
   padding-top: 0;
   padding-bottom: 0;
 }
+.modal-core__nursingEnd {
+  padding: 14rem 8rem 13rem 8rem;
+}
+.modal-core__nursingCare {
+  padding: 10rem 8rem 13rem 8rem;
+}
 .modal-tit {
   margin-bottom: 2.5rem;
   font-size: 2rem;
@@ -1894,6 +1998,9 @@
 .modal-title2 {
   font-size: 6rem;
   font-weight: 500;
+}
+.modal-title2 span {
+  font-size: 6rem;
 }
 .modal-title__font-l {
   font-size: 7.5rem;
@@ -1989,34 +2096,35 @@
   width: 100%;
   padding: 7rem 6rem 15rem 6rem;
 }
-.modal .uploadimg__wrap > div {
+.modal .uploadimg-box {
   width: 50%;
-  padding: 10rem;
+  height: 60rem;
+  padding: 4rem;
+  padding-top: 10rem;
   border: 1px solid #d8dce2;
   box-sizing: border-box;
   border-radius: 1.3rem;
   text-align: center;
   cursor: pointer;
 }
-.modal .uploadimg__wrap > div img {
+.modal .uploadimg-box img {
   width: 100%;
   text-align: center;
   margin: 0 auto;
 }
-.modal .uploadimg__wrap > div p {
-  margin-top: 6rem;
+.modal .uploadimg-box + div {
+  margin-left: 2rem;
+}
+.modal .uploadimg-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 14rem;
+  margin-top: 6rem;
   line-height: 7rem;
   text-align: center;
   vertical-align: middle;
   font-size: 5.5rem;
-}
-.modal .uploadimg__wrap > div + div {
-  margin-left: 2rem;
-}
-.modal .uploadimg__wrap > div + div p {
-  height: 14rem;
-  line-height: 14rem;
 }
 .modal .modalUploadImg__wrap {
   padding: 7rem 6rem 15rem 6rem;
@@ -2029,7 +2137,7 @@
   width: 50%;
   height: auto;
   cursor: pointer;
-  border: 3px solid #d8dce2;
+  border: 0.3rem solid #d8dce2;
   border-radius: 1.3rem;
 }
 .modal .modalUploadImg__wrap .thumb-radio-image img {
@@ -2042,7 +2150,7 @@
   margin-left: 2rem;
 }
 .modal .modalUploadImg__wrap .thumb-radio-image.active {
-  border: 3px solid #795bdc;
+  border: 0.3rem solid #795bdc;
 }
 
 @media (max-width: 1600px) {
@@ -2062,12 +2170,7 @@
 @media (max-width: 1400px) {
   /* 모달 사진 업로드 */
   .modal .uploadimg__wrap > div {
-    padding: 4rem;
     font-size: 5.5rem;
-  }
-  .modal .uploadimg__wrap > div + div p {
-    height: 8rem;
-    line-height: 8rem;
   }
 }
 @media (max-width: 1024px) {
