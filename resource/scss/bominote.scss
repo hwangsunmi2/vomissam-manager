@@ -14,21 +14,36 @@
         span{
             font-size:10rem;
             font-weight:500;
-            &.bomiNote__tit__capt{
-                position:absolute;
-                top:.2rem;
-                left:0;
-                font-size:6rem;
-            }
+        }
+        .bomiNote__tit__capt{
+            position:absolute;
+            //top:.5rem;
+            left:0;
+            font: {
+                size:6rem;
+                weight:600;
+            };
+            line-height: 8.4rem;
         }
         &--paren{
             display:block;
             width:100%;
-            padding-left:7rem;
+            padding-left: 7rem;
+            //padding-left:7rem;
+            font-size: 6rem;
+            line-height: 8.4rem;
+            &__normal{
+                padding-left: 0;
+                .bomiNote__tit__capt{
+                    position: unset;
+                    padding-right: 2rem;
+
+                }
+            }
         }
-        + .ui-buttons{
-            margin-top:6.5rem;
-        }
+        // + .ui-buttons{
+        //     margin-top:6.5rem;
+        // }
     }
     &__subtit{
         font-size:5.5rem;
@@ -134,6 +149,42 @@
             color:#9196a5;
         }
     }
+    &-box{
+        &+&{
+            margin-top: 12rem;
+        }
+        .bomiNote{
+            &__tit{
+                &--paren{
+                    margin-bottom: 7rem;
+                }
+                &--ps{
+                    font: {
+                        size: 5rem;
+                        weight:300;
+                    };
+                    color:#a7a5ae;
+                    &__pink{
+                        color:#e90f75;
+                    }
+                }
+            }
+            &__subtit{
+                margin-bottom: 7rem;
+            }
+        }
+        &__sub{
+            &+&{
+                margin-top: 7rem;
+            }
+        }
+        .ui-button{
+            font-weight: 400;
+            &.is-active{
+                font-weight: 500;
+            }
+        }
+    }
 }
 .ui{
     &-form{
@@ -147,13 +198,14 @@
 .acordion{
     &-list{
         &__view{
-            padding:2.5rem 4rem;
+            padding:5rem 4.8rem 9.5rem;
         }
     }
     &-view{
         &__date{
             display:flex;
             align-items: center;
+            justify-content: flex-end;
         }
     }
     &-date{

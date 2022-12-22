@@ -73,114 +73,147 @@
                             </div>
                             
                             <div class="sub-item">
-                                <h2 class="bomiNote__tit bomiNote__tit--paren">
-                                    <span class="bomiNote__tit__capt">1)</span>
-                                    환자의 기분 상태
-                                </h2>
-                                <div class="ui-buttons ui-buttons__thirds">
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">좋음</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">보통</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">나쁨</button>
-                                </div>
-                                <h2 class="bomiNote__tit bomiNote__tit--paren mt-120">
-                                    <span class="bomiNote__tit__capt">2)</span>
-                                    식사
-                                </h2>
-                                <h3 class="bomiNote__subtit mt-50">식사 종류</h3>
-                                <div class="ui-buttons ui-buttons__thirds mt-60">
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">밥</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">죽</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">유동식</button>
-                                </div>
-                                <h3 class="bomiNote__subtit mt-70">식사 량</h3>
-                                <div class="ui-buttons ui-buttons__thirds mt-60">
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">밥</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">죽</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">유동식</button>
-                                </div>
-                                <h2 class="bomiNote__tit bomiNote__tit--paren mt-120">
-                                    <span class="bomiNote__tit__capt">3)</span>
-                                    배변
-                                </h2>
-                                <div class="ui-form ui-form__flex--row mt-70">
-                                    <div class="ui-form__cell">대변</div>
-                                    <div class="ui-form__cell flex">
-                                        <input type="text" class="ui-input " placeholder="">
+
+                                <!-- 2022.12.22 : mod : 레이아웃 전체 수정 -->
+
+                                <div class="bomiNote-box">
+                                    <h2 class="bomiNote__tit bomiNote__tit--paren">
+                                        <span class="bomiNote__tit__capt">1)</span>
+                                        환자의 기분 상태
+                                    </h2>
+    
+                                
+                                    <!-- 2022.12.22 : add : 버튼 공통 .ui-button__height-m 추가, 텍스트 수정 -->
+                                    <div class="ui-buttons ui-buttons__thirds">
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">좋음</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">보통</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">나쁨</button>
                                     </div>
-                                    <div class="ui-form__cell">회</div>
-                                    <div class="ui-form__cell ml-110">소변</div>
-                                    <div class="ui-form__cell flex">
-                                        <input type="text" class="ui-input " placeholder="">
+
+                                    <div class="bomiNote-box__sub">
+                                        <h2 class="bomiNote__tit bomiNote__tit--paren mt-120">
+                                            <span class="bomiNote__tit__capt">2)</span>
+                                            식사
+                                        </h2>
+                                        <h3 class="bomiNote__subtit">식사 종류</h3>
+                                        <!-- 2022.12.22 : mod : .ui-buttons__thirds -> .ui-buttons__second 수정 -->
+                                        <div class="ui-buttons ui-buttons__second">
+                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">밥</button>
+                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">죽(미음)</button>
+                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">경관식(피딩)</button>
+                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">금식</button>
+                                        </div>
                                     </div>
-                                    <div class="ui-form__cell">회</div>
+
+                                    <div class="bomiNote-box__sub">
+                                        <h3 class="bomiNote__subtit">식사 량</h3>
+                                        <div class="ui-buttons ui-buttons__second">
+                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">한공기</button>
+                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">반공기</button>
+                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">반공기 미만</button>
+                                            <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">경관식(ml)</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h3 class="bomiNote__subtit mt-70">특이사항</h3>
-                                <div class="ui-form mt-70">
-                                    <textarea name="" class="ui-textarea ui-textarea__height-350" placeholder="특이사항을 입력하세요"></textarea>
+
+                                <div class="bomiNote-box">
+                                    <h2 class="bomiNote__tit bomiNote__tit--paren">
+                                        <span class="bomiNote__tit__capt">3)</span>약 복용
+                                    </h2>
+                                    <div class="ui-buttons ui-buttons__second">
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">잘하심</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">거부함</button>
+                                    </div>
                                 </div>
-                                <h2 class="bomiNote__tit bomiNote__tit--paren mt-120">
-                                    <span class="bomiNote__tit__capt">4)</span>
-                                    수면
-                                </h2>
-                                <div class="ui-buttons ui-buttons__thirds mt-60">
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">잘 주무심</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">보통</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">못 주무심</button>
+
+                                <div class="bomiNote-box">
+                                    <h2 class="bomiNote__tit bomiNote__tit--paren">
+                                        <span class="bomiNote__tit__capt">4)</span>대/소변 상태
+                                    </h2>
+                                    <div class="ui-buttons ui-buttons__thirds">
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">정산 대변</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">정상 소변</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">비정상 대변</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">비정상 소변</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">대변 안봄</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">소변 안봄</button>
+                                    </div>
                                 </div>
-                                <h2 class="bomiNote__tit bomiNote__tit--paren mt-120">
-                                    <span class="bomiNote__tit__capt">5)</span>
-                                    개인 위생 관리
-                                </h2>
-                                <div class="ui-buttons ui-buttons__thirds mt-60">
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">세면</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">양치</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">세발</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">목욕</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">환복</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">침구교환</button>
+
+                                <div class="bomiNote-box">
+                                    <h2 class="bomiNote__tit bomiNote__tit--paren">
+                                        <span class="bomiNote__tit__capt">5)</span>수면 상태
+                                    </h2>
+                                    <div class="ui-buttons ui-buttons__thirds">
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">잘 주무심</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">보통</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">못 주무심</button>
+                                    </div>
                                 </div>
-                                <h2 class="bomiNote__tit bomiNote__tit--paren mt-120">
-                                    <span class="bomiNote__tit__capt">6)</span>
-                                    돌봄 관련 활동
-                                </h2>
-                                <h3 class="bomiNote__subtit mt-50">이동 및 운동</h3>
-                                <div class="ui-buttons ui-buttons__thirds mt-60">
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">체위 변경</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">보행 도움</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">산책</button>
+                                
+                                <div class="bomiNote-box">
+                                    <h2 class="bomiNote__tit bomiNote__tit--paren">
+                                        <span class="bomiNote__tit__capt">6)</span>
+                                        개인 위생 관리 <span class="bomiNote__tit--ps">(하신 일을 모두 선택하세요.)</span>
+                                    </h2>
+                                    <div class="ui-buttons ui-buttons__thirds">
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">세면</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">양치</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">세발</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">목욕</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">환복</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">침구교환</button>
+                                    </div>
                                 </div>
-                                <h3 class="bomiNote__subtit mt-70">정서적 도움</h3>
-                                <div class="ui-buttons ui-buttons__thirds mt-60">
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">말벗</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">종교 활동</button>
-                                    <button type="button" class="ui-button ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">경청</button>
+
+                                <div class="bomiNote-box">
+                                    <h2 class="bomiNote__tit bomiNote__tit--paren">
+                                        <span class="bomiNote__tit__capt">7)</span>
+                                        돌봄 관련 활동
+                                    </h2>
+                                    <div class="ui-buttons ui-buttons__thirds">
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple is-active">체위 변경</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">이동 도움</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">재활 도움</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">놀이</button>
+                                        <button type="button" class="ui-button ui-button__height-m ui-button__left ui-button__border-gray ui-button__font-xs ui-button__check--purple">말벗</button>
+                                    </div>
                                 </div>
-                                <h3 class="bomiNote__subtit mt-70">추가적 도움</h3>
-                                <div class="ui-form mt-70">
-                                    <textarea name="" class="ui-textarea ui-textarea__height-350" placeholder="내용을 입력하세요."></textarea>
+
+                                <div class="bomiNote-box">
+                                    <h2 class="bomiNote__tit bomiNote__tit--paren mt-120">
+                                        <span class="bomiNote__tit__capt">8)</span>
+                                        오늘 특별히 시행된 검사/시술/수술이 있으면 
+                                        기록해주세요. <span class="bomiNote__tit--ps">(일상적인 검사, 치료는 제외)</span>
+                                    </h2>
+                                    <div class="ui-form">
+                                        <textarea name="" class="ui-textarea ui-textarea__height-350" placeholder="특별한 내용은 없음."></textarea>
+                                    </div>
                                 </div>
-                                <h2 class="bomiNote__tit bomiNote__tit--paren mt-120">
-                                    <span class="bomiNote__tit__capt">7)</span>
-                                    어제의 치료와 변경된 내용 및 오늘의 시술.수술.검사 관련 시행 내용
-                                </h2>
-                                <div class="ui-form mt-70">
-                                    <textarea name="" class="ui-textarea ui-textarea__height-350" placeholder="특별한 내용은 없음."></textarea>
+
+                                <div class="bomiNote-box">
+                                    <h2 class="bomiNote__tit bomiNote__tit--paren mt-120">
+                                        <span class="bomiNote__tit__capt">9)</span>
+                                        의료진 전달 사항이 있으면 기록해주세요. <span class="bomiNote__tit--ps">(회진 포함<span class="bomiNote__tit--ps bomiNote__tit--ps__pink">*</span>)</span>
+                                    </h2>
+                                    <div class="ui-form">
+                                        <textarea name="" class="ui-textarea ui-textarea__height-350" placeholder="특별한 내용은 없음."></textarea>
+                                    </div>
                                 </div>
-                                <h2 class="bomiNote__tit bomiNote__tit--paren mt-120">
-                                    <span class="bomiNote__tit__capt">8)</span>
-                                    의료진 전달 사항
-                                </h2>
-                                <div class="ui-form mt-70">
-                                    <textarea name="" class="ui-textarea ui-textarea__height-350" placeholder="특별한 내용은 없음."></textarea>
+
+                                <div class="bomiNote-box">
+                                    <h2 class="bomiNote__tit bomiNote__tit--paren bomiNote__tit--paren__normal">
+                                        <span class="bomiNote__tit__capt">10)</span>간병인 요청 사항</span>
+                                    </h2>
+                                    <div class="ui-form">
+                                        <textarea name="" class="ui-textarea ui-textarea__height-350" placeholder="특별한 내용은 없음."></textarea>
+                                    </div>
                                 </div>
-                                <h2 class="bomiNote__tit bomiNote__tit--paren mt-120">
-                                    <span class="bomiNote__tit__capt">9)</span>
-                                    간병인 요청 사항
-                                </h2>
-                                <div class="ui-form mt-70">
-                                    <textarea name="" class="ui-textarea ui-textarea__height-350" placeholder="특별한 내용은 없음."></textarea>
-                                </div>
-                                <button type="button" class="ui-button ui-button__bg-purple mt-120">작성완료</button>
+
+
+
+
+                                <button type="button" class="ui-button ui-button__bg-purple mt-80">작성완료</button>
                             </div>
                         </div>
                     </div>
@@ -214,9 +247,9 @@
         <!-- //quick-menu -->
 
         <!-- footer -->
-        <!-- [include] footer -->
-        <footer data-include-file="../include/footer.html" class="footer-wrap js-include"></footer>
-        <!-- //[include] footer -->
+        <footer  class="footer-wrap js-include">
+            <div class="footer__inner"></div>
+        </footer>
         <!-- //footer -->
     </div>
 </body>

@@ -121,19 +121,26 @@
   font-size: 10rem;
   font-weight: 500;
 }
-.bomiNote__tit span.bomiNote__tit__capt {
+.bomiNote__tit .bomiNote__tit__capt {
   position: absolute;
-  top: 0.2rem;
   left: 0;
   font-size: 6rem;
+  font-weight: 600;
+  line-height: 8.4rem;
 }
 .bomiNote__tit--paren {
   display: block;
   width: 100%;
   padding-left: 7rem;
+  font-size: 6rem;
+  line-height: 8.4rem;
 }
-.bomiNote__tit + .ui-buttons {
-  margin-top: 6.5rem;
+.bomiNote__tit--paren__normal {
+  padding-left: 0;
+}
+.bomiNote__tit--paren__normal .bomiNote__tit__capt {
+  position: unset;
+  padding-right: 2rem;
 }
 .bomiNote__subtit {
   font-size: 5.5rem;
@@ -233,17 +240,44 @@
   font-size: 4.8rem;
   color: #9196a5;
 }
+.bomiNote-box + .bomiNote-box {
+  margin-top: 12rem;
+}
+.bomiNote-box .bomiNote__tit--paren {
+  margin-bottom: 7rem;
+}
+.bomiNote-box .bomiNote__tit--ps {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #a7a5ae;
+}
+.bomiNote-box .bomiNote__tit--ps__pink {
+  color: #e90f75;
+}
+.bomiNote-box .bomiNote__subtit {
+  margin-bottom: 7rem;
+}
+.bomiNote-box__sub + .bomiNote-box__sub {
+  margin-top: 7rem;
+}
+.bomiNote-box .ui-button {
+  font-weight: 400;
+}
+.bomiNote-box .ui-button.is-active {
+  font-weight: 500;
+}
 
 .ui-form__cell.ml-110 {
   margin-left: 11rem !important;
 }
 
 .acordion-list__view {
-  padding: 2.5rem 4rem;
+  padding: 5rem 4.8rem 9.5rem;
 }
 .acordion-view__date {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 .acordion-date {
   display: flex;
