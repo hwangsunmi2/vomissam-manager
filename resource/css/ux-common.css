@@ -311,6 +311,10 @@
   background: #795bdc;
   color: #ffffff;
 }
+.ui-button__bg-deeppurple {
+  background: #5330c8;
+  color: #ffffff;
+}
 .ui-button__border-gray {
   border: 0.4rem solid #e9eaec;
 }
