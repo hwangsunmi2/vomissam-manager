@@ -311,6 +311,10 @@
   background: #795bdc;
   color: #ffffff;
 }
+.ui-button__bg-deeppurple {
+  background: #5330c8;
+  color: #ffffff;
+}
 .ui-button__border-gray {
   border: 0.4rem solid #e9eaec;
 }
@@ -363,7 +367,7 @@
   line-height: 8rem;
 }
 .ui-button__font-xxs {
-  font-size: 4.6rem;
+  font-size: 4.6rem !important;
 }
 .ui-button__font-xs {
   font-size: 5.5rem;
@@ -1295,7 +1299,7 @@
   align-items: center;
 }
 .personalInfo__text--inner {
-  padding: 14rem 0;
+  padding: 9rem 0;
   margin-left: 8rem;
   width: calc(100% - 39.4rem);
 }
@@ -1886,6 +1890,7 @@
   background: rgba(0, 0, 0, 0.5);
   padding: 10rem 0;
   padding-right: 0 !important;
+  padding-left: 0 !important;
   /* case3 간병시작하기 모달 */
   /* 인적 사항 보미쌤 찾기 모달 */
   /* 인적 사항 사진 업로드 모달 */
