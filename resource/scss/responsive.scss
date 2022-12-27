@@ -21,10 +21,10 @@ html{
         font-size:calc(62.5% / 2);
     }
     @include tablet{ //768px
-        font-size:calc(62.5% / 1.2);
+        font-size:13%;
     }
-    @include labtop{
-        font-size:62.5%;
+    @include media-breakpoint-down(n-xxs){ 
+        font-size:13%;
     }
 }
 

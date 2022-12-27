@@ -2205,12 +2205,12 @@
 }
 @media (min-width: 768px) {
   html {
-    font-size: 52.0833333333%;
+    font-size: 13%;
   }
 }
-@media (min-width: 1024px) {
+@media (max-width: 320px) {
   html {
-    font-size: 62.5%;
+    font-size: 13%;
   }
 }
 
