@@ -581,8 +581,10 @@
   box-sizing: border-box;
 }
 .index-case-box .carer-info > div.ellipse .choice {
-  padding: 4rem;
-  border: 2px solid #d5d9df;
+  width: auto;
+  height: 13.3rem;
+  padding: 0 4rem;
+  border: 0.2rem solid #d5d9df;
   border-radius: 10rem;
   color: #656565;
   box-sizing: border-box;
@@ -598,6 +600,13 @@
   background-image: url(../image/m-sub/icon-star-line-gray.png);
   background-size: contain;
   vertical-align: top;
+}
+.index-case-box .carer-info > div.ellipse .choice .ui-form {
+  height: 100%;
+}
+.index-case-box .carer-info > div.ellipse .choice .ui-form .ui-select {
+  height: 100%;
+  line-height: 100%;
 }
 .index-case-box .carer-info > div.ellipse .choice .ui-select {
   font-size: 5.2rem;
