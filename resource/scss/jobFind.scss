@@ -40,18 +40,23 @@
     .rating-detail {
         dl {
             align-items: center;
+            dt{
+                vertical-align: middle;
+            }
             dd {
                 a {
                     display: inline-block;
-                    margin-top:-0.3rem;
-                    margin-left:4rem;
-                    padding:1.5rem 4rem;
-                    font-size:4.4rem;
+                    height: 8rem;
+                    margin-top: -1rem;
+                    margin-left: 4rem;
+                    padding: 0 4rem;
+                    font-size: 4.4rem;
                     background-color: #9f96c4;
-                    color:#fff;
+                    color: #fff;
                     border-radius: 5rem;
                     box-sizing: border-box;
-                    vertical-align: top;
+                    vertical-align: middle;
+                    line-height: 9rem;
                 }
             }
             &+dl {

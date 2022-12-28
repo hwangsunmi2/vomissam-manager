@@ -166,29 +166,30 @@
         display: flex;
         flex-direction: column;
         height:100%;
-        padding: 27.5rem 5rem 15.5rem;
+        //padding: 27.5rem 5rem 15.5rem;
+        padding: 20rem 5rem 10rem;
         &__title{
             font: {
-                size: 13rem;
+                size: 11rem;
                 weight:100;
             };
             text-align: center;
-            line-height: 18.6rem;
+            line-height: 15.5rem;
             strong{
                 font: {
-                    size: 13rem;
+                    size: 11rem;
                     weight:600;
                 };
             }
             span{
                 font: {
-                    size: 13rem;
+                    size: 11rem;
                     weight:500;
                 };
             }
         }
         &__text{
-            margin-top: 9rem;
+            margin-top: 4rem;
             font : {
                 size: 5.8rem;
             }
@@ -198,7 +199,7 @@
         &__bottom{
             margin-top: auto;
             &--bottom{
-                margin-top: 16rem;
+                margin-top: 10rem;
                 &-text{
                     display: flex;
                     align-items: center;
@@ -294,14 +295,16 @@
     }
 }
 
-@media (max-width: 360px) {
+/*============================================================*/ 
+
+@media (max-width: 480px) {
     .container{
         &-login{
             margin-bottom: 0;
             padding-bottom:0;
             background: url(../image/common/bg-login.jpg);
             background-size: cover;
-            background-position: center top;
+            background-position: center top -42rem;
         }
     }
 }
