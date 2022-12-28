@@ -111,6 +111,9 @@
   background: url(../image/common/bg-login.jpg);
   background-size: cover;
 }
+.container-login .container__inner {
+  padding-bottom: 0;
+}
 
 .loading {
   display: flex;
@@ -138,11 +141,12 @@
 .loading__bg {
   position: absolute;
   width: 300%;
-  height: 100%;
-  background: url(../image/common/loading-v.png) repeat-x;
-  background-size: 95%;
+  height: calc(100% - 37rem);
+  background: url(../image/common/loading-v__long.png) repeat-x;
+  background-size: 225%;
   background-position: right -179% top 130%;
   opacity: 0.04;
+  animation: wave 4s infinite linear;
 }
 .loading-logo .img-wrap {
   width: 28.1rem;
@@ -256,7 +260,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 27.5rem 5rem 21.5rem;
+  padding: 27.5rem 5rem 15.5rem;
 }
 .login-first__title {
   font-size: 13rem;
@@ -307,6 +311,7 @@
 }
 .login-first__bottom--bottom .button-wrap {
   display: flex;
+  margin-top: 4rem;
 }
 .login-first__bottom--bottom button {
   display: flex;
@@ -326,6 +331,16 @@
 }
 .login-first__bottom--bottom button + button {
   margin-left: 4rem;
+}
+.login-first__bottom--bottom button.button-kakao {
+  width: 100%;
+  height: 20rem;
+  font-size: 6rem;
+  font-weight: 500;
+  background: #fae100 url(../image/common/icon-kakao.png) no-repeat left 7rem center;
+  background-size: 9.9rem 9.1rem;
+  border-radius: 2rem;
+  color: #000000;
 }
 .login-first.m-login {
   padding: 15rem 5rem;

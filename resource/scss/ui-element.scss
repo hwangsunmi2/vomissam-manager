@@ -445,6 +445,12 @@
                 //         display: none;
                 //     }
                 // }
+                &.new{
+                    display: none;
+                }
+                &.old{
+                    color:#a5a5a5;
+                }
             }
             &.active{
                 position: relative;

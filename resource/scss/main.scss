@@ -645,11 +645,11 @@
                 }
             }
         }
-        
 
         .carer {
             &-info {
-                margin:12.7rem 0 5rem 0;
+                //margin:12.7rem 0 5rem 0; //2022.12.28 index 수정
+                margin:0rem 0 5rem 0;
                 box-sizing: border-box;
                 align-items: center;
                 justify-content: space-between;
@@ -707,6 +707,7 @@
                 }
             }
         }
+        
     }
     &__title{
         margin-bottom: 7rem;

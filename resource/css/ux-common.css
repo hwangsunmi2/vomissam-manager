@@ -1842,6 +1842,12 @@
   margin: 0;
   border: 0;
 }
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td.day.new {
+  display: none;
+}
+.ui-input__datepicker + .bootstrap-datetimepicker-widget table td.day.old {
+  color: #575c62;
+}
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td.active {
   position: relative;
 }

@@ -569,7 +569,7 @@
   background: linear-gradient(0deg, #ab97eb 0%, #ab97eb 60%, rgba(171, 151, 235, 0.8) 100%);
 }
 .index-case-box .carer-info {
-  margin: 12.7rem 0 5rem 0;
+  margin: 0rem 0 5rem 0;
   box-sizing: border-box;
   align-items: center;
   justify-content: space-between;

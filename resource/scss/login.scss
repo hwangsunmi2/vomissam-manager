@@ -4,6 +4,9 @@
     &-login{
         background: url(../image/common/bg-login.jpg);
         background-size: cover;
+        .container__inner{
+            padding-bottom: 0;
+        }
     }
 }
 
@@ -26,13 +29,13 @@
     &__bg{
         position: absolute;
         width: 300%;
-        height: 100%;
-        background: url(../image/common/loading-v.png) repeat-x;
+        height: calc(100% - 37rem);
+        background: url(../image/common/loading-v__long.png) repeat-x;
         // background-size: 294rem 267rem;
-        background-size: 95%;
+        background-size: 225%;
         background-position: right -179% top 130%;
         opacity: 0.04;
-        //animation: wave 3s infinite linear;
+        animation: wave 4s infinite linear;
     }
     &-logo{
         .img-wrap{
@@ -162,7 +165,7 @@
         display: flex;
         flex-direction: column;
         height:100%;
-        padding: 27.5rem 5rem 21.5rem;
+        padding: 27.5rem 5rem 15.5rem;
         &__title{
             font: {
                 size: 13rem;
@@ -193,7 +196,6 @@
         }
         &__bottom{
             margin-top: auto;
-           
             &--bottom{
                 margin-top: 16rem;
                 &-text{
@@ -220,6 +222,7 @@
                 .button{
                     &-wrap{
                         display: flex;
+                        margin-top: 4rem
                     }
                 }
                 button{
@@ -234,6 +237,16 @@
                     &+button{
                         margin-left: 4rem;
                     }
+                    &.button-kakao {
+                        width: 100%;
+                        height: 20rem;
+                        font-size: 6rem;
+                        font-weight: 500;
+                        background: #fae100 url(../image/common/icon-kakao.png) no-repeat left 7rem center;
+                        background-size: 9.9rem 9.1rem;
+                        border-radius: 2rem;
+                        color: #000000;
+                      }
                 }
             }
         }
