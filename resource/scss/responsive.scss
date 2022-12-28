@@ -23,9 +23,7 @@ html{
     @include tablet{ //768px
         font-size:13%;
     }
-    @include media-breakpoint-down(n-xxs){ 
-        font-size:13%;
-    }
+    
     // @media (min-height:660px) {
     //     font-size:calc(62.5% / 2);
     // }
@@ -75,6 +73,10 @@ html{
     }
     // ##출처: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
     // 원문에서 landscape(가로), portrait(세로)이 잘못 기재된 부분을 수정했습니다.
+
+    @media (max-width: 360px){ 
+        font-size:13%;
+    }
         
 }
 
