@@ -600,7 +600,7 @@
                 &-buttons{
                     &.on {
                         .carer-button {
-                            background: linear-gradient(0deg, #ab97eb 0%, #ab97eb 60%, rgba(171, 151, 235, 0.8) 100%);
+                            background: linear-gradient(180deg, #9186d8 0%, #ab97eb 100%, #ab97eb 100%);
                             &__wish {
                                 display:block;
                                 background: #846cdd;
@@ -614,7 +614,7 @@
                             }
                             &__choice {
                                 display:block;
-                                background: linear-gradient(0deg, #ab97eb 0%, #ab97eb 60%, rgba(171, 151, 235, 0.8) 100%);
+                                background: linear-gradient(180deg, #9186d8 0%, #ab97eb 100%, #ab97eb 100%);
                             }
                         } 
                     }

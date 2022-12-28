@@ -4,6 +4,7 @@
     &-login{
         background: url(../image/common/bg-login.jpg);
         background-size: cover;
+        background-position: center top -25rem;
         .container__inner{
             padding-bottom: 0;
         }
@@ -289,6 +290,18 @@
             color: #ffffff;
             text-shadow: 0.3rem 0.3rem 0 rgb(41 5 81 / 30%);
             letter-spacing: 1px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .container{
+        &-login{
+            margin-bottom: 0;
+            padding-bottom:0;
+            background: url(../image/common/bg-login.jpg);
+            background-size: cover;
+            background-position: center top;
         }
     }
 }

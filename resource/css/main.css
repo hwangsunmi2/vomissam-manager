@@ -533,7 +533,7 @@
   margin-top: 0;
 }
 .index-case-box .apply .carer-buttons.on .carer-button {
-  background: linear-gradient(0deg, #ab97eb 0%, #ab97eb 60%, rgba(171, 151, 235, 0.8) 100%);
+  background: linear-gradient(180deg, #9186d8 0%, #ab97eb 100%, #ab97eb 100%);
 }
 .index-case-box .apply .carer-buttons.on .carer-button__wish {
   display: block;
@@ -548,7 +548,7 @@
 }
 .index-case-box .apply .carer-buttons.on .carer-button__choice {
   display: block;
-  background: linear-gradient(0deg, #ab97eb 0%, #ab97eb 60%, rgba(171, 151, 235, 0.8) 100%);
+  background: linear-gradient(180deg, #9186d8 0%, #ab97eb 100%, #ab97eb 100%);
 }
 .index-case-box .apply .carer-buttons.off .carer-button__wish {
   display: block;

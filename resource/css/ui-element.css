@@ -354,7 +354,7 @@
   display: none;
 }
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td.day.old {
-  color: #a5a5a5;
+  color: #959595;
 }
 .ui-input__datepicker + .bootstrap-datetimepicker-widget table td.active {
   position: relative;
