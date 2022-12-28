@@ -164,6 +164,9 @@
   font-size: 6rem;
   color: #fff;
 }
+.myInfo-box__item dd a {
+  color: #ffffff;
+}
 .myInfo-box__item:last-child {
   width: calc(100% - 40rem);
   margin-top: 6rem;
@@ -213,7 +216,7 @@
   font-weight: 500;
 }
 .history-list__item > dl dt {
-  width: 23rem;
+  width: auto;
   margin-right: 3rem;
   margin-top: 5rem;
   font-weight: 500;

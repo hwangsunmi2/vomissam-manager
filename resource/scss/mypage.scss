@@ -1,6 +1,9 @@
 @charset 'utf-8';
 @import './helper/index';
 
+// .container-myPageHistory{
+//     padding-bottom: 12rem;
+// }
 .sub{
     &-item{
         &.gradation{
@@ -61,6 +64,9 @@
                 width:100%;
                 font-size:6rem;
                 color:#fff;
+                a{
+                    color:#ffffff;
+                }
             }
             &:last-child{
                 width:calc(100% - 40rem);
@@ -117,7 +123,8 @@
                 flex-wrap:wrap;
                 font-weight:500;
                 dt{
-                    width:23rem;
+                    //width:23rem;
+                    width:auto;
                     margin-right:3rem;
                     margin-top:5rem;
                     font-weight:500;

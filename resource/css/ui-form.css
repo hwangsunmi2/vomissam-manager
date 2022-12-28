@@ -130,6 +130,10 @@
 .ui-input__height-s {
   height: 13.5rem;
 }
+.ui-input__height-m {
+  height: 15rem;
+  line-height: 15.1rem;
+}
 .ui-input__bg-gray {
   background: #f8f8f8;
 }
