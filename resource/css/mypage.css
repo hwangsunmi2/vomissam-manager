@@ -307,12 +307,12 @@
 
 .bank-list__inner {
   overflow: auto;
-  height: 111rem;
+  height: auto;
 }
 .bank-list-box {
   padding: 10rem 7.5rem;
   border-radius: 3rem;
-  box-shadow: 4px 5px 11px rgba(0, 0, 0, 0.089);
+  box-shadow: 2rem 2rem 8rem rgba(0, 0, 0, 0.08);
 }
 .bank-list > div + div {
   margin-top: 5rem;
