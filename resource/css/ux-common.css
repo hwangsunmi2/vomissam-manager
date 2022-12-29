@@ -562,6 +562,14 @@
   box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 .ui-button__badge {
+  display: flex;
+  -ms-display: flexbox;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 1.7rem 2.8rem;
   font-size: 4rem;
   font-weight: 500;
@@ -636,6 +644,8 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -748,6 +758,8 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .board-table__list .td-title .icon-secret {
@@ -1220,6 +1232,8 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 1.6rem;
   line-height: normal;
@@ -1382,6 +1396,8 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .attach-file__bottom {
@@ -1398,6 +1414,8 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0.2rem 0 0.2rem 2.5rem;
   font-size: 1.6rem;

@@ -307,6 +307,14 @@
   box-shadow: 1rem 1rem 3.3rem rgba(0, 0, 0, 0.13);
 }
 .ui-button__badge {
+  display: flex;
+  -ms-display: flexbox;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 1.7rem 2.8rem;
   font-size: 4rem;
   font-weight: 500;
@@ -381,6 +389,8 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;

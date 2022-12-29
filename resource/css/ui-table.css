@@ -60,6 +60,8 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .board-table__list .td-title .icon-secret {
