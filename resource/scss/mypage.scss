@@ -123,8 +123,8 @@
                 flex-wrap:wrap;
                 font-weight:500;
                 dt{
-                    //width:23rem;
-                    width:auto;
+                    width:24rem;
+                    // width:auto;
                     margin-right:3rem;
                     margin-top:5rem;
                     font-weight:500;
@@ -132,7 +132,7 @@
                     line-height:1.3
                 }
                 dd{
-                    width:calc(100% - 26rem);
+                    width:calc(100% - 27rem);
                     margin-top:5rem;
                     font-weight:500;
                     line-height:1.3

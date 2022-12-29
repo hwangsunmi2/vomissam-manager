@@ -331,9 +331,10 @@
   height: 13.5rem;
   font-size: 5.5rem;
   text-indent: 0;
+  line-height: 13.6rem;
 }
 .sub-item__box--totalPay {
-  padding: 13.5rem 9rem;
+  padding: 11rem 9rem;
   color: #fff;
   border-radius: 3rem;
   background-image: url("../image/sub/img-totalPay.png");

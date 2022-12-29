@@ -149,7 +149,7 @@
 }
 .modal-buttons__sticky .ui-button {
   border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 0;
+  border-bottom-right-radius: 2rem;
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
@@ -269,30 +269,4 @@
 }
 .modal .modalUploadImg__wrap .thumb-radio-image.active {
   border: 0.3rem solid #795bdc;
-}
-
-@media (max-width: 1600px) {
-  .modal .ssamSearch__wrap input::placeholder {
-    font-size: 3rem;
-  }
-  .modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div {
-    font-size: 3rem;
-  }
-  .modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div span {
-    font-size: 3rem;
-  }
-  .modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div a {
-    font-size: 3rem;
-  }
-}
-@media (max-width: 1400px) {
-  /* 모달 사진 업로드 */
-  .modal .uploadimg__wrap > div {
-    font-size: 5.5rem;
-  }
-}
-@media (max-width: 1024px) {
-  .modal .ssamSearch__wrap input::placeholder {
-    font-size: 5.5rem;
-  }
 }

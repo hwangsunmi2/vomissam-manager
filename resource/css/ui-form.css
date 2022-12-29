@@ -395,7 +395,10 @@
 .agreeView .form-check {
   position: relative;
   justify-content: flex-start;
-  padding: 7.5rem 0;
+  padding: 4rem 0;
+}
+.agreeView .form-check:nth-child(1) {
+  padding-top: 9rem;
 }
 .agreeView .form-check label {
   margin-left: 10rem;

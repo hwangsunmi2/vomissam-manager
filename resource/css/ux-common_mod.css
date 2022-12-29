@@ -1332,14 +1332,13 @@
 .personalInfo__text--inner > div + div {
   margin-top: 8rem;
 }
-
+.agreeView .form-check:nth-child(1){
+	padding-top:9rem;
+}
 .agreeView .form-check {
   position: relative;
   justify-content: flex-start;
   padding: 4rem 0;
-}
-.agreeView .form-check:nth-child(1) {
-  padding-top: 9rem;
 }
 .agreeView .form-check label {
   margin-left: 10rem;
@@ -1612,6 +1611,7 @@
 }
 .sub-dt, .sub-dd {
   font-size: 5.6rem;
+/*   letter-spacing: -1px; */
 }
 .sub-dt *:not(button):not(.des-text2), .sub-dd *:not(button):not(.des-text2) {
   font-size: 5.6rem;
@@ -2189,6 +2189,31 @@
   border: 0.3rem solid #795bdc;
 }
 
+@media (max-width: 1600px) {
+  /* .modal .ssamSearch__wrap input::placeholder {
+    font-size: 3rem;
+  }
+  .modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div {
+    font-size: 3rem;
+  }
+  .modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div span {
+    font-size: 3rem;
+  }
+  .modal .ssamSearch__wrap > div.ssamLineTop .ssamLine > div a {
+    font-size: 3rem;
+  } */
+}
+@media (max-width: 1400px) {
+  /* 모달 사진 업로드 */
+  /* .modal .uploadimg__wrap > div {
+    font-size: 5.5rem;
+  } */
+}
+@media (max-width: 1024px) {
+  /* .modal .ssamSearch__wrap input::placeholder {
+    font-size: 5.5rem;
+  } */
+}
 /* ========== reponsive =========== */
 /*
 * xs: 576px,// Small screen / phone

@@ -204,7 +204,7 @@
             display: flex;
             .ui-button{
                 border-bottom-left-radius: 2rem;
-                border-bottom-right-radius: 0;
+                border-bottom-right-radius: 2rem;
                 border : {
                     bottom: 0;
                     left: 0;
@@ -364,66 +364,66 @@
     }
 }
 
-@include media-breakpoint-down(n-xl){
-    //1600 
-    .modal {
-        .ssamSearch__wrap {
-            input {
-                &::placeholder {
-                    font-size:3rem;
-                }
-            }
-            &> div.ssamLineTop {
-                .ssamLine {
-                    &> div {
-                        font-size:3rem;
-                       span {
-                        font-size:3rem;
-                       }
-                       a {
-                        font-size:3rem;
-                       }
-                    }
-                }
-            }
-        }
-    }
-}
+// @include media-breakpoint-down(n-xl){
+//     //1600 
+//     .modal {
+//         .ssamSearch__wrap {
+//             input {
+//                 &::placeholder {
+//                     font-size:3rem;
+//                 }
+//             }
+//             &> div.ssamLineTop {
+//                 .ssamLine {
+//                     &> div {
+//                         font-size:3rem;
+//                        span {
+//                         font-size:3rem;
+//                        }
+//                        a {
+//                         font-size:3rem;
+//                        }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 
 
 
-@include media-breakpoint-down(n-ml){ 
+// @include media-breakpoint-down(n-ml){ 
 
-    //1400
-    /* 모달 사진 업로드 */
-    .modal {
-        .uploadimg__wrap {
-            &> div {
-                //padding: 4rem;
-                font-size:5.5rem;
-                // &+div {
-                //     p{
-                //         height:8rem;
-                //         line-height: 8rem;
-                //     }
-                // }
+//     //1400
+//     /* 모달 사진 업로드 */
+//     .modal {
+//         .uploadimg__wrap {
+//             &> div {
+//                 //padding: 4rem;
+//                 font-size:5.5rem;
+//                 // &+div {
+//                 //     p{
+//                 //         height:8rem;
+//                 //         line-height: 8rem;
+//                 //     }
+//                 // }
                 
-            }
-        }
-    }
-}
+//             }
+//         }
+//     }
+// }
 
 
-@include media-breakpoint-down(n-md){
-    //1024 
-    .modal {
-        .ssamSearch__wrap {
-            input {
-                &::placeholder {
-                    font-size:5.5rem;
-                }
-            }
-        }
-    }
-}
+// @include media-breakpoint-down(n-md){
+//     //1024 
+//     .modal {
+//         .ssamSearch__wrap {
+//             input {
+//                 &::placeholder {
+//                     font-size:5.5rem;
+//                 }
+//             }
+//         }
+//     }
+// }

@@ -176,7 +176,7 @@
   max-width: calc(25% - 1.5rem);
   margin: 0;
   text-align: left;
-  padding-left: 3.9rem;
+  padding-left:3.9rem;
 }
 #preferredArea .modal-body > .modal-body .ui-buttons__fourth .ui-button:nth-child(n+5) {
   margin-top: 2rem;
@@ -785,8 +785,6 @@
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   justify-content: center;
   width: 30rem;
@@ -832,6 +830,7 @@
 .carer-detail__text {
   line-height: 11.4rem;
   word-break: keep-all;
+/*   letter-spacing: -.5px; */
   vertical-align: middle;
   text-align: right;
 }
@@ -1254,6 +1253,8 @@
   border-radius: 1rem;
 }
 
+
+
 /* Case2 :: NEW */
 .newNotice__inner {
   display: block;
@@ -1273,7 +1274,7 @@
   background-color: #ffde00;
   border-radius: 7rem;
   box-sizing: border-box;
-  line-height: 100%;
+  line-height:100%;
 }
 .newNotice__inner p {
   display: inline-block;
@@ -1310,7 +1311,9 @@
   word-wrap: keep-all;
 }
 
-/* case1, case3 버튼 높이 수정 */
-.case1 .ui-button__height-s, .case3 .ui-button__height-s {
-  height: 15rem;
+
+
+
+.case1 .ui-button__height-s, .case3 .ui-button__height-s{
+	height: 15rem;
 }

@@ -448,7 +448,10 @@
     .form-check {
         position:relative;
         justify-content: flex-start;
-        padding: 7.5rem 0;
+        padding: 4rem 0;
+        &:nth-child(1){
+            padding-top:9rem;
+        }
         label {
             margin-left:10rem;
             font-size:6rem;
@@ -462,7 +465,6 @@
                 }
             }
         }
-        
         input {
             &[type='checkbox'] {
                 position: absolute;

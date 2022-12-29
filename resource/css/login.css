@@ -146,7 +146,7 @@
   width: 300%;
   height: calc(100% - 37rem);
   background: url(../image/common/loading-v__long.png) repeat-x;
-  background-size: 225%;
+  background-size: cover;
   background-position: right -179% top 130%;
   opacity: 0.04;
   animation: wave 4s infinite linear;
@@ -377,7 +377,6 @@
   font-size: 7rem;
   font-weight: 500;
   color: #ffffff;
-  text-shadow: 0.3rem 0.3rem 0 rgba(41, 5, 81, 0.3);
   letter-spacing: 1px;
 }
 
