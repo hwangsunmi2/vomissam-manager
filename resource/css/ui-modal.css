@@ -255,7 +255,7 @@
   width: 50%;
   height: auto;
   cursor: pointer;
-  border: 0.3rem solid #d8dce2;
+  border: 1px solid #d8dce2;
   border-radius: 1.3rem;
 }
 .modal .modalUploadImg__wrap .thumb-radio-image img {
@@ -268,5 +268,5 @@
   margin-left: 2rem;
 }
 .modal .modalUploadImg__wrap .thumb-radio-image.active {
-  border: 0.3rem solid #795bdc;
+  border: 1px solid #795bdc;
 }

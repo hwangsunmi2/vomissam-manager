@@ -342,7 +342,7 @@
                         width:50%;
                         height:auto; 
                         cursor: pointer; 
-                        border:.3rem solid #d8dce2;
+                        border:1px solid #d8dce2;
                         border-radius: 1.3rem;
                         img {
                             width:100%; 
@@ -354,7 +354,7 @@
                             margin-left:2rem;
                         }
                         &.active {
-                            border:.3rem solid #795bdc;
+                            border:1px solid #795bdc;
                         }
                     }
                     
