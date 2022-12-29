@@ -282,9 +282,6 @@
 .mt-40 {
   margin-top: 40px;
 }
-/* .mt-50 {
-  margin-top: 50px;
-} */
 .mt-60 {
   margin-top: 60px;
 }
@@ -303,15 +300,17 @@
   background: url(../image/common/bg-joinDirect.jpg) no-repeat center;
   background-size: cover;
 }
-
+.container-joinDirect .container__inner{padding-bottom:0;}
 .joinDirect {
   height: 100%;
 }
 .joinDirect__inner {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 50rem);
+  height: 100%;
   padding: 20rem 5rem 14.8rem 5rem;
+
+      justify-content: space-between;
 }
 .joinDirect-title {
   font-size: 8.5rem;
@@ -327,7 +326,7 @@
 }
 .joinDirect-buttons {
   display: flex;
-  margin-top: 20rem;
+/*   margin-top: 20rem; */
 }
 .joinDirect-buttons .ui-button {
   height: auto;
@@ -353,27 +352,27 @@
   text-align: right;
 }
 .joinDirect-bottom {
-  flex: 1;
+  flex: none;
 }
 .joinDirect-bottom__inner {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.joinDirect-logo {
+/* .joinDirect-logo {
   margin-top: auto;
-}
+} */
 .joinDirect-logo__inner {
   width: 100%;
   height: 6.6rem;
-  margin-top: 20rem;
+  margin-top: auto;
   background: url(../image/common/intro-logo.png) no-repeat center;
   background-size: 30.6rem 6.6rem;
 }
 
 /* 동영상 콘텐츠 영역 */
 .video-area__inner {
-  margin-top: 20rem;
+/*   margin-top: 15rem; */
   border-radius: 3rem;
 }
 .video-item {
