@@ -679,6 +679,11 @@
                                 background-image: url(../image/m-sub/icon-star-line-gray.png);
                                 background-size: contain;
                                 vertical-align: middle;
+                            }                            
+                            &.is-active{
+                                i{
+                                    background-image: url(../image/m-sub/icon-star-on.png);
+                                }
                             }
                             .ui{
                                 &-form{

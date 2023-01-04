@@ -6,7 +6,7 @@ $(document).ready(function () {
   todayList();
   mainTab();
   check();
-
+  choiceStar();
 });
 
 function introSlide() {
@@ -68,4 +68,11 @@ function check() {
   $(".ui-button__check--multi--purple").click(function(){
     $(this).toggleClass("is-active");
   });
+}
+
+//2023.01.04 : add : 찜한 일감 
+function choiceStar(){
+  $(".choice.star").click(function(){
+    $(this).toggleClass("is-active");
+  })
 }

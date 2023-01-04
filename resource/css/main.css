@@ -588,6 +588,9 @@
   background-size: contain;
   vertical-align: middle;
 }
+.index-case-box .carer-info > div.ellipse .choice.is-active i {
+  background-image: url(../image/m-sub/icon-star-on.png);
+}
 .index-case-box .carer-info > div.ellipse .choice .ui-form {
   height: 100%;
 }
