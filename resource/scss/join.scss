@@ -346,16 +346,44 @@
         overflow: hidden;
         &__inner {
             position: relative;
-            height: 0;
-            padding-top: 56.3%;
-            
+            height:0;
+            //padding-top:59.702%;
+            padding-top:56.3%;
         }
-        img {
-            display: block;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
             max-width: 100%;
+            width:100%;
             height: 100%;
         }
-
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+            height: 100%;
+            border-radius: 3rem;
+        }
+    }
+    &-thumb{
+        border-radius: 3rem;
+        overflow: hidden;
+        &__inner {
+            position: relative;
+            height:0;
+            //padding-top:59.702%;
+            padding-top:56.3%;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+            width:100%;
+            height: 100%;
+        }
         video {
             position: absolute;
             top: 0;
