@@ -304,6 +304,16 @@
   background-color: #9daaca;
   font-size: 4rem;
 }
+.acordion-answer {
+  margin-top: 4.5rem;
+}
+.acordion-answer textarea {
+  font-size: 5rem;
+  line-height: 1.8;
+}
+.acordion-answer .ui-buttons {
+  margin-top: 2rem;
+}
 
 .modal-title {
   text-align: left;

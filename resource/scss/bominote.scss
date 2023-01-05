@@ -233,6 +233,16 @@
             font-size:4rem;
         }
     }
+    &-answer{
+        margin-top: 4.5rem;
+        textarea{
+            font-size: 5rem;
+            line-height: 1.8;
+        }
+        .ui-buttons{
+            margin-top: 2rem;
+        }
+    }
 }
 .modal{
     &-title{

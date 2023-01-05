@@ -169,6 +169,10 @@
   padding: 5.5rem;
   height: 35rem;
 }
+.ui-textarea__height-600 {
+  padding: 5.5rem;
+  height: 60rem;
+}
 .ui-textarea::placeholder {
   color: #9196a5;
 }
