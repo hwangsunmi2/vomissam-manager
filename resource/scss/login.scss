@@ -124,7 +124,7 @@
                 height:100%;
                 background-image: url(../image/main/intro-slide0#{$i}.jpg);
                 background-repeat: no-repeat;
-                background-position: center top -35rem;
+                background-position: center top 0rem;
                 background-size: cover;
             }
         }
@@ -305,7 +305,7 @@
             padding-bottom:0;
             background: url(../image/common/bg-login.jpg);
             background-size: cover;
-            background-position: center top -42rem;
+            background-position: center top 0rem;
         }
     }
 }
