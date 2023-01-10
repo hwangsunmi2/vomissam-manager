@@ -77,10 +77,28 @@ html, body, .wrap{
     }
     &-alarm{
         &__button{
+            position: relative;
             width:6.9rem;
             height:8.2rem;
             background: url(../image/common/icon-alarm.png) no-repeat center;
             background-size: 6.9rem 8.2rem;
+        }
+        &__count{
+            display: inline-block;
+            position:absolute;
+            top: -1.8rem;
+            right: -3rem;
+            width: 5.5rem;
+            height: 5.5rem;
+            background: #e94f51;
+            border-radius: 100%;
+            text-align: center;
+            &--num{
+                color: #ffffff;
+                font-size: 3.8rem;
+                line-height: 5.4rem;
+                letter-spacing: -.5px;
+            }
         }
     }
     &-hamberger{

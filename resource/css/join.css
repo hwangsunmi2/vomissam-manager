@@ -422,3 +422,12 @@
   height: 100%;
   border-radius: 3rem;
 }
+
+/* 개발 페이지 수정  */
+/* joinOtherSocial */
+#app > div {
+  height: 100%;
+}
+#app > div .container-join {
+  height: 100%;
+}

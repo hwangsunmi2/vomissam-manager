@@ -328,14 +328,16 @@
   justify-content: center;
   flex: 1;
   height: 18.5rem;
-  font-size: 5rem;
+  padding: 0 2rem;
+  font-size: 4.8rem;
   color: #333333;
   border-radius: 2rem;
   border: 0.3rem solid #e9eaec;
   background: #ffffff;
+  word-break: keep-all;
 }
 .login-first__bottom--bottom button + button {
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 .login-first__bottom--bottom button.button-kakao {
   width: 100%;
