@@ -195,11 +195,15 @@ html, body, .wrap {
   position: absolute;
   top: -1.8rem;
   right: -3rem;
-  width: 5.5rem;
-  height: 5.5rem;
+  min-width: 5.5rem;
+  width: auto;
+  min-height: 5.5rem;
+  height: auto;
+  padding: 0 0.5rem;
   background: #e94f51;
   border-radius: 100%;
   text-align: center;
+  box-sizing: border-box;
 }
 .header-alarm__count--num {
   color: #ffffff;
