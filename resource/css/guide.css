@@ -964,15 +964,15 @@
 .button-joinSocial__kakao {
   border-color: #fae100;
   background-image: url(../image/common/icon-kakao.png);
-  background-size: 5.6rem 5.1rem;
+  background-size: 8.5rem 7.7rem;
 }
 .button-joinSocial__apple {
-  border-color: #fae100;
+  border-color: #000000;
   background-image: url(../image/common/icon-apple.png);
-  background-size: 5.6rem 5.1rem;
+  background-size: 5.4rem 6.6rem;
 }
 .button-joinSocial + .button-joinSocial {
-  margin-top: 8.7rem;
+  margin-top: 1.7rem;
 }
 .button-kakao {
   width: 100%;
@@ -992,6 +992,7 @@
   background: url(../image/common/icon-naver__colored.png);
   background-size: 5.6rem 5.1rem;
   vertical-align: middle;
+  flex: none;
   content: "";
 }
 .button-google::before {
@@ -1008,11 +1009,11 @@
 .button-apple::before {
   display: inline-block;
   flex: none;
-  width: 5.3rem;
-  height: 5.5rem;
+  width: 5.4rem;
+  height: 6.6rem;
   margin-right: 2rem;
   background: url(../image/common/icon-apple.png);
-  background-size: 5.3rem 5.5rem;
+  background-size: 5.4rem 6.6rem;
   vertical-align: middle;
   content: "";
 }

@@ -440,12 +440,14 @@
         background-size: 9.9rem 9.1rem;
         border-radius: 2rem;
         color:#000000;
+        border: 0;
     }
     &-naver{
         &::before{
             display: inline-block;
             width: 5.6rem;
             height: 5.1rem;
+            margin-top: -1rem;
             margin-right: 2rem;
             background: url(../image/common/icon-naver__colored.png);
             background-size: 5.6rem 5.1rem;
@@ -460,6 +462,7 @@
             flex: none;
             width: 5.3rem;
             height: 5.5rem;
+            margin-top: -.5rem;
             margin-right: 2rem;
             background: url(../image/common/icon-google__colored.png);
             background-size: 5.3rem 5.5rem;
@@ -473,6 +476,7 @@
             flex: none;
             width: 5.4rem;
             height: 6.6rem;
+            margin-top: -2rem;
             margin-right: 2rem;
             background: url(../image/common/icon-apple.png);
             background-size: 5.4rem 6.6rem;
